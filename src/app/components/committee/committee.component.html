@@ -1,0 +1,257 @@
+<section id="committee" class="committee-section section-padding">
+  <div class="container">
+    <!-- Header -->
+    <div class="section-header">
+      <span class="section-tagline">“The Pillars of STAR BOYS • School Sahi, Ghantapada, Talcher”</span>
+      <h2 class="section-title gold-gradient-text">Our Puja Committee</h2>
+      <app-decorative-divider></app-decorative-divider>
+      <p class="section-subtitle">
+        Meet the dedicated ritual patrons, organizers, technical specialists, advisors, and youth volunteers working tirelessly with devotion to make every celebration unforgettable.
+      </p>
+    </div>
+
+    <!-- =========================================================================
+         TIER 1: 2 PUJA KARTA (TOP PROFILES - SACRED PATRONS)
+         ========================================================================= -->
+    <div class="karta-section-wrapper">
+      <div class="tier-header">
+        <div class="tier-badge">
+          <i class="fa-solid fa-om text-gold"></i>
+          <span>Sacred Ritual Patrons</span>
+        </div>
+        <h3 class="tier-title font-cinzel">Mukhya & Saha Puja Karta</h3>
+        <p class="tier-desc">Chief patrons performing the holy Sankalpa, Yajna, and Aarti of Maa Laxmi</p>
+      </div>
+
+      <div class="karta-grid">
+        @for (karta of kartaMembers; track karta.id) {
+          <div class="karta-card glass-card">
+            <div class="karta-golden-glow"></div>
+            
+            <div class="karta-badge">
+              <i class="fa-solid fa-fire-flame-curved"></i>
+              <span>{{ karta.badge }}</span>
+            </div>
+
+            <div class="karta-avatar-frame">
+              <div class="avatar-sunburst"></div>
+              <div class="avatar-circle">
+                @if (karta.image && !hasImageError(karta.id)) {
+                  <img [src]="karta.image" [alt]="karta.name" class="avatar-photo" (error)="handleImageError(karta.id)" />
+                } @else {
+                  <div class="avatar-fallback-sacred">
+                    <i class="fa-solid fa-hands-praying"></i>
+                  </div>
+                }
+              </div>
+            </div>
+
+            <div class="karta-info">
+              <h4 class="karta-name font-cinzel">{{ karta.name }}</h4>
+              <span class="karta-role font-decorative">{{ karta.role }}</span>
+              <p class="karta-bio">{{ karta.bio }}</p>
+
+              @if (karta.socials && karta.socials.length > 0) {
+                <div class="karta-actions">
+                  @for (soc of karta.socials; track soc.platform) {
+                    <a [href]="soc.url" class="btn btn-secondary btn-sm" [attr.aria-label]="soc.label">
+                      <i [class]="soc.icon"></i>
+                      <span>{{ soc.label }}</span>
+                    </a>
+                  }
+                </div>
+              }
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+
+    <!-- =========================================================================
+         TIER 2: 4 TECHNICAL & DIGITAL MEDIA TEAM
+         ========================================================================= -->
+    <div class="tech-section-wrapper">
+      <div class="tier-header">
+        <div class="tier-badge tech-badge-pill">
+          <i class="fa-solid fa-laptop-code text-gold"></i>
+          <span>Digital & Media Wings</span>
+        </div>
+        <h3 class="tier-title font-cinzel">Technical Team (4 Specialists)</h3>
+        <p class="tier-desc">Empowering STAR BOYS with modern web architecture, live broadcasting, and creative media</p>
+      </div>
+
+      <div class="tech-grid">
+        @for (tech of techMembers; track tech.id) {
+          <div class="tech-card glass-card">
+            <div class="tech-badge-strip">
+              <span class="pulse-dot"></span>
+              <span>{{ tech.badge }}</span>
+            </div>
+
+            <div class="tech-avatar-wrapper">
+              <div class="tech-avatar-circle">
+                @if (tech.image && !hasImageError(tech.id)) {
+                  <img [src]="tech.image" [alt]="tech.name" class="tech-avatar-photo" (error)="handleImageError(tech.id)" />
+                } @else {
+                  <div class="tech-avatar-fallback">
+                    <i class="fa-solid fa-code"></i>
+                  </div>
+                }
+              </div>
+            </div>
+
+            <div class="tech-info">
+              <h4 class="tech-name font-cinzel">{{ tech.name }}</h4>
+              <span class="tech-role">{{ tech.role }}</span>
+              <p class="tech-bio">{{ tech.bio }}</p>
+
+              @if (tech.socials && tech.socials.length > 0) {
+                <div class="tech-socials">
+                  @for (soc of tech.socials; track soc.platform) {
+                    <a [href]="soc.url" target="_blank" rel="noopener noreferrer" class="social-icon-chip" [attr.aria-label]="soc.label">
+                      <i [class]="soc.icon"></i>
+                    </a>
+                  }
+                </div>
+              }
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+
+    <!-- =========================================================================
+         TIER 3: 40 COMMITTEE MEMBERS WITH SEARCH & FILTER TABS
+         ========================================================================= -->
+    <div class="committee-members-section">
+      <div class="tier-header">
+        <div class="tier-badge">
+          <i class="fa-solid fa-users text-gold"></i>
+          <span>Full Executive Body</span>
+        </div>
+        <h3 class="tier-title font-cinzel">Puja Committee (40 Members)</h3>
+        <p class="tier-desc">Executive leadership, advisory council, event organizers, and volunteer brigade</p>
+      </div>
+
+      <!-- Controls: Category Filter Tabs & Search Bar -->
+      <div class="committee-controls glass-card">
+        <!-- Filter Tabs -->
+        <div class="category-tabs" role="tablist">
+          @for (cat of categories; track cat.id) {
+            <button
+              type="button"
+              class="category-tab-btn"
+              [class.active]="activeCategory() === cat.id"
+              (click)="setCategory(cat.id)"
+              role="tab"
+              [attr.aria-selected]="activeCategory() === cat.id">
+              <i [class]="cat.icon"></i>
+              <span>{{ cat.label }}</span>
+              <span class="tab-count-badge">{{ cat.count }}</span>
+            </button>
+          }
+        </div>
+
+        <!-- Search Bar -->
+        <div class="committee-search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search 40 members by name, role, or wing..."
+            [value]="searchQuery()"
+            (input)="onSearchChange($event)"
+            aria-label="Search committee members" />
+          @if (searchQuery()) {
+            <button type="button" class="clear-search-btn" (click)="clearSearch()" aria-label="Clear search">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          }
+        </div>
+      </div>
+
+      <!-- Results Count Status -->
+      <div class="results-status-bar">
+        <span class="results-count">
+          Showing <strong>{{ filteredMembers().length }}</strong> of <strong>{{ allMembers.length }}</strong> Committee Members
+        </span>
+        @if (searchQuery()) {
+          <span class="search-indicator">
+            Filtered by query: "<em>{{ searchQuery() }}</em>"
+          </span>
+        }
+      </div>
+
+      <!-- Committee 40 Members Grid -->
+      <div class="committee-grid">
+        @for (member of filteredMembers(); track member.id) {
+          <div class="member-card glass-card">
+            <!-- Top Role Badge -->
+            @if (member.badge) {
+              <div class="member-badge-strip">
+                <span>{{ member.badge }}</span>
+              </div>
+            }
+
+            <!-- Member Avatar / Photo Frame -->
+            <div class="member-avatar-wrapper">
+              <div class="avatar-ring"></div>
+              <div class="avatar-container">
+                @if (member.image && !hasImageError(member.id)) {
+                  <img [src]="member.image" [alt]="member.name" class="member-real-photo" (error)="handleImageError(member.id)" />
+                } @else {
+                  <div class="avatar-placeholder-art">
+                    <i class="fa-solid fa-user-tie member-icon"></i>
+                  </div>
+                }
+              </div>
+            </div>
+
+            <!-- Member Information -->
+            <div class="member-info">
+              <h4 class="member-name font-cinzel">{{ member.name }}</h4>
+              <span class="member-role font-decorative">{{ member.role }}</span>
+              
+              @if (member.bio) {
+                <p class="member-bio">{{ member.bio }}</p>
+              }
+
+              <!-- Social Links / Contact -->
+              @if (member.socials && member.socials.length > 0) {
+                <div class="member-socials">
+                  @for (soc of member.socials; track soc.platform) {
+                    <a
+                      [href]="soc.url"
+                      class="social-btn"
+                      [attr.aria-label]="soc.label">
+                      <i [class]="soc.icon"></i>
+                    </a>
+                  }
+                </div>
+              }
+            </div>
+          </div>
+        }
+      </div>
+
+      <!-- Empty State if search yields no results -->
+      @if (filteredMembers().length === 0) {
+        <div class="no-results-box glass-card">
+          <i class="fa-solid fa-user-slash no-results-icon"></i>
+          <h4>No committee members found</h4>
+          <p>No members matched your search criteria "{{ searchQuery() }}". Try a different keyword or switch category tab.</p>
+          <button type="button" class="btn btn-secondary btn-sm" (click)="clearSearch(); setCategory('all')">
+            Reset Filters
+          </button>
+        </div>
+      }
+    </div>
+
+    <!-- Note on Updating Committee Members -->
+    <div class="committee-note">
+      <i class="fa-solid fa-shield-halved text-gold"></i>
+      <span>STAR BOYS Laxmi Puja Committee, School Sahi, Ghantapada, Talcher — Powered by 2 Karta, 4 Technical Specialists & 40 Committee Leaders.</span>
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,53 @@
+<section id="schedule" class="schedule-section section-padding">
+  <div class="container">
+    <!-- Header -->
+    <div class="section-header">
+      <span class="section-tagline">“Festival Timeline”</span>
+      <h2 class="section-title gold-gradient-text">Puja Day Program Schedule</h2>
+      <app-decorative-divider></app-decorative-divider>
+      <p class="section-subtitle">
+        Carefully planned Vedic rituals and cultural performances for an unforgettable evening of devotion.
+      </p>
+    </div>
+
+    <!-- Responsive Cards Grid Schedule -->
+    <div class="schedule-grid">
+      @for (item of schedule; track item.id; let idx = $index) {
+        <div class="schedule-card glass-card" [class.highlight-card]="item.highlight">
+          
+          <!-- Special Badge if Highlight -->
+          @if (item.highlight) {
+            <div class="highlight-ribbon">
+              <i class="fa-solid fa-star"></i>
+              <span>Key Ritual</span>
+            </div>
+          }
+
+          <!-- Time Header Badge -->
+          <div class="time-badge-wrapper">
+            <span class="step-num">{{ idx + 1 }}</span>
+            <div class="time-badge">
+              <i class="fa-regular fa-clock"></i>
+              <span>{{ item.time }}</span>
+            </div>
+          </div>
+
+          <!-- Icon & Title -->
+          <div class="schedule-body">
+            <div class="icon-avatar">
+              <i [class]="item.icon"></i>
+            </div>
+            
+            <div class="schedule-text">
+              <h3 class="item-title">{{ item.title }}</h3>
+              <p class="item-desc">{{ item.description }}</p>
+            </div>
+          </div>
+
+          <!-- Bottom Visual Bar -->
+          <div class="schedule-footer-bar"></div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

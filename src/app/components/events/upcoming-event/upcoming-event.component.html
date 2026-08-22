@@ -1,0 +1,143 @@
+<section id="events" class="upcoming-section section-padding">
+  <div class="container">
+    <!-- Header -->
+    <div class="section-header">
+      <span class="section-tagline">“Mark Your Calendar”</span>
+      <h2 class="section-title gold-gradient-text">Upcoming Laxmi Puja</h2>
+      <app-decorative-divider></app-decorative-divider>
+      <p class="section-subtitle">
+        Join the grand festive atmosphere, Sandhya Aarti, and divine blessings of Maa Laxmi.
+      </p>
+    </div>
+
+    <!-- Main Grand Festival Card -->
+    <div class="festival-banner-card glass-card">
+      <div class="banner-glow-effect"></div>
+
+      <div class="banner-inner">
+        <!-- Event Sacred Tag & Title -->
+        <div class="banner-header">
+          <div class="banner-badge">
+            <i class="fa-solid fa-om text-gold"></i>
+            <span>{{ eventConfig.subTitle }}</span>
+          </div>
+
+          <h3 class="banner-title font-cinzel">
+            {{ eventConfig.title }}
+          </h3>
+
+          <p class="banner-description">
+            {{ eventConfig.description }}
+          </p>
+        </div>
+
+        <!-- Key Event Info Grid (Date, Location, Time) -->
+        <div class="event-meta-grid">
+          <!-- Date Card -->
+          <div class="meta-box">
+            <div class="meta-icon-circle">
+              <i class="fa-solid fa-calendar-star"></i>
+            </div>
+            <div class="meta-content">
+              <span class="meta-label">Puja Date</span>
+              <strong class="meta-value">{{ eventConfig.displayDate }}</strong>
+            </div>
+          </div>
+
+          <!-- Location Card -->
+          <div class="meta-box">
+            <div class="meta-icon-circle">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="meta-content">
+              <span class="meta-label">Mandap Location</span>
+              <strong class="meta-value">{{ eventConfig.location }}</strong>
+            </div>
+          </div>
+
+          <!-- Time Card -->
+          <div class="meta-box">
+            <div class="meta-icon-circle">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="meta-content">
+              <span class="meta-label">Puja Muhurta & Aarti</span>
+              <strong class="meta-value">06:00 PM – 10:00 PM</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Real-Time Countdown Timer -->
+        <div class="countdown-wrapper">
+          <div class="countdown-header">
+            <span class="countdown-title font-decorative">Countdown To Divine Celebrations</span>
+            <div class="pulsing-live-dot"></div>
+          </div>
+
+          @if (!timeLeft().isExpired) {
+            <div class="countdown-grid" role="timer" aria-live="polite">
+              <!-- Days -->
+              <div class="countdown-box">
+                <div class="countdown-digit-plate">
+                  <span class="digit-value">{{ timeLeft().formatted.days }}</span>
+                </div>
+                <span class="digit-label">Days</span>
+              </div>
+
+              <div class="countdown-separator">:</div>
+
+              <!-- Hours -->
+              <div class="countdown-box">
+                <div class="countdown-digit-plate">
+                  <span class="digit-value">{{ timeLeft().formatted.hours }}</span>
+                </div>
+                <span class="digit-label">Hours</span>
+              </div>
+
+              <div class="countdown-separator">:</div>
+
+              <!-- Minutes -->
+              <div class="countdown-box">
+                <div class="countdown-digit-plate">
+                  <span class="digit-value">{{ timeLeft().formatted.minutes }}</span>
+                </div>
+                <span class="digit-label">Minutes</span>
+              </div>
+
+              <div class="countdown-separator">:</div>
+
+              <!-- Seconds -->
+              <div class="countdown-box">
+                <div class="countdown-digit-plate">
+                  <span class="digit-value seconds-highlight">{{ timeLeft().formatted.seconds }}</span>
+                </div>
+                <span class="digit-label">Seconds</span>
+              </div>
+            </div>
+          } @else {
+            <div class="puja-live-banner">
+              <span class="live-icon">🪔</span>
+              <div class="live-text">
+                <h4 class="live-title font-cinzel">Maa Laxmi Puja is Currently LIVE!</h4>
+                <p>Welcome all devotees to join the sacred Darshan & Prasad Seva.</p>
+              </div>
+              <span class="live-icon">🪔</span>
+            </div>
+          }
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="banner-cta">
+          <a href="#schedule" class="btn btn-primary" (click)="scrollToSchedule($event)">
+            <i class="fa-solid fa-list-check"></i>
+            <span>View Full Day Schedule</span>
+          </a>
+          <a [href]="eventConfig.venueMapUrl" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span>Get Mandap Directions</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

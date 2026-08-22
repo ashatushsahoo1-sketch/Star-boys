@@ -1,0 +1,135 @@
+.past-events-section {
+  position: relative;
+  z-index: 5;
+}
+
+.past-events-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.past-card {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(245, 197, 66, 0.2);
+  transition: all 0.35s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    border-color: var(--gold);
+    box-shadow: 0 14px 30px rgba(245, 197, 66, 0.15);
+
+    .past-cover-art .art-mandala-sm {
+      transform: scale(1.15) rotate(10deg);
+    }
+  }
+}
+
+.past-cover-art {
+  position: relative;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  text-align: center;
+  overflow: hidden;
+
+  .year-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.2rem 0.65rem;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid var(--gold);
+    border-radius: 20px;
+    font-size: 0.75rem;
+    color: var(--gold-light);
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
+
+  .art-mandala-sm {
+    font-size: 2.5rem;
+    color: var(--gold);
+    margin-bottom: 0.4rem;
+    filter: drop-shadow(0 0 10px rgba(245, 197, 66, 0.6));
+    transition: transform 0.4s ease;
+  }
+
+  .theme-tag {
+    font-size: 1.15rem;
+    color: var(--gold-light);
+  }
+}
+
+.past-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .past-title {
+    font-size: 1.15rem;
+    color: var(--cream);
+    margin-bottom: 0.6rem;
+    line-height: 1.35;
+  }
+
+  .past-desc {
+    font-size: 0.86rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    flex: 1;
+  }
+
+  .past-meta-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1.25rem;
+    padding: 0.75rem 0;
+    border-top: 1px solid rgba(245, 197, 66, 0.12);
+    border-bottom: 1px solid rgba(245, 197, 66, 0.12);
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.78rem;
+      color: var(--text-light);
+
+      i {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .past-footer {
+    .w-full {
+      width: 100%;
+    }
+
+    .btn-sm {
+      padding: 0.55rem 1rem;
+      font-size: 0.8rem;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+<header class="navbar-header" [class.scrolled]="isScrolled()">
+  <div class="navbar-container container-wide">
+    <!-- Brand Logo -->
+    <a href="#home" class="navbar-brand" (click)="scrollToSection('home', $event)">
+      <div class="brand-emblem">
+        <svg class="emblem-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Outer Star Glow -->
+          <path d="M24 2L29 16L44 19L33 30L36 45L24 37L12 45L15 30L4 19L19 16L24 2Z" fill="url(#brandStarGrad)" opacity="0.3"/>
+          <!-- Inner Lotus Blossom -->
+          <path d="M24 10C21 19 16 26 24 40C32 26 27 19 24 10Z" fill="url(#brandGoldGrad)"/>
+          <path d="M24 40C14 34 5 25 11 16C16 24 21 31 24 40Z" fill="url(#brandGoldGrad)" opacity="0.8"/>
+          <path d="M24 40C34 34 43 25 37 16C32 24 27 31 24 40Z" fill="url(#brandGoldGrad)" opacity="0.8"/>
+          <!-- Diya Flame Base -->
+          <circle cx="24" cy="38" r="3" fill="#ff7b00"/>
+          <circle cx="24" cy="38" r="1.5" fill="#ffffff"/>
+          <defs>
+            <linearGradient id="brandGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ffe8a3"/>
+              <stop offset="50%" stop-color="#f5c542"/>
+              <stop offset="100%" stop-color="#d49b19"/>
+            </linearGradient>
+            <linearGradient id="brandStarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ff7b00"/>
+              <stop offset="100%" stop-color="#8b0000"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">STAR BOYS</span>
+        <span class="brand-sub">LAXMI PUJA COMMITTEE</span>
+        <span class="brand-loc">
+          <i class="fa-solid fa-location-dot"></i> School Sahi, Ghantapada, Talcher
+        </span>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <nav class="desktop-nav" aria-label="Main Navigation">
+      <ul class="nav-menu">
+        @for (link of navLinks; track link.target) {
+          <li class="nav-item">
+            <a
+              [href]="'#' + link.target"
+              class="nav-link"
+              [class.active]="activeSection() === link.target"
+              (click)="scrollToSection(link.target, $event)">
+              <span class="link-label">{{ link.label }}</span>
+              <span class="link-indicator"></span>
+            </a>
+          </li>
+        }
+      </ul>
+    </nav>
+
+    <!-- Header Action Button -->
+    <div class="navbar-actions">
+      <a href="#events" class="btn btn-primary btn-sm" (click)="scrollToSection('events', $event)">
+        <i class="fa-solid fa-om"></i>
+        <span>Laxmi Puja 2026</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button
+        type="button"
+        class="mobile-toggle"
+        [class.open]="isMobileMenuOpen()"
+        (click)="toggleMobileMenu()"
+        aria-label="Toggle navigation menu"
+        [attr.aria-expanded]="isMobileMenuOpen()">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" [class.open]="isMobileMenuOpen()" (click)="closeMobileMenu()">
+    <div class="mobile-drawer-content" (click)="$event.stopPropagation()">
+      <div class="drawer-header">
+        <div class="drawer-brand">
+          <span class="gold-gradient-text font-cinzel font-bold brand-title">STAR BOYS</span>
+          <span class="drawer-sub">LAXMI PUJA COMMITTEE</span>
+          <small class="drawer-location">
+            <i class="fa-solid fa-location-dot"></i> School Sahi, Ghantapada, Talcher
+          </small>
+        </div>
+        <button class="drawer-close" (click)="closeMobileMenu()" aria-label="Close menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <nav class="drawer-nav">
+        <ul>
+          @for (link of navLinks; track link.target) {
+            <li>
+              <a
+                [href]="'#' + link.target"
+                class="drawer-link"
+                [class.active]="activeSection() === link.target"
+                (click)="scrollToSection(link.target, $event)">
+                <i [class]="link.icon" class="link-icon"></i>
+                <span class="link-text">{{ link.label }}</span>
+                <i class="fa-solid fa-chevron-right arrow-icon"></i>
+              </a>
+            </li>
+          }
+        </ul>
+      </nav>
+
+      <div class="drawer-footer">
+        <a href="#events" class="btn btn-primary w-full" (click)="scrollToSection('events', $event)">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span>View Upcoming Events</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>

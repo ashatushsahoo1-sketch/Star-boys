@@ -1,0 +1,56 @@
+<section class="past-events-section section-padding">
+  <div class="container">
+    <!-- Header -->
+    <div class="section-header">
+      <span class="section-tagline">“Treasured Editions”</span>
+      <h2 class="section-title gold-gradient-text">Previous Celebrations</h2>
+      <app-decorative-divider></app-decorative-divider>
+      <p class="section-subtitle">
+        A look back at recent milestone Laxmi Puja celebrations that captivated hearts with their grand decor and divine atmosphere.
+      </p>
+    </div>
+
+    <!-- Past Event Cards Grid -->
+    <div class="past-events-grid">
+      @for (evt of pastEvents; track evt.year) {
+        <div class="past-card glass-card">
+          <!-- Cover Art Banner -->
+          <div class="past-cover-art" [style.background]="'radial-gradient(circle at center, #4a050e, #1a0815)'">
+            <div class="year-badge">
+              <i class="fa-solid fa-crown"></i>
+              <span>{{ evt.year }}</span>
+            </div>
+            <div class="art-mandala-sm">
+              <i class="fa-solid fa-om"></i>
+            </div>
+            <span class="theme-tag font-decorative">{{ evt.theme }}</span>
+          </div>
+
+          <!-- Body Details -->
+          <div class="past-body">
+            <h3 class="past-title">{{ evt.title }}</h3>
+            <p class="past-desc">{{ evt.description }}</p>
+
+            <div class="past-meta-row">
+              <span class="meta-item">
+                <i class="fa-solid fa-users text-gold"></i>
+                <span>{{ evt.attendeesCount }}</span>
+              </span>
+              <span class="meta-item">
+                <i class="fa-solid fa-sparkles text-gold"></i>
+                <span>{{ evt.highlightText }}</span>
+              </span>
+            </div>
+
+            <div class="past-footer">
+              <a href="#gallery" class="btn btn-secondary btn-sm w-full" (click)="scrollToGallery($event)">
+                <i class="fa-solid fa-images"></i>
+                <span>View {{ evt.year }} Memories</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

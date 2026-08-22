@@ -1,0 +1,281 @@
+.gallery-section {
+  position: relative;
+  z-index: 5;
+}
+
+/* Category Filter Tabs */
+.filter-tabs-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+
+  .filter-tabs-scroll {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    background: rgba(35, 14, 39, 0.7);
+    padding: 0.5rem;
+    border-radius: 50px;
+    border: 1px solid rgba(245, 197, 66, 0.2);
+    backdrop-filter: blur(10px);
+
+    @media (max-width: 768px) {
+      border-radius: 20px;
+      padding: 0.5rem;
+      gap: 0.5rem;
+    }
+  }
+}
+
+.filter-pill-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 1.4rem;
+  border-radius: 30px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-muted);
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+  @media (max-width: 576px) {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.78rem;
+  }
+
+  i {
+    font-size: 0.9rem;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover {
+    color: var(--gold-light);
+    background: rgba(245, 197, 66, 0.1);
+
+    i {
+      transform: scale(1.15);
+    }
+  }
+
+  &.active {
+    color: #1a0815;
+    background: linear-gradient(135deg, #ffe8a3 0%, #f5c542 100%);
+    box-shadow: 0 4px 15px rgba(245, 197, 66, 0.35);
+    font-weight: 700;
+
+    i {
+      color: #1a0815;
+    }
+  }
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallery-card {
+  position: relative;
+  height: 290px;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid rgba(245, 197, 66, 0.2);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: fadeInGrid 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+
+  &:hover {
+    transform: translateY(-8px);
+    border-color: var(--gold);
+    box-shadow: 0 16px 35px rgba(245, 197, 66, 0.22);
+
+    .gallery-art-layer {
+      transform: scale(1.08);
+    }
+
+    .gallery-hover-overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .gallery-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .gallery-art-layer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.6s ease;
+
+    .art-badge-top {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .badge-cat {
+        padding: 0.25rem 0.75rem;
+        background: rgba(0, 0, 0, 0.6);
+        border: 1px solid rgba(245, 197, 66, 0.4);
+        border-radius: 20px;
+        font-size: 0.72rem;
+        color: var(--gold-light);
+        font-family: var(--font-heading);
+        font-weight: 600;
+      }
+
+      .badge-year {
+        padding: 0.25rem 0.6rem;
+        background: rgba(122, 12, 24, 0.8);
+        border: 1px solid rgba(245, 197, 66, 0.3);
+        border-radius: 20px;
+        font-size: 0.72rem;
+        color: #fff;
+        font-weight: 700;
+        font-family: var(--font-heading);
+      }
+    }
+
+    .art-center-icon {
+      font-size: 3rem;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+      filter: drop-shadow(0 0 15px rgba(245, 197, 66, 0.5));
+    }
+
+    .art-title-text {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      color: var(--cream);
+      letter-spacing: 0.04em;
+    }
+  }
+
+  .gallery-hover-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(18, 7, 19, 0.4) 0%, rgba(29, 9, 32, 0.95) 75%);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.35s ease;
+
+    .overlay-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .overlay-cat-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        font-size: 0.75rem;
+        color: var(--gold);
+        font-family: var(--font-heading);
+        font-weight: 600;
+      }
+
+      .overlay-year-badge {
+        font-size: 0.75rem;
+        color: var(--gold-light);
+        background: rgba(0, 0, 0, 0.5);
+        padding: 0.2rem 0.5rem;
+        border-radius: 12px;
+        font-family: var(--font-heading);
+      }
+    }
+
+    .overlay-bottom {
+      .overlay-photo-title {
+        font-size: 1.25rem;
+        color: #ffffff;
+        margin-bottom: 0.4rem;
+        line-height: 1.3;
+      }
+
+      .overlay-photo-desc {
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        margin-bottom: 0.85rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .enlarge-action {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        color: var(--gold-light);
+        font-size: 0.8rem;
+        font-weight: 600;
+        font-family: var(--font-heading);
+      }
+    }
+  }
+}
+
+.gallery-info-strip {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(35, 14, 39, 0.5);
+  border: 1px dashed rgba(245, 197, 66, 0.25);
+  border-radius: 12px;
+  padding: 0.85rem 1.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+
+  code {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    color: var(--gold-light);
+  }
+}
+
+@keyframes fadeInGrid {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

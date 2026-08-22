@@ -1,0 +1,100 @@
+<section id="developer" class="developer-section section-padding">
+  <div class="container-narrow">
+    <!-- Header -->
+    <div class="section-header">
+      <span class="section-tagline">“Crafted with Passion & Devotion”</span>
+      <h2 class="section-title gold-gradient-text">Designed & Developed By</h2>
+      <app-decorative-divider></app-decorative-divider>
+      <p class="section-subtitle">
+        {{ dev.subtitle }}
+      </p>
+    </div>
+
+    <!-- Main Developer Card with Gradient Border & Glassmorphism -->
+    <div class="developer-card-wrapper">
+      <div class="card-gradient-border"></div>
+      
+      <div class="dev-card glass-card">
+        <!-- Top Tech Ribbon -->
+        <div class="dev-badge-header">
+          <span class="tech-badge">
+            <i class="fa-brands fa-angular text-gold"></i>
+            <span>Angular 19 Standalone</span>
+          </span>
+          <span class="status-badge">
+            <span class="status-dot"></span>
+            <span>Available for Projects</span>
+          </span>
+        </div>
+
+        <div class="dev-card-body">
+          <!-- Left: Developer Avatar -->
+          <div class="dev-avatar-column">
+            <div class="avatar-frame">
+              <div class="avatar-orbit"></div>
+              <div class="avatar-circle">
+                @if (dev.avatarImage && !imageError) {
+                  <img 
+                    [src]="dev.avatarImage" 
+                    [alt]="dev.name" 
+                    class="dev-avatar-img"
+                    (error)="onImageError()" />
+                } @else {
+                  <i class="fa-solid fa-code dev-avatar-icon"></i>
+                }
+              </div>
+            </div>
+            <div class="role-chip">
+              <i class="fa-solid fa-laptop-code"></i>
+              <span>{{ dev.role }}</span>
+            </div>
+          </div>
+
+          <!-- Right: Details -->
+          <div class="dev-details-column">
+            <h3 class="dev-name font-cinzel">{{ dev.name }}</h3>
+            <div class="dev-meta-line">
+              <span class="dev-designation">Full Stack & Angular Web Specialist</span>
+              <a [href]="'mailto:' + dev.email" class="dev-email-badge">
+                <i class="fa-solid fa-envelope text-gold"></i>
+                <span>{{ dev.email }}</span>
+              </a>
+            </div>
+
+            <p class="dev-bio">{{ dev.bio }}</p>
+
+            <!-- Tech Tags -->
+            <div class="tech-tags-list">
+              @for (tech of dev.techStack; track tech) {
+                <span class="tech-tag">{{ tech }}</span>
+              }
+            </div>
+
+            <!-- Social Action Links -->
+            <div class="dev-social-actions">
+              <a [href]="dev.githubUrl" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </a>
+
+              <a [href]="dev.linkedinUrl" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+
+              <a [href]="'mailto:' + dev.email" class="btn btn-secondary btn-sm" aria-label="Send Email">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+              </a>
+
+              <a [href]="dev.portfolioUrl" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="View Portfolio">
+                <i class="fa-solid fa-globe"></i>
+                <span>Portfolio</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,110 @@
+<section id="about" class="about-section section-padding">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="section-header">
+      <span class="section-tagline">“Bhakti, Ekata & Sanskruti”</span>
+      <h2 class="section-title gold-gradient-text">{{ about.heading }}</h2>
+      <app-decorative-divider></app-decorative-divider>
+      <p class="section-subtitle">
+        {{ about.subHeading }} — Rooted in Odia cultural pride and driven by youth brotherhood.
+      </p>
+    </div>
+
+    <!-- Main Two-Column Layout -->
+    <div class="about-grid">
+      <!-- Left Column: Visual Showcase -->
+      <div class="about-visual-col">
+        <div class="visual-frame">
+          <div class="frame-border-glow"></div>
+          <div class="visual-img-wrapper">
+            <div class="devotional-art-card">
+              <!-- Traditional Odia Alpona/Mandala Motif Background -->
+              <div class="art-mandala-bg"></div>
+              <div class="art-content">
+                <div class="diya-centerpiece">
+                  <div class="flame"></div>
+                  <div class="base">🪔</div>
+                </div>
+                <h3 class="art-title font-cinzel">STAR BOYS</h3>
+                <p class="art-tagline font-decorative">Maa Laxmi Puja Committee</p>
+                <div class="art-badge">
+                  <span>Est. {{ about.stats[0].count }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Stats Pill 1 -->
+          <div class="floating-stat stat-top">
+            <div class="stat-icon"><i class="fa-solid fa-hands-praying"></i></div>
+            <div class="stat-info">
+              <span class="stat-num">{{ about.stats[1].count }}</span>
+              <span class="stat-label">{{ about.stats[1].label }}</span>
+            </div>
+          </div>
+
+          <!-- Floating Stats Pill 2 -->
+          <div class="floating-stat stat-bottom">
+            <div class="stat-icon"><i class="fa-solid fa-heart"></i></div>
+            <div class="stat-info">
+              <span class="stat-num">{{ about.stats[2].count }}</span>
+              <span class="stat-label">{{ about.stats[2].label }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Story & Mission -->
+      <div class="about-text-col">
+        <div class="story-card glass-card">
+          <div class="story-tag">
+            <i class="fa-solid fa-feather-pointed"></i>
+            <span>Our Journey & Purpose</span>
+          </div>
+
+          <h3 class="story-heading">
+            Uniting Hearts Through Sacred Traditions & Community Bond
+          </h3>
+
+          <p class="story-p lead">
+            {{ about.introText }}
+          </p>
+
+          <p class="story-p">
+            {{ about.description }}
+          </p>
+
+          <div class="story-stats-row">
+            @for (stat of about.stats; track stat.label) {
+              <div class="stat-box">
+                <span class="box-num gold-gradient-text">{{ stat.count }}</span>
+                <span class="box-label">{{ stat.label }}</span>
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 Core Feature Cards: Devotion, Unity, Tradition -->
+    <div class="features-row">
+      @for (val of about.values; track val.id) {
+        <div class="feature-card glass-card">
+          <div class="card-glow-bg"></div>
+          <div class="feature-icon-wrapper">
+            <i [class]="val.icon" class="feature-icon" [style.color]="val.color"></i>
+            <span class="icon-ring"></span>
+          </div>
+
+          <span class="feature-tagline font-decorative">{{ val.tagline }}</span>
+          <h4 class="feature-title">{{ val.title }}</h4>
+          <p class="feature-desc">{{ val.description }}</p>
+
+          <div class="feature-footer">
+            <span class="card-bar"></span>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

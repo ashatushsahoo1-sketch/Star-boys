@@ -1,0 +1,355 @@
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8rem 1.5rem 6rem;
+  overflow: hidden;
+}
+
+/* Devotional Background Layer with Festive Gradients */
+.hero-bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #120713;
+  background-image: 
+    radial-gradient(circle at 50% 30%, rgba(122, 12, 24, 0.45) 0%, transparent 60%),
+    radial-gradient(circle at 20% 80%, rgba(91, 33, 182, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(230, 126, 34, 0.25) 0%, transparent 50%);
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.hero-gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(18, 7, 19, 0.75) 0%,
+    rgba(18, 7, 19, 0.45) 40%,
+    rgba(18, 7, 19, 0.85) 85%,
+    #120713 100%
+  );
+  z-index: 2;
+}
+
+.hero-radial-glow {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  max-width: 90vw;
+  background: radial-gradient(circle, rgba(245, 197, 66, 0.18) 0%, rgba(139, 0, 0, 0.12) 40%, transparent 70%);
+  filter: blur(50px);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: pulseGlow 6s ease-in-out infinite;
+  z-index: 2;
+}
+
+/* Floating Elements (Petals / Stars) */
+.floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+
+  .floating-petal {
+    position: absolute;
+    font-size: 1.5rem;
+    opacity: 0.7;
+    filter: drop-shadow(0 0 10px rgba(245, 197, 66, 0.6));
+    animation: floatDrift 10s ease-in-out infinite;
+
+    &.petal-1 { top: 18%; left: 12%; animation-duration: 8s; font-size: 1.8rem; }
+    &.petal-2 { top: 28%; right: 15%; animation-duration: 11s; animation-delay: 1s; }
+    &.petal-3 { bottom: 25%; left: 18%; animation-duration: 9s; animation-delay: 2s; font-size: 1.4rem; }
+    &.petal-4 { top: 65%; right: 12%; animation-duration: 12s; animation-delay: 3s; font-size: 1.9rem; }
+    &.petal-5 { top: 15%; right: 28%; animation-duration: 7s; animation-delay: 1.5s; font-size: 1.2rem; }
+    &.petal-6 { bottom: 35%; right: 32%; animation-duration: 10s; animation-delay: 4s; }
+  }
+}
+
+@keyframes floatDrift {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-25px) rotate(20deg) scale(1.1);
+  }
+}
+
+/* Content Container */
+.hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Sacred Invocation Badge */
+.hero-sacred-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.45rem 1.4rem;
+  background: rgba(35, 16, 38, 0.75);
+  border: 1px solid rgba(245, 197, 66, 0.35);
+  border-radius: 50px;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeInDown 1s ease forwards;
+
+  .sacred-text {
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    color: var(--gold-light);
+    font-weight: 500;
+
+    @media (max-width: 576px) {
+      font-size: 0.75rem;
+    }
+  }
+
+  .sacred-icon {
+    font-size: 0.95rem;
+  }
+}
+
+/* Hero Title Group */
+.hero-title-group {
+  margin-bottom: 1.25rem;
+
+  .star-boys-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.25rem;
+
+    .hero-star-icon {
+      font-size: 1.75rem;
+      color: var(--gold);
+      filter: drop-shadow(0 0 10px rgba(245, 197, 66, 0.8));
+      animation: pulseGlow 3s ease-in-out infinite;
+
+      @media (max-width: 768px) {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 0.18em;
+    color: #ffffff;
+    text-shadow: 0 0 25px rgba(245, 197, 66, 0.3);
+    margin: 0;
+    line-height: 1.1;
+
+    @media (max-width: 992px) {
+      font-size: 3.2rem;
+      letter-spacing: 0.12em;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 2.3rem;
+      letter-spacing: 0.08em;
+    }
+  }
+
+  .hero-festival-title {
+    font-size: 4.8rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    margin: 0;
+    line-height: 1.15;
+    text-shadow: 0 0 35px rgba(255, 123, 0, 0.5);
+
+    @media (max-width: 992px) {
+      font-size: 3.6rem;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 2.6rem;
+    }
+  }
+}
+
+/* Tagline */
+.hero-tagline {
+  font-size: 2.4rem;
+  color: var(--gold-light);
+  margin-bottom: 1.25rem;
+  text-shadow: 0 0 15px rgba(245, 197, 66, 0.5);
+
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 1.4rem;
+  }
+}
+
+/* Description */
+.hero-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+
+  @media (max-width: 576px) {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* CTA Group */
+.hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+  margin-bottom: 3.5rem;
+
+  .hero-btn {
+    padding: 0.95rem 2.2rem;
+    font-size: 1rem;
+  }
+}
+
+/* Highlights Chips */
+.hero-highlights {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 0.85rem 1.8rem;
+  background: rgba(35, 16, 38, 0.5);
+  border: 1px solid rgba(245, 197, 66, 0.2);
+  border-radius: 40px;
+  backdrop-filter: blur(8px);
+
+  @media (max-width: 576px) {
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .highlight-chip {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.88rem;
+    color: var(--text-light);
+    font-weight: 500;
+
+    .chip-icon {
+      color: var(--gold);
+    }
+  }
+
+  .highlight-separator {
+    color: var(--gold-dark);
+    font-size: 0.8rem;
+
+    @media (max-width: 576px) {
+      display: none;
+    }
+  }
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: var(--text-muted);
+  z-index: 10;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--gold);
+  }
+
+  .scroll-text {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+  }
+
+  .mouse-icon {
+    width: 22px;
+    height: 34px;
+    border: 2px solid rgba(245, 197, 66, 0.5);
+    border-radius: 12px;
+    position: relative;
+
+    .wheel {
+      width: 4px;
+      height: 7px;
+      background: var(--gold);
+      border-radius: 2px;
+      position: absolute;
+      top: 6px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: wheelBounce 2s infinite;
+    }
+  }
+
+  .scroll-arrow {
+    font-size: 0.8rem;
+    color: var(--gold);
+    animation: arrowBounce 1.5s infinite;
+  }
+}
+
+@keyframes wheelBounce {
+  0% { transform: translate(-50%, 0); opacity: 1; }
+  100% { transform: translate(-50%, 14px); opacity: 0; }
+}
+
+@keyframes arrowBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

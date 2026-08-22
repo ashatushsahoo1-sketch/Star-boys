@@ -1,0 +1,84 @@
+<section id="gallery" class="gallery-section section-padding">
+  <div class="container">
+    <!-- Header -->
+    <div class="section-header">
+      <span class="section-tagline">“Visual Splendor”</span>
+      <h2 class="section-title gold-gradient-text">STAR BOYS Photo Gallery</h2>
+      <app-decorative-divider></app-decorative-divider>
+      <p class="section-subtitle">
+        Immerse yourself in divine darshans, majestic illumination, soulful cultural celebrations, and heartwarming community moments.
+      </p>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="filter-tabs-container">
+      <div class="filter-tabs-scroll">
+        @for (cat of categories; track cat.id) {
+          <button
+            type="button"
+            class="filter-pill-btn"
+            [class.active]="selectedCategory() === cat.id"
+            (click)="setCategory(cat.id)">
+            <i [class]="cat.icon"></i>
+            <span>{{ cat.label }}</span>
+            <span class="pill-glow"></span>
+          </button>
+        }
+      </div>
+    </div>
+
+    <!-- Gallery Grid with Animated Transitions -->
+    <div class="gallery-grid">
+      @for (item of filteredItems(); track item.id) {
+        <div
+          class="gallery-card"
+          (click)="openLightbox(item)"
+          role="button"
+          tabindex="0"
+          (keydown.enter)="openLightbox(item)"
+          [attr.aria-label]="'View full photo of ' + item.title">
+          
+          <div class="gallery-card-inner">
+            <!-- Simulated Sacred Card Background Art -->
+            <div class="gallery-art-layer" [style.background]="'radial-gradient(circle at center, #2e0836, #120713)'">
+              <div class="art-badge-top">
+                <span class="badge-cat">{{ item.categoryLabel }}</span>
+                <span class="badge-year">{{ item.year }}</span>
+              </div>
+              <div class="art-center-icon">
+                <i class="fa-solid fa-camera-retro"></i>
+              </div>
+              <span class="art-title-text">{{ item.title }}</span>
+            </div>
+
+            <!-- Hover Effect Overlay -->
+            <div class="gallery-hover-overlay">
+              <div class="overlay-top">
+                <span class="overlay-cat-badge">
+                  <i class="fa-solid fa-tag"></i>
+                  <span>{{ item.categoryLabel }}</span>
+                </span>
+                <span class="overlay-year-badge">{{ item.year }}</span>
+              </div>
+
+              <div class="overlay-bottom">
+                <h3 class="overlay-photo-title">{{ item.title }}</h3>
+                <p class="overlay-photo-desc">{{ item.description }}</p>
+                <div class="enlarge-action">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  <span>View High-Resolution</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+
+    <!-- Gallery Customization Note -->
+    <div class="gallery-info-strip">
+      <i class="fa-solid fa-image text-gold"></i>
+      <span>All gallery images can be customized with actual high-definition STAR BOYS festival photos via <code>src/assets/images/gallery/</code> and <code>puja-data.service.ts</code>.</span>
+    </div>
+  </div>
+</section>

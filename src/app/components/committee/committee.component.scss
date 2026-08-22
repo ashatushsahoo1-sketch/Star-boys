@@ -1,0 +1,176 @@
+.committee-section {
+  position: relative;
+  z-index: 5;
+}
+
+.committee-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.member-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem 1.5rem 2rem;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(245, 197, 66, 0.2);
+  transition: all 0.4s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+    border-color: var(--gold);
+    box-shadow: 0 16px 35px rgba(245, 197, 66, 0.18);
+
+    .avatar-ring {
+      transform: scale(1.15) rotate(90deg);
+      border-color: var(--gold);
+    }
+  }
+
+  .member-badge-strip {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 0.2rem 0.65rem;
+    background: rgba(245, 197, 66, 0.15);
+    border: 1px solid rgba(245, 197, 66, 0.35);
+    border-radius: 20px;
+    font-size: 0.7rem;
+    color: var(--gold-light);
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
+}
+
+.member-avatar-wrapper {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  margin-bottom: 1.5rem;
+
+  .avatar-ring {
+    position: absolute;
+    inset: -6px;
+    border: 2px dashed rgba(245, 197, 66, 0.45);
+    border-radius: 50%;
+    transition: all 0.5s ease;
+  }
+
+  .avatar-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #3d1354, #120713);
+    border: 3px solid rgba(245, 197, 66, 0.6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+
+    .avatar-placeholder-art {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+
+      .member-icon {
+        font-size: 2.8rem;
+        filter: drop-shadow(0 0 10px rgba(245, 197, 66, 0.5));
+      }
+    }
+  }
+}
+
+.member-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+  .member-name {
+    font-size: 1.25rem;
+    color: var(--cream);
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.04em;
+  }
+
+  .member-role {
+    font-size: 1.15rem;
+    color: var(--gold);
+    margin-bottom: 0.85rem;
+  }
+
+  .member-bio {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    flex: 1;
+  }
+
+  .member-socials {
+    display: flex;
+    gap: 0.6rem;
+    justify-content: center;
+
+    .social-btn {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(45, 18, 52, 0.8);
+      border: 1px solid rgba(245, 197, 66, 0.3);
+      color: var(--gold-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: linear-gradient(135deg, var(--gold), var(--primary));
+        color: #1a0815;
+        border-color: var(--gold);
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(245, 197, 66, 0.4);
+      }
+    }
+  }
+}
+
+.committee-note {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: rgba(35, 14, 39, 0.6);
+  border: 1px dashed rgba(245, 197, 66, 0.25);
+  border-radius: 12px;
+  padding: 0.85rem 1.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+
+  code {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    color: var(--gold-light);
+  }
+}
