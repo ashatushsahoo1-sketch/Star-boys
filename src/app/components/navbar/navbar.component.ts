@@ -24,6 +24,8 @@ export class NavbarComponent {
     { label: 'Puja Events', target: 'events', icon: 'fa-solid fa-calendar-days' },
     { label: 'Gallery', target: 'gallery', icon: 'fa-solid fa-images' },
     { label: 'Committee', target: 'committee', icon: 'fa-solid fa-users' },
+    { label: 'Our Family', target: 'our-family', icon: 'fa-solid fa-house-chimney-heart' },
+    { label: 'Maha Bhog', target: 'maha-bhog', icon: 'fa-solid fa-bowl-food' },
     { label: 'Developer', target: 'developer', icon: 'fa-solid fa-code' }
   ];
 

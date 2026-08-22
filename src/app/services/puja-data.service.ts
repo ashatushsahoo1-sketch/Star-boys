@@ -37,12 +37,12 @@ export class PujaDataService {
     heading: 'About STAR BOYS',
     subHeading: 'A Brotherhood Bound by Devotion & Culture',
     introText: 'STAR BOYS is a premier socio-cultural youth committee dedicated to celebrating the grand festival of Maa Laxmi Puja with supreme reverence, artistic grandeur, and heartfelt community togetherness.',
-    description: 'Founded in 2010 by a passionate circle of youths, STAR BOYS has evolved into a cornerstone of cultural heritage. We take immense pride in preserving sacred Odia Laxmi Puja rituals, uplifting local artisans through breathtaking pandal architecture, and fostering unity through selfless community service and vibrant cultural extravaganzas.',
+    description: 'Founded in 2004 by a passionate circle of youths, STAR BOYS has evolved into a cornerstone of cultural heritage. We take immense pride in preserving sacred Odia Laxmi Puja rituals, uplifting local artisans through breathtaking pandal architecture, and fostering unity through selfless community service and vibrant cultural extravaganzas.',
     image: 'assets/images/hero/about-pandal.jpg',
     stats: [
-      { count: '16+', label: 'Glorious Years of Legacy' },
-      { count: '15,000+', label: 'Devotees Welcomed Annually' },
-      { count: '100+', label: 'Dedicated Youths & Volunteers' },
+      { count: '22+', label: 'Glorious Years of Legacy' },
+      { count: '10000+', label: 'Devotees Welcomed Annually' },
+      { count: '50+', label: 'Dedicated Youths & Volunteers' },
       { count: '100%', label: 'Joy, Faith & Pure Devotion' }
     ],
     values: [
@@ -78,19 +78,19 @@ export class PujaDataService {
      ========================================================================= */
   readonly legacyItems: LegacyMilestone[] = [
     {
-      year: '2010',
+      year: '2004',
       title: 'The Beginning',
       tagline: 'A Spark of Devotion & Brotherhood',
       description: 'STAR BOYS began its glorious journey with a small group of enthusiastic youths who came together with empty pockets but hearts full of devotion to install our first Maa Laxmi Puja mandap.',
-      image: 'assets/images/legacy/2010.jpg',
+      image: 'assets/images/legacy/2004.jpg',
       highlights: ['First sacred kalash sthapana', 'Modest bamboo & fabric pandal', '20 founding youth members']
     },
     {
-      year: '2013',
+      year: '2007',
       title: 'Growing Together',
       tagline: 'Community Embraces the Vision',
       description: 'Over the years, the celebration expanded with overwhelming love and participation from the entire neighborhood. Grand lighting gates and traditional bhajan nights were introduced.',
-      image: 'assets/images/legacy/2013.jpg',
+      image: 'assets/images/legacy/2007.jpg',
       highlights: ['First decorative illuminated gate', 'Community Anna Prasad distribution', 'Folk dance & Odissi night']
     },
     {
@@ -390,7 +390,7 @@ export class PujaDataService {
   readonly kartaMembers: CommitteeMember[] = [
     {
       id: 'karta-1',
-      name: 'Shri Ramesh Chandra Sahoo',
+      name: 'Shri Dushasan Sahoo',
       role: 'Mukhya Puja Karta (Chief Ritual Patron)',
       category: 'karta',
       badge: 'Mukhya Karta',
@@ -403,7 +403,7 @@ export class PujaDataService {
     },
     {
       id: 'karta-2',
-      name: 'Shri Bijay Kumar Sahoo',
+      name: 'Shri Ramachandra sahoo',
       role: 'Saha Puja Karta (Co-Ritual Patron)',
       category: 'karta',
       badge: 'Saha Karta',
@@ -437,7 +437,7 @@ export class PujaDataService {
     },
     {
       id: 'tech-2',
-      name: 'Subham Kumar Sahoo',
+      name: 'Sudeep sahoo',
       role: 'UI/UX Designer & Frontend Specialist',
       category: 'tech',
       badge: 'UI/UX Lead',
@@ -450,7 +450,7 @@ export class PujaDataService {
     },
     {
       id: 'tech-3',
-      name: 'Priyabrata Sahoo',
+      name: 'Tapas Sahoo',
       role: 'Digital Media & Live Streaming Lead',
       category: 'tech',
       badge: 'Live Broadcast',
@@ -463,7 +463,7 @@ export class PujaDataService {
     },
     {
       id: 'tech-4',
-      name: 'Debasish Sahoo',
+      name: 'Suman Sahoo',
       role: 'Sound, Visuals & Tech Coordinator',
       category: 'tech',
       badge: 'Audio/Visuals',
@@ -481,7 +481,7 @@ export class PujaDataService {
   readonly committeeMembers: CommitteeMember[] = [
     {
       id: 'mem-1',
-      name: 'Rajesh Kumar Sahoo',
+      name: 'Rinku Pradhan',
       role: 'President (Sabhapati)',
       category: 'leadership',
       badge: 'President',
@@ -491,7 +491,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-2',
-      name: 'Prabhat Kumar Mohapatra',
+      name: 'Satyananda Sahoo',
       role: 'Working President (Karyakari Sabhapati)',
       category: 'leadership',
       badge: 'Working President',
@@ -501,7 +501,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-3',
-      name: 'Manas Ranjan Sahoo',
+      name: 'Gautam Pradhan',
       role: 'Vice President (Upa Sabhapati)',
       category: 'leadership',
       badge: 'Vice President',
@@ -511,7 +511,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-4',
-      name: 'Sanjay Kumar Sahoo',
+      name: 'Akashya Pradhan',
       role: 'Vice President (Upa Sabhapati)',
       category: 'leadership',
       badge: 'Vice President',
@@ -521,7 +521,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-5',
-      name: 'Ranjan Kumar Sahoo',
+      name: 'Babuli Pradhan',
       role: 'General Secretary (Sadharana Sampadaka)',
       category: 'leadership',
       badge: 'General Secretary',
@@ -531,7 +531,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-6',
-      name: 'Alok Kumar Nayak',
+      name: 'Satru Sahoo',
       role: 'Joint Secretary (Sahakari Sampadaka)',
       category: 'leadership',
       badge: 'Joint Secretary',
@@ -541,7 +541,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-7',
-      name: 'Bikash Kumar Sahoo',
+      name: 'Chagli Pradhan',
       role: 'Joint Secretary (Sahakari Sampadaka)',
       category: 'leadership',
       badge: 'Joint Secretary',
@@ -551,7 +551,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-8',
-      name: 'Chitta Ranjan Sahoo',
+      name: 'Surendra Sahoo',
       role: 'Treasurer & Finance Lead (Kosadhyaksha)',
       category: 'seva',
       badge: 'Treasurer',
@@ -561,7 +561,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-9',
-      name: 'Dillip Kumar Sahoo',
+      name: 'Manas Sahoo',
       role: 'Assistant Cashier (Sahakari Kosadhyaksha)',
       category: 'seva',
       badge: 'Asst. Cashier',
@@ -571,7 +571,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-10',
-      name: 'Pitabas Sahoo',
+      name: 'Shrikant Pradhan',
       role: 'Chief Advisor (Mukhya Paramarsadata)',
       category: 'advisor',
       badge: 'Chief Advisor',
@@ -581,7 +581,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-11',
-      name: 'Gopal Chandra Sahoo',
+      name: 'Sahadaba Pradhan',
       role: 'Senior Advisor (Baristha Paramarsadata)',
       category: 'advisor',
       badge: 'Senior Advisor',
@@ -591,7 +591,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-12',
-      name: 'Balaram Sahoo',
+      name: 'Situ Sahoo',
       role: 'Advisory Board Member',
       category: 'advisor',
       badge: 'Advisory Board',
@@ -601,7 +601,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-13',
-      name: 'Kailash Chandra Behera',
+      name: 'Ashish Pradhan',
       role: 'Advisory Board Member',
       category: 'advisor',
       badge: 'Advisory Board',
@@ -611,7 +611,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-14',
-      name: 'Soumya Ranjan Sahoo',
+      name: 'Ranu Sahoo',
       role: 'Pandal & Mandap Incharge',
       category: 'organizer',
       badge: 'Pandal Incharge',
@@ -621,7 +621,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-15',
-      name: 'Deepak Kumar Sahoo',
+      name: 'Siku Pradhan',
       role: 'Light & Sound Coordinator',
       category: 'organizer',
       badge: 'Light & Sound',
@@ -631,7 +631,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-16',
-      name: 'Sunil Kumar Swain',
+      name: 'Bijesh Sahoo',
       role: 'Stage & Cultural Secretary',
       category: 'organizer',
       badge: 'Cultural Secretary',
@@ -641,7 +641,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-17',
-      name: 'Tapas Kumar Sahoo',
+      name: 'Kanha Sahoo',
       role: 'Maha Prasad & Bhog Coordinator',
       category: 'seva',
       badge: 'Maha Prasad Seva',
@@ -651,7 +651,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-18',
-      name: 'Chandan Kumar Sahoo',
+      name: 'Kalia Sahoo',
       role: 'Prasad Seva Incharge',
       category: 'seva',
       badge: 'Prasad Seva',
@@ -661,7 +661,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-19',
-      name: 'Rakesh Kumar Sahoo',
+      name: 'Sibu Sahoo',
       role: 'Volunteer Captain & Discipline Lead',
       category: 'organizer',
       badge: 'Volunteer Captain',
@@ -671,7 +671,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-20',
-      name: 'Saroj Kumar Nayak',
+      name: 'Babu Biswal',
       role: 'Security & Crowd Management',
       category: 'organizer',
       badge: 'Security Lead',
@@ -681,7 +681,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-21',
-      name: 'Abhijit Sahoo',
+      name: 'Mukul Sahoo',
       role: 'Public Relations (PR) & Media Incharge',
       category: 'organizer',
       badge: 'PR & Media',
@@ -691,7 +691,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-22',
-      name: 'Bibhuti Bhusan Sahoo',
+      name: 'Siri Pradhan',
       role: 'Floral Decoration & Jhoti Lead',
       category: 'organizer',
       badge: 'Decoration Lead',
@@ -701,7 +701,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-23',
-      name: 'Gagan Bihari Sahoo',
+      name: 'Ajaya Pradhan',
       role: 'Puja Samagri & Ritual Assistant',
       category: 'seva',
       badge: 'Puja Samagri',
@@ -711,7 +711,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-24',
-      name: 'Dhiren Kumar Sahoo',
+      name: 'Sankar Pradhan',
       role: 'Cultural Night Manager',
       category: 'organizer',
       badge: 'Stage Manager',
@@ -721,7 +721,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-25',
-      name: 'Satyabrata Sahoo',
+      name: 'Dilu Sahoo',
       role: 'Reception & Guest Relations',
       category: 'leadership',
       badge: 'Reception Lead',
@@ -731,7 +731,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-26',
-      name: 'Jitendra Kumar Sahoo',
+      name: 'Suman Sahoo',
       role: 'Youth Brigade Leader',
       category: 'youth',
       badge: 'Youth Wing',
@@ -741,7 +741,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-27',
-      name: 'Milan Kumar Sahoo',
+      name: 'Suman Sahoo',
       role: 'Youth Coordinator',
       category: 'youth',
       badge: 'Youth Wing',
@@ -751,7 +751,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-28',
-      name: 'Prakash Chandra Sahoo',
+      name: 'Amit sahoo',
       role: 'Logistics & Transport Incharge',
       category: 'organizer',
       badge: 'Logistics Lead',
@@ -761,7 +761,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-29',
-      name: 'Kamal Lochan Sahoo',
+      name: 'Dabliu sahoo',
       role: 'Vedic Aarti Seva Incharge',
       category: 'seva',
       badge: 'Aarti Seva',
@@ -771,7 +771,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-30',
-      name: 'Subrat Kumar Swain',
+      name: 'Gudu',
       role: 'Community Seva Volunteer Lead',
       category: 'seva',
       badge: 'Social Seva',
@@ -781,7 +781,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-31',
-      name: 'Amit Kumar Sahoo',
+      name: 'Udhaba Pradhan',
       role: 'Generator & Power Backup Incharge',
       category: 'organizer',
       badge: 'Power Systems',
@@ -791,7 +791,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-32',
-      name: 'Rasmiranjan Sahoo',
+      name: 'Sipun Sahoo',
       role: 'Electrical & Lighting Supervisor',
       category: 'organizer',
       badge: 'Electricals',
@@ -801,7 +801,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-33',
-      name: 'Santosh Kumar Nayak',
+      name: 'Hagru Pradhan',
       role: 'Food & Refreshments Incharge',
       category: 'seva',
       badge: 'Food Seva',
@@ -811,7 +811,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-34',
-      name: 'Pabitra Kumar Sahoo',
+      name: 'Himansu Behera',
       role: 'Youth Volunteer Commander',
       category: 'youth',
       badge: 'Youth Wing',
@@ -821,7 +821,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-35',
-      name: 'Kunal Kishore Sahoo',
+      name: 'Raja Sahoo',
       role: 'Social Outreach & Volunteer',
       category: 'youth',
       badge: 'Youth Wing',
@@ -831,7 +831,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-36',
-      name: 'Debabrata Sahoo',
+      name: 'Sandeep Pradhan',
       role: 'Devotee Queue & Assistance Incharge',
       category: 'organizer',
       badge: 'Devotee Seva',
@@ -841,7 +841,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-37',
-      name: 'Lalatendu Sahoo',
+      name: 'Babaji',
       role: 'Procurement & Supplies Incharge',
       category: 'seva',
       badge: 'Supplies Lead',
@@ -851,7 +851,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-38',
-      name: 'Rudra Narayan Sahoo',
+      name: 'Jagannath Behera',
       role: 'Cultural Events Assistant',
       category: 'youth',
       badge: 'Youth Wing',
@@ -862,7 +862,7 @@ export class PujaDataService {
     {
       id: 'mem-39',
       name: 'Suman Kumar Sahoo',
-      role: 'Pandal Artwork & Maintenance',
+      role: 'to be updated',
       category: 'organizer',
       badge: 'Art & Decor',
       image: 'assets/images/members/art-lead.jpg',
@@ -871,7 +871,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-40',
-      name: 'Bhabani Sankar Sahoo',
+      name: 'to be updated',
       role: 'Executive Volunteer & Immersion Lead',
       category: 'youth',
       badge: 'Youth Wing',

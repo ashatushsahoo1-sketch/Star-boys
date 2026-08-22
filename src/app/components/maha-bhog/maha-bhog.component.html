@@ -1,0 +1,83 @@
+<section id="maha-bhog" class="maha-bhog-section section-padding">
+  <div class="container">
+
+    <!-- Section Header -->
+    <div class="section-header">
+      <span class="section-tagline">ଆଜିର ମହାଭୋଗ</span>
+      <h2 class="section-title gold-gradient-text">Today's Maha Bhog</h2>
+      <div class="divider-ornament">
+        <span class="ornament-line"></span>
+        <span class="ornament-lotus">🌸</span>
+        <span class="ornament-line"></span>
+      </div>
+      <p class="section-subtitle">
+        Prasad lovingly prepared and offered to Maa Laxmi on this auspicious day.
+      </p>
+    </div>
+
+    <!-- Bhog Card -->
+    <div class="bhog-card-wrapper">
+      <div class="bhog-glow-ring"></div>
+
+      <div class="bhog-card glass-card">
+        <!-- Decorative top bar -->
+        <div class="bhog-card-topbar">
+          <span class="topbar-om">ॐ</span>
+          <span class="topbar-text">Maa Laxmi Prasad</span>
+          <span class="topbar-om">ॐ</span>
+        </div>
+
+        <!-- Photo Section -->
+        <div class="bhog-photo-area">
+          <div class="bhog-photo-frame">
+            <img
+              [src]="todaysBhog().image"
+              [alt]="'Today\'s Maha Bhog: ' + todaysBhog().name"
+              class="bhog-photo"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <!-- Fallback placeholder -->
+            <div class="bhog-placeholder" style="display:none;">
+              <div class="placeholder-icons">🍛 🥗 🍚</div>
+              <p>Bhog Photo</p>
+              <span>Place photo at<br><code>assets/images/bhog/maha-bhog.jpg</code></span>
+            </div>
+          </div>
+
+          <!-- Diya accents -->
+          <div class="diya-left">🪔</div>
+          <div class="diya-right">🪔</div>
+        </div>
+
+        <!-- Bhog Info -->
+        <div class="bhog-info">
+          <div class="bhog-label">
+            <i class="fa-solid fa-leaf"></i>
+            <span>Today's Sacred Offering</span>
+          </div>
+
+          <h3 class="bhog-name">{{ todaysBhog().name }}</h3>
+
+          <div class="offered-by">
+            <i class="fa-solid fa-hands-praying"></i>
+            <span>Offered by <strong>{{ todaysBhog().offeredBy }}</strong></span>
+          </div>
+
+          <div class="bhog-blessings">
+            <span class="blessing-pill">
+              <i class="fa-solid fa-star"></i> May Maa Laxmi bless all with health & prosperity
+            </span>
+          </div>
+        </div>
+
+        <!-- Decorative bottom -->
+        <div class="bhog-card-footer">
+          <span class="footer-bar"></span>
+          <span class="footer-text font-decorative">Jai Maa Laxmi</span>
+          <span class="footer-bar"></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -11,6 +11,8 @@ import { EventScheduleComponent } from './components/events/event-schedule/event
 import { PastEventsComponent } from './components/events/past-events/past-events.component';
 import { PhotoGalleryComponent } from './components/gallery/photo-gallery/photo-gallery.component';
 import { CommitteeComponent } from './components/committee/committee.component';
+import { OurFamilyComponent } from './components/our-family/our-family.component';
+import { MahaBhogComponent } from './components/maha-bhog/maha-bhog.component';
 import { DeveloperInfoComponent } from './components/developer/developer-info.component';
 import { LightboxComponent } from './components/lightbox/lightbox.component';
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
@@ -32,6 +34,8 @@ import { FooterComponent } from './components/footer/footer.component';
     PastEventsComponent,
     PhotoGalleryComponent,
     CommitteeComponent,
+    OurFamilyComponent,
+    MahaBhogComponent,
     DeveloperInfoComponent,
     LightboxComponent,
     ScrollToTopComponent,

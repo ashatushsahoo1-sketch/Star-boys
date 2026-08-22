@@ -80,35 +80,49 @@
         <p class="tier-desc">Empowering STAR BOYS with modern web architecture, live broadcasting, and creative media</p>
       </div>
 
-      <div class="tech-grid">
+      <div class="committee-grid">
         @for (tech of techMembers; track tech.id) {
-          <div class="tech-card glass-card">
-            <div class="tech-badge-strip">
-              <span class="pulse-dot"></span>
-              <span>{{ tech.badge }}</span>
-            </div>
+          <div class="member-card glass-card">
+            <!-- Top Role Badge -->
+            @if (tech.badge) {
+              <div class="member-badge-strip">
+                <span>{{ tech.badge }}</span>
+              </div>
+            }
 
-            <div class="tech-avatar-wrapper">
-              <div class="tech-avatar-circle">
+            <!-- Avatar / Photo Frame -->
+            <div class="member-avatar-wrapper">
+              <div class="avatar-ring"></div>
+              <div class="avatar-container">
                 @if (tech.image && !hasImageError(tech.id)) {
-                  <img [src]="tech.image" [alt]="tech.name" class="tech-avatar-photo" (error)="handleImageError(tech.id)" />
+                  <img [src]="tech.image" [alt]="tech.name" class="member-real-photo" (error)="handleImageError(tech.id)" />
                 } @else {
-                  <div class="tech-avatar-fallback">
-                    <i class="fa-solid fa-code"></i>
+                  <div class="avatar-placeholder-art">
+                    <i class="fa-solid fa-code member-icon"></i>
                   </div>
                 }
               </div>
             </div>
 
-            <div class="tech-info">
-              <h4 class="tech-name font-cinzel">{{ tech.name }}</h4>
-              <span class="tech-role">{{ tech.role }}</span>
-              <p class="tech-bio">{{ tech.bio }}</p>
+            <!-- Member Information -->
+            <div class="member-info">
+              <h4 class="member-name font-cinzel">{{ tech.name }}</h4>
+              <span class="member-role font-decorative">{{ tech.role }}</span>
 
+              @if (tech.bio) {
+                <p class="member-bio">{{ tech.bio }}</p>
+              }
+
+              <!-- Social Links -->
               @if (tech.socials && tech.socials.length > 0) {
-                <div class="tech-socials">
+                <div class="member-socials">
                   @for (soc of tech.socials; track soc.platform) {
-                    <a [href]="soc.url" target="_blank" rel="noopener noreferrer" class="social-icon-chip" [attr.aria-label]="soc.label">
+                    <a
+                      [href]="soc.url"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="social-btn"
+                      [attr.aria-label]="soc.label">
                       <i [class]="soc.icon"></i>
                     </a>
                   }
