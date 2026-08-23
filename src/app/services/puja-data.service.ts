@@ -86,27 +86,27 @@ export class PujaDataService {
       highlights: ['First sacred kalash sthapana', 'Modest bamboo & fabric pandal', '20 founding youth members']
     },
     {
-      year: '2007',
+      year: '2022',
       title: 'Growing Together',
       tagline: 'Community Embraces the Vision',
       description: 'Over the years, the celebration expanded with overwhelming love and participation from the entire neighborhood. Grand lighting gates and traditional bhajan nights were introduced.',
-      image: 'assets/images/legacy/2007.jpg',
+      image: 'assets/images/legacy/2022.jpg',
       highlights: ['First decorative illuminated gate', 'Community Anna Prasad distribution', 'Folk dance & Odissi night']
     },
     {
-      year: '2016',
+      year: '2023',
       title: 'A New Chapter',
       tagline: 'Artistic Excellence & Social Impact',
       description: 'STAR BOYS scaled new heights with magnificent architectural pandal replicas, introducing social blood donation camps, blanket drives, and vibrant inter-school cultural contests.',
-      image: 'assets/images/legacy/2016.jpg',
+      image: 'assets/images/legacy/2023.jpg',
       highlights: ['Theme-based eco-friendly idol', 'Annual charity & blood drive launch', '5-day mega festival format']
     },
     {
-      year: '2020',
+      year: '2024',
       title: 'Together Through Challenges',
       tagline: 'Devotion Unbroken by Adversity',
       description: 'Even during challenging global times, the flame of faith and brotherhood burned bright. We conducted disciplined rituals with live broadcasts and delivered prasad to hundreds of doorsteps.',
-      image: 'assets/images/legacy/2020.jpg',
+      image: 'assets/images/legacy/2024.jpg',
       highlights: ['Digital live darshan for devotees', 'Doorstep prasad delivery seva', 'Essential food relief distribution']
     },
     {
@@ -114,7 +114,7 @@ export class PujaDataService {
       title: 'A Celebration of Tradition',
       tagline: 'Passing the Torch to New Generations',
       description: 'New energetic youths joined hands with veteran founders, blending modern digital creativity with sacred time-honored rituals, creating our most magnificent golden idol showcase yet.',
-      image: 'assets/images/legacy/2023.jpg',
+      image: 'assets/images/legacy/2025.jpg',
       highlights: ['30-ft Grand Golden Temple Facade', 'Symphonic Bhajan & Light spectacle', 'Over 12,000 visitors in 4 days']
     },
     {
@@ -161,9 +161,9 @@ export class PujaDataService {
     },
     {
       id: 'mem-5',
-      year: '2023',
+      year: '2024',
       title: 'Golden Dazzle & Night Aarti',
-      image: 'assets/images/legacy/mem-2023.jpg',
+      image: 'assets/images/legacy/cd8f0f60-4d0e-4f41-b875-26ee762da2bf.jpg',
       caption: 'The majestic night glow of Maa Laxmi surrounded by thousand glittering diyas.'
     },
     {
@@ -755,7 +755,7 @@ export class PujaDataService {
       role: 'Logistics & Transport Incharge',
       category: 'organizer',
       badge: 'Logistics Lead',
-      image: 'assets/images/members/logistics-lead.jpg',
+      image: 'assets/images/members/fe6f1ae1-7cfd-49b6-b58b-4ca3e86a99d1.jpg',
       bio: 'Managing vehicle logistics, material transport, and emergency transit arrangements.',
       socials: [{ platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }]
     },
@@ -815,7 +815,7 @@ export class PujaDataService {
       role: 'Youth Volunteer Commander',
       category: 'youth',
       badge: 'Youth Wing',
-      image: 'assets/images/members/youth-cmd.jpg',
+      image: 'assets/images/members/462d2f32-a010-43db-9703-80ee39bddfab.jpg',
       bio: 'Supervising the volunteer team for orderly darshan queues and pushpanjali batches.',
       socials: [{ platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }]
     },

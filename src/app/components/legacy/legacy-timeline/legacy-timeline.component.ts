@@ -1,7 +1,7 @@
-import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component, inject } from '@angular/core';
 import { PujaDataService } from '../../../services/puja-data.service';
-import { LightboxService } from '../../../services/lightbox.service';
+import { LightboxService, LightboxImage } from '../../../services/lightbox.service';
 import { DecorativeDividerComponent } from '../../../shared/decorative-divider/decorative-divider.component';
 
 @Component({
@@ -18,11 +18,22 @@ export class LegacyTimelineComponent {
   readonly legacyItems = this.pujaData.getLegacyItems();
 
   openImage(item: any): void {
-    this.lightbox.open({
+    if (!item?.image) return;
+
+    const current: LightboxImage = {
       src: item.image,
-      title: `${item.year}: ${item.title}`,
+      title: item.year + ': ' + item.title,
       year: item.year,
       description: item.description
-    });
+    };
+
+    const allImages: LightboxImage[] = this.legacyItems.map((i: any) => ({
+      src: i.image,
+      title: i.year + ': ' + i.title,
+      year: i.year,
+      description: i.description
+    }));
+
+    this.lightbox.open(current, allImages);
   }
 }

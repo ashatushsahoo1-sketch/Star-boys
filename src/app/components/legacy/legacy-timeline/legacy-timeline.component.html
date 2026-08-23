@@ -6,7 +6,8 @@
       <h2 class="section-title gold-gradient-text">Our Historical Legacy</h2>
       <app-decorative-divider></app-decorative-divider>
       <p class="section-subtitle">
-        Follow the inspirational journey of STAR BOYS from humble beginnings in 2010 to one of Odisha's most revered Laxmi Puja celebrations.
+        Follow the inspirational journey of STAR BOYS from humble beginnings in 2010 to one of Odisha's most revered
+        Laxmi Puja celebrations.
       </p>
     </div>
 
@@ -20,65 +21,70 @@
       <!-- Timeline Items -->
       <div class="timeline-items">
         @for (item of legacyItems; track item.year; let idx = $index; let isEven = $even) {
-          <div class="timeline-row" [class.row-left]="isEven" [class.row-right]="!isEven">
-            
-            <!-- Timeline Center Node / Year Badge -->
-            <div class="timeline-node">
-              <div class="node-pulse"></div>
-              <div class="node-circle">
-                <span class="node-year">{{ item.year }}</span>
-              </div>
+        <div class="timeline-row" [class.row-left]="isEven" [class.row-right]="!isEven">
+
+          <!-- Timeline Center Node / Year Badge -->
+          <div class="timeline-node">
+            <div class="node-pulse"></div>
+            <div class="node-circle">
+              <span class="node-year">{{ item.year }}</span>
             </div>
+          </div>
 
-            <!-- Timeline Content Card -->
-            <div class="timeline-card-wrapper">
-              <div class="timeline-card glass-card">
-                <!-- Image Container with Hover Zoom & Click Lightbox -->
-                <div class="card-media" (click)="openImage(item)" role="button" tabindex="0" (keydown.enter)="openImage(item)" aria-label="Click to enlarge image">
-                  <!-- Fallback devotional vector banner if image is loaded / placeholder -->
-                  <div class="media-placeholder-art" [style.background]="'radial-gradient(circle at center, #4a0c18, #1a0815)'">
-                    <div class="art-badge-year">{{ item.year }}</div>
-                    <div class="art-icon"><i class="fa-solid fa-om"></i></div>
-                    <span class="art-title-hint">{{ item.title }}</span>
-                  </div>
-                  <div class="media-overlay">
-                    <span class="zoom-badge">
-                      <i class="fa-solid fa-magnifying-glass-plus"></i>
-                      <span>Enlarge Memory</span>
-                    </span>
-                  </div>
+          <!-- Timeline Content Card -->
+          <div class="timeline-card-wrapper">
+            <div class="timeline-card glass-card">
+              <!-- Image Container with Hover Zoom & Click Lightbox -->
+              <div class="card-media" (click)="openImage(item)" role="button" tabindex="0"
+                (keydown.enter)="openImage(item)">
+                @if (item.image) {
+                <img [src]="item.image" [alt]="item.title" class="timeline-image" />
+                } @else {
+                <div class="media-placeholder-art"
+                  [style.background]="'radial-gradient(circle at center, #4a0c10, #1a0815)'">
+                  <div class="art-badge-year">{{ item.year }}</div>
+                  <div class="art-icon"><i class="fa-solid fa-om"></i></div>
+                  <span class="art-title-hint">{{ item.title }}</span>
                 </div>
+                }
+                <div class="media-overlay">
+                  <span class="zoom-badge">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    <span>Enlarge Memory</span>
+                  </span>
+                </div>
+              </div>
 
-                <!-- Card Body -->
-                <div class="card-body">
-                  <div class="card-meta">
-                    <span class="year-pill">{{ item.year }}</span>
-                    @if (item.tagline) {
-                      <span class="tagline-pill font-decorative">{{ item.tagline }}</span>
-                    }
-                  </div>
-
-                  <h3 class="card-title">{{ item.title }}</h3>
-                  <p class="card-description">{{ item.description }}</p>
-
-                  @if (item.highlights && item.highlights.length > 0) {
-                    <div class="card-highlights">
-                      <span class="highlights-title"><i class="fa-solid fa-star text-gold"></i> Milestones:</span>
-                      <ul class="highlights-list">
-                        @for (hl of item.highlights; track hl) {
-                          <li>
-                            <i class="fa-solid fa-check text-gold"></i>
-                            <span>{{ hl }}</span>
-                          </li>
-                        }
-                      </ul>
-                    </div>
+              <!-- Card Body -->
+              <div class="card-body">
+                <div class="card-meta">
+                  <span class="year-pill">{{ item.year }}</span>
+                  @if (item.tagline) {
+                  <span class="tagline-pill font-decorative">{{ item.tagline }}</span>
                   }
                 </div>
+
+                <h3 class="card-title">{{ item.title }}</h3>
+                <p class="card-description">{{ item.description }}</p>
+
+                @if (item.highlights && item.highlights.length > 0) {
+                <div class="card-highlights">
+                  <span class="highlights-title"><i class="fa-solid fa-star text-gold"></i> Milestones:</span>
+                  <ul class="highlights-list">
+                    @for (hl of item.highlights; track hl) {
+                    <li>
+                      <i class="fa-solid fa-check text-gold"></i>
+                      <span>{{ hl }}</span>
+                    </li>
+                    }
+                  </ul>
+                </div>
+                }
               </div>
             </div>
-
           </div>
+
+        </div>
         }
       </div>
     </div>

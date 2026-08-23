@@ -1,82 +1,68 @@
 @if (lightbox.isOpen() && lightbox.currentImage(); as img) {
-  <div
-    class="lightbox-overlay"
-    (click)="lightbox.close()"
-    role="dialog"
-    aria-modal="true"
-    [attr.aria-label]="img.title">
-    
-    <!-- Modal Dialog Frame -->
-    <div class="lightbox-dialog" (click)="$event.stopPropagation()">
-      
-      <!-- Top Action Bar -->
-      <div class="lightbox-header">
-        <div class="header-meta">
-          @if (img.year) {
-            <span class="year-pill">{{ img.year }}</span>
-          }
-          @if (img.category) {
-            <span class="cat-pill">{{ img.category }}</span>
-          }
-          <span class="counter-pill">
-            {{ lightbox.currentIndex() + 1 }} / {{ lightbox.imageList().length }}
-          </span>
-        </div>
+<div class="lightbox-overlay" (click)="lightbox.close()" role="dialog" aria-modal="true" [attr.aria-label]="img.title">
 
-        <button
-          type="button"
-          class="lightbox-close-btn"
-          (click)="lightbox.close()"
-          aria-label="Close Lightbox (Esc)">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
+  <!-- Modal Dialog Frame -->
+  <div class="lightbox-dialog" (click)="$event.stopPropagation()">
+
+    <!-- Top Action Bar -->
+    <div class="lightbox-header">
+      <div class="header-meta">
+        @if (img.year) {
+        <span class="year-pill">{{ img.year }}</span>
+        }
+        @if (img.category) {
+        <span class="cat-pill">{{ img.category }}</span>
+        }
+        <span class="counter-pill">
+          {{ lightbox.currentIndex() + 1 }} / {{ lightbox.imageList().length }}
+        </span>
       </div>
 
-      <!-- Main Image Viewport Area -->
-      <div class="lightbox-body">
-        <!-- Navigation Prev -->
-        @if (lightbox.imageList().length > 1) {
-          <button
-            type="button"
-            class="nav-arrow prev"
-            (click)="lightbox.prev()"
-            aria-label="Previous Image (Left Arrow)">
-            <i class="fa-solid fa-chevron-left"></i>
-          </button>
-        }
-
-        <!-- Image / Visual Banner -->
-        <div class="image-stage">
-          <div class="stage-placeholder-art" [style.background]="'radial-gradient(circle at center, #4a0c18, #110514)'">
-            <div class="stage-icon">🪔</div>
-            <h3 class="stage-title font-cinzel">{{ img.title }}</h3>
-            @if (img.year) {
-              <span class="stage-year font-decorative">STAR BOYS • {{ img.year }}</span>
-            }
-          </div>
-        </div>
-
-        <!-- Navigation Next -->
-        @if (lightbox.imageList().length > 1) {
-          <button
-            type="button"
-            class="nav-arrow next"
-            (click)="lightbox.next()"
-            aria-label="Next Image (Right Arrow)">
-            <i class="fa-solid fa-chevron-right"></i>
-          </button>
-        }
-      </div>
-
-      <!-- Caption & Footer Info -->
-      <div class="lightbox-footer">
-        <h4 class="img-title font-cinzel">{{ img.title }}</h4>
-        @if (img.description) {
-          <p class="img-desc">{{ img.description }}</p>
-        }
-        <small class="esc-hint">Press <kbd>ESC</kbd> to close, <kbd>←</kbd> <kbd>→</kbd> to navigate</small>
-      </div>
-
+      <button type="button" class="lightbox-close-btn" (click)="lightbox.close()" aria-label="Close Lightbox (Esc)">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
     </div>
+
+    <!-- Main Image Viewport Area -->
+    <div class="lightbox-body">
+      <!-- Navigation Prev -->
+      @if (lightbox.imageList().length > 1) {
+      <button type="button" class="nav-arrow prev" (click)="lightbox.prev()" aria-label="Previous Image (Left Arrow)">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      }
+
+      <div class="image-stage">
+        <img class="lightbox-main-image" [src]="img.src" [alt]="img.title"
+          style="max-width:90vw; max-height:80vh; object-fit:contain; border-radius:12px;" (error)="img.src = ''" />
+        @if (!img.src) {
+        <div class="stage-placeholder-art" [style.background]="'radial-gradient(circle at center, #4a0c18, #110514)'">
+          <div class="stage-icon">🪔</div>
+          <h3 class="stage-title font-cinzel">{{ img.title }}</h3>
+          @if (img.year) {
+          <span class="stage-year font-decorative">STAR BOYS • {{ img.year }}</span>
+          }
+        </div>
+        }
+      </div>
+
+      <!-- Navigation Next -->
+      @if (lightbox.imageList().length > 1) {
+      <button type="button" class="nav-arrow next" (click)="lightbox.next()" aria-label="Next Image (Right Arrow)">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      }
+    </div>
+
+    <!-- Caption & Footer Info -->
+    <div class="lightbox-footer">
+      <h4 class="img-title font-cinzel">{{ img.title }}</h4>
+      @if (img.description) {
+      <p class="img-desc">{{ img.description }}</p>
+      }
+      <small class="esc-hint">Press <kbd>ESC</kbd> to close, <kbd>←</kbd> <kbd>→</kbd> to navigate</small>
+    </div>
+
   </div>
+</div>
 }
