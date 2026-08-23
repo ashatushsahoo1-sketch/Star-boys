@@ -18,7 +18,7 @@ export class PujaDataService {
     fullName: 'STAR BOYS Laxmi Puja Committee',
     tagline: 'Tradition • Unity • Devotion • Celebration',
     subTagline: 'School Sahi, Ghantapada, Talcher',
-    establishedYear: '2010',
+    establishedYear: '2004',
     locationShort: 'School Sahi, Ghantapada, Talcher',
     fullAddress: 'STAR BOYS Puja Mandap, School Sahi, Ghantapada, Talcher, Angul, Odisha, India',
     contactNumber: '+91 97786 69092',
@@ -41,7 +41,7 @@ export class PujaDataService {
     image: 'assets/images/hero/about-pandal.jpg',
     stats: [
       { count: '22+', label: 'Glorious Years of Legacy' },
-      { count: '10000+', label: 'Devotees Welcomed Annually' },
+      { count: '1000+', label: 'Devotees Welcomed Annually' },
       { count: '50+', label: 'Dedicated Youths & Volunteers' },
       { count: '100%', label: 'Joy, Faith & Pure Devotion' }
     ],
@@ -74,7 +74,7 @@ export class PujaDataService {
   };
 
   /* =========================================================================
-     3. LEGACY TIMELINE (2010 - 2026)
+     3. LEGACY TIMELINE (2004 - 2026)
      ========================================================================= */
   readonly legacyItems: LegacyMilestone[] = [
     {
@@ -181,7 +181,7 @@ export class PujaDataService {
      ========================================================================= */
   readonly pujaEvent: PujaEventConfig = {
     title: 'MAA LAXMI PUJA 2026',
-    subTitle: '16th Annual Grand Celebration',
+    subTitle: '23th Annual Grand Celebration',
     year: '2026',
     // Set target date (ISO format). Example: 2026-10-25 at 18:00 (Kumar Purnima evening)
     targetDate: '2026-10-25T18:00:00',
@@ -403,7 +403,7 @@ export class PujaDataService {
     },
     {
       id: 'karta-2',
-      name: 'Shri Ramachandra sahoo',
+      name: 'Prafulla Sahoo',
       role: 'Saha Puja Karta (Co-Ritual Patron)',
       category: 'karta',
       badge: 'Saha Karta',
@@ -463,7 +463,7 @@ export class PujaDataService {
     },
     {
       id: 'tech-4',
-      name: 'Suman Sahoo',
+      name: 'Tushar Kant Sahoo',
       role: 'Sound, Visuals & Tech Coordinator',
       category: 'tech',
       badge: 'Audio/Visuals',
