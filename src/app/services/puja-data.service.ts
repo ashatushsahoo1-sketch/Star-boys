@@ -78,11 +78,67 @@ export class PujaDataService {
      ========================================================================= */
   readonly legacyItems: LegacyMilestone[] = [
     {
-      year: '2004',
+      year: '2014',
       title: 'The Beginning',
       tagline: 'A Spark of Devotion & Brotherhood',
       description: 'STAR BOYS began its glorious journey with a small group of enthusiastic youths who came together with empty pockets but hearts full of devotion to install our first Maa Laxmi Puja mandap.',
-      image: 'assets/images/legacy/2004.jpg',
+      image: 'assets/images/legacy/2014.jpg',
+      highlights: ['First sacred kalash sthapana', 'Modest bamboo & fabric pandal', '20 founding youth members']
+    },
+    {
+      year: '2015',
+      title: 'The Beginning',
+      tagline: 'A Spark of Devotion & Brotherhood',
+      description: 'STAR BOYS began its glorious journey with a small group of enthusiastic youths who came together with empty pockets but hearts full of devotion to install our first Maa Laxmi Puja mandap.',
+      image: 'assets/images/legacy/2015.jpg',
+      highlights: ['First sacred kalash sthapana', 'Modest bamboo & fabric pandal', '20 founding youth members']
+    },
+    {
+      year: '2016',
+      title: 'The Beginning',
+      tagline: 'A Spark of Devotion & Brotherhood',
+      description: 'STAR BOYS began its glorious journey with a small group of enthusiastic youths who came together with empty pockets but hearts full of devotion to install our first Maa Laxmi Puja mandap.',
+      image: 'assets/images/legacy/2016.jpg',
+      highlights: ['First sacred kalash sthapana', 'Modest bamboo & fabric pandal', '20 founding youth members']
+    },
+    {
+      year: '2017',
+      title: 'The Beginning',
+      tagline: 'A Spark of Devotion & Brotherhood',
+      description: 'STAR BOYS began its glorious journey with a small group of enthusiastic youths who came together with empty pockets but hearts full of devotion to install our first Maa Laxmi Puja mandap.',
+      image: 'assets/images/legacy/2017.jpg',
+      highlights: ['First sacred kalash sthapana', 'Modest bamboo & fabric pandal', '20 founding youth members']
+    },
+    {
+      year: '2018',
+      title: 'The Beginning',
+      tagline: 'A Spark of Devotion & Brotherhood',
+      description: 'STAR BOYS began its glorious journey with a small group of enthusiastic youths who came together with empty pockets but hearts full of devotion to install our first Maa Laxmi Puja mandap.',
+      image: 'assets/images/legacy/2018.jpg',
+      highlights: ['First sacred kalash sthapana', 'Modest bamboo & fabric pandal', '20 founding youth members']
+    },
+    {
+      year: '2019',
+      title: 'The Beginning',
+      tagline: 'A Spark of Devotion & Brotherhood',
+      description: 'STAR BOYS began its glorious journey with a small group of enthusiastic youths who came together with empty pockets but hearts full of devotion to install our first Maa Laxmi Puja mandap.',
+      image: 'assets/images/legacy/2019.jpg',
+      highlights: ['First sacred kalash sthapana', 'Modest bamboo & fabric pandal', '20 founding youth members']
+    },
+    {
+      year: '2020',
+      title: 'The Beginning',
+      tagline: 'A Spark of Devotion & Brotherhood',
+      description: 'STAR BOYS began its glorious journey with a small group of enthusiastic youths who came together with empty pockets but hearts full of devotion to install our first Maa Laxmi Puja mandap.',
+      image: 'assets/images/legacy/2020.jpg',
+      highlights: ['First sacred kalash sthapana', 'Modest bamboo & fabric pandal', '20 founding youth members']
+    },
+    {
+      year: '2021',
+      title: 'The Beginning',
+      tagline: 'A Spark of Devotion & Brotherhood',
+      description: 'STAR BOYS began its glorious journey with a small group of enthusiastic youths who came together with empty pockets but hearts full of devotion to install our first Maa Laxmi Puja mandap.',
+      image: 'assets/images/legacy/2021.jpg',
       highlights: ['First sacred kalash sthapana', 'Modest bamboo & fabric pandal', '20 founding youth members']
     },
     {
