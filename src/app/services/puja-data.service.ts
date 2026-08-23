@@ -394,7 +394,7 @@ export class PujaDataService {
       role: 'Mukhya Puja Karta (Chief Ritual Patron)',
       category: 'karta',
       badge: 'Mukhya Karta',
-      image: 'assets/images/members/karta-1.jpg',
+      image: 'assets/images/members/katra1.jpeg',
       bio: 'Leading the sacred Sankalpa, Ghat Sthapana, and Vedic Sodashopachara Puja of Maa Laxmi on behalf of all devotees and the STAR BOYS family.',
       phone: '+91 97786 69092',
       socials: [
@@ -485,7 +485,7 @@ export class PujaDataService {
       role: 'President (Sabhapati)',
       category: 'leadership',
       badge: 'President',
-      image: 'assets/images/members/president.jpg',
+      image: 'assets/images/members/president.png',
       bio: 'Guiding the STAR BOYS family with inspiring vision, administrative harmony, and deep devotion to Maa Laxmi.',
       socials: [{ platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }]
     },
