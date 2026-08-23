@@ -191,43 +191,64 @@ export class PujaDataService {
       id: 'mem-1',
       year: '2010',
       title: 'The Humble First Darshan',
-      image: 'assets/images/legacy/mem-2010.jpg',
+      image: 'assets/images/legacy/01d388ee-917b-456f-9a9f-8562dc2370d7.jpg',
       caption: 'The founding members performing the inaugural Maha Aarti with clay diyas.'
     },
     {
       id: 'mem-2',
-      year: '2013',
+      year: '2019',
       title: 'First Mega Prasad Seva',
-      image: 'assets/images/legacy/mem-2013.jpg',
+      image: 'assets/images/legacy/acc03467-b19a-4ea5-a1a2-464648f1a2ce.jpg',
       caption: 'Serving thousands of devotees hot Khichdi and Kheer prasad with pure joy.'
     },
     {
       id: 'mem-3',
       year: '2016',
       title: 'Artisans Crafting the Pandal',
-      image: 'assets/images/legacy/mem-2016.jpg',
+      image: 'assets/images/legacy/f4c8d765-e3ff-4d9d-91a2-4f6925507879.jpg',
       caption: 'Master artisans creating intricate Odia wooden filigree and golden arches.'
     },
     {
       id: 'mem-4',
       year: '2020',
       title: 'Quiet Faith & Eternal Bond',
-      image: 'assets/images/legacy/mem-2020.jpg',
+      image: 'assets/images/legacy/7f48c716-63ad-48fa-b988-21a34776a39f.jpg',
       caption: 'Maintaining the uninterrupted sacred diya rituals with heartfelt prayers for global healing.'
     },
     {
       id: 'mem-5',
       year: '2024',
       title: 'Golden Dazzle & Night Aarti',
-      image: 'assets/images/legacy/cd8f0f60-4d0e-4f41-b875-26ee762da2bf.jpg',
+      image: 'assets/images/legacy/0ceaa5a6-e880-4845-9ff4-9b0e58249957.jpg',
       caption: 'The majestic night glow of Maa Laxmi surrounded by thousand glittering diyas.'
     },
     {
       id: 'mem-6',
       year: '2025',
       title: 'Youth Brigade in Action',
-      image: 'assets/images/legacy/mem-2025.jpg',
+      image: 'assets/images/legacy/3c931b91-3fea-4660-af50-f9b29ee1b491.jpg',
       caption: 'STAR BOYS members united in traditional attire during the grand pushpanjali.'
+    },
+    {
+      id: 'mem-7',
+      year: '2024',
+      title: 'Golden Dazzle & Night Aarti',
+      image: 'assets/images/legacy/00e10f27-3f38-4122-836b-61a5987db7de.jpg',
+      caption: 'The majestic night glow of Maa Laxmi surrounded by thousand glittering diyas.'
+    },
+    {
+      id: 'mem-8',
+      year: '2024',
+      title: 'Golden Dazzle & Night Aarti',
+      image: 'assets/images/legacy/a0a9b515-8d96-4e48-bbef-5c2b335f6095.jpg',
+      caption: 'The majestic night glow of Maa Laxmi surrounded by thousand glittering diyas.'
+    },
+    {
+      id: 'mem-9',
+      year: '2024',
+      title: 'Golden Dazzle & Night Aarti',
+      image: 'assets/images/legacy/58e4643b-b86b-4972-94d9-57f6869919f7.jpg',
+      caption: 'The majestic night glow of Maa Laxmi surrounded by thousand glittering diyas.'
     }
   ];
 

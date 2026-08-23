@@ -6,53 +6,53 @@
       <h2 class="section-title gold-gradient-text">Memories Through The Years</h2>
       <app-decorative-divider></app-decorative-divider>
       <p class="section-subtitle">
-        Glimpses of brotherhood, divine darshans, artisan craftsmanship, and euphoric celebration captured across generations.
+        Glimpses of brotherhood, divine darshans, artisan craftsmanship, and euphoric celebration captured across
+        generations.
       </p>
     </div>
 
     <!-- Masonry Grid -->
     <div class="memories-grid">
       @for (item of memories; track item.id; let idx = $index) {
-        <div
-          class="memory-card"
-          [class.card-featured]="idx === 0 || idx === 3"
-          (click)="openMemory(item)"
-          role="button"
-          tabindex="0"
-          (keydown.enter)="openMemory(item)"
-          [attr.aria-label]="'Enlarge ' + item.title + ' from ' + item.year">
-          
-          <!-- Image Box / Card Container -->
-          <div class="memory-card-inner">
-            <!-- Simulated Sacred Card Art for Placeholder -->
-            <div class="memory-art" [style.background]="'radial-gradient(circle at center, #3d1354, #120713)'">
-              <div class="sacred-year-tag">{{ item.year }}</div>
-              <div class="sacred-motif">🪔</div>
-              <span class="sacred-title-label">{{ item.title }}</span>
-            </div>
+      <div class="memory-card" [class.card-featured]="idx === 0 || idx === 3" (click)="openMemory(item)" role="button"
+        tabindex="0" (keydown.enter)="openMemory(item)"
+        [attr.aria-label]="'Enlarge ' + item.title + ' from ' + item.year">
 
-            <!-- Hover Details Overlay -->
-            <div class="memory-hover-overlay">
-              <div class="overlay-badge">
-                <i class="fa-solid fa-calendar-day"></i>
-                <span>{{ item.year }}</span>
-              </div>
-              <h3 class="overlay-title">{{ item.title }}</h3>
-              <p class="overlay-caption">{{ item.caption }}</p>
-              <span class="click-to-view">
-                <i class="fa-solid fa-expand"></i>
-                <span>Click to View Full Photo</span>
-              </span>
+        <!-- Image Box / Card Container -->
+        <div class="memory-card-inner">
+          @if (item.image) {
+          <img [src]="item.image" [alt]="item.title" class="memory-real-image" />
+          } @else {
+          <div class="memory-art" [style.background]="'radial-gradient(circle at center, #3d1354, #120713)'">
+            <div class="sacred-year-tag">{{ item.year }}</div>
+            <div class="sacred-motif">🪔</div>
+            <span class="sacred-title-label">{{ item.title }}</span>
+          </div>
+          }
+          <!-- Hover Details Overlay -->
+          <div class="memory-hover-overlay">
+            <div class="overlay-badge">
+              <i class="fa-solid fa-calendar-day"></i>
+              <span>{{ item.year }}</span>
             </div>
+            <h3 class="overlay-title">{{ item.title }}</h3>
+            <p class="overlay-caption">{{ item.caption }}</p>
+            <span class="click-to-view">
+              <i class="fa-solid fa-expand"></i>
+              <span>Click to View Full Photo</span>
+            </span>
           </div>
         </div>
+      </div>
       }
     </div>
 
     <!-- Replace photo info note for users -->
     <div class="legacy-customization-note">
       <i class="fa-solid fa-circle-info"></i>
-      <span>Tip: Committee members can place their authentic high-res photographs in <code>src/assets/images/legacy/</code> and update <code>puja-data.service.ts</code> to display real photos.</span>
+      <span>Tip: Committee members can place their authentic high-res photographs in
+        <code>src/assets/images/legacy/</code> and update <code>puja-data.service.ts</code> to display real
+        photos.</span>
     </div>
   </div>
 </section>
