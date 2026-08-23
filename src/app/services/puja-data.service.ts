@@ -265,7 +265,7 @@ export class PujaDataService {
     displayDate: 'October 25, 2026 (Kumar Purnima)',
     location: 'School Sahi, Ghantapada, Talcher, Odisha',
     venueMapUrl: 'https://maps.google.com/?q=School+Sahi+Ghantapada+Talcher+Odisha',
-    description: 'Join STAR BOYS for our 16th annual grand Laxmi Puja celebration at School Sahi, Ghantapada, Talcher. Experience divine darshan of Maa Laxmi, majestic pandal lighting, soul-stirring Vedic bhajans, grand Pushpanjali, and sumptuous Mahaprasad.',
+    description: 'Join STAR BOYS for our 23th annual grand Laxmi Puja celebration at School Sahi, Ghantapada, Talcher. Experience divine darshan of Maa Laxmi, majestic pandal lighting, soul-stirring Vedic bhajans, grand Pushpanjali, and sumptuous Mahaprasad.',
     themeBanner: 'assets/images/hero/hero-banner.jpg'
   };
 
@@ -838,7 +838,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-29',
-      name: 'Dabliu sahoo',
+      name: 'Dablu sahoo',
       role: 'Vedic Aarti Seva Incharge',
       category: 'seva',
       badge: 'Aarti Seva',
@@ -918,11 +918,11 @@ export class PujaDataService {
     },
     {
       id: 'mem-37',
-      name: 'Babaji',
+      name: 'Babu Swain',
       role: 'Procurement & Supplies Incharge',
       category: 'seva',
       badge: 'Supplies Lead',
-      image: 'assets/images/members/supplies-lead.jpg',
+      image: 'assets/images/members/WhatsApp Image 2026-08-23 at 9.18.42 PM.jpeg',
       bio: 'Handling grocery, flower, and tentage inventory for all festival operations.',
       socials: [{ platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }]
     },
@@ -932,7 +932,7 @@ export class PujaDataService {
       role: 'Cultural Events Assistant',
       category: 'youth',
       badge: 'Youth Wing',
-      image: 'assets/images/members/cultural-asst.jpg',
+      image: 'assets/images/members/dfg.jpg',
       bio: 'Coordinating microphones, audio tracks, and green-room arrangements for performers.',
       socials: [{ platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }]
     },
