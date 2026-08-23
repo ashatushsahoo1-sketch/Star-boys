@@ -110,7 +110,7 @@ export class PujaDataService {
       highlights: ['Digital live darshan for devotees', 'Doorstep prasad delivery seva', 'Essential food relief distribution']
     },
     {
-      year: '2023',
+      year: '2025',
       title: 'A Celebration of Tradition',
       tagline: 'Passing the Torch to New Generations',
       description: 'New energetic youths joined hands with veteran founders, blending modern digital creativity with sacred time-honored rituals, creating our most magnificent golden idol showcase yet.',
@@ -485,7 +485,7 @@ export class PujaDataService {
       role: 'President (Sabhapati)',
       category: 'leadership',
       badge: 'President',
-      image: 'assets/images/members/president.png',
+      image: 'assets/images/members/17b6e3a5-e19f-43c0-957f-051b0467f546.jpg',
       bio: 'Guiding the STAR BOYS family with inspiring vision, administrative harmony, and deep devotion to Maa Laxmi.',
       socials: [{ platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }]
     },
@@ -495,7 +495,7 @@ export class PujaDataService {
       role: 'Working President (Karyakari Sabhapati)',
       category: 'leadership',
       badge: 'Working President',
-      image: 'assets/images/members/vp1.jpg',
+      image: 'assets/images/members/04f2902c-1eea-4b5f-b956-0d0ba4bb6d6c.jpg',
       bio: 'Overseeing daily ground operations, sub-committee alignments, and government authority liaison.',
       socials: [{ platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }]
     },
@@ -505,7 +505,7 @@ export class PujaDataService {
       role: 'Vice President (Upa Sabhapati)',
       category: 'leadership',
       badge: 'Vice President',
-      image: 'assets/images/members/vp2.jpg',
+      image: 'assets/images/members/e919b0db-c33d-446a-bbf8-1aea8f2933bb.jpg',
       bio: 'Championing community outreach, public relations, and devotee hospitality arrangements.',
       socials: [{ platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }]
     },
@@ -515,7 +515,7 @@ export class PujaDataService {
       role: 'Vice President (Upa Sabhapati)',
       category: 'leadership',
       badge: 'Vice President',
-      image: 'assets/images/members/vp3.jpg',
+      image: 'assets/images/members/258557c9-a3f0-4e12-a95b-5c9ffd8faac5.jpg',
       bio: 'Leading the safety protocols, volunteer management, and visitor queue arrangements.',
       socials: [{ platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }]
     },
@@ -535,7 +535,7 @@ export class PujaDataService {
       role: 'Joint Secretary (Sahakari Sampadaka)',
       category: 'leadership',
       badge: 'Joint Secretary',
-      image: 'assets/images/members/joint-sec1.jpg',
+      image: 'assets/images/members/86839225-291d-415a-b92d-9649b5abe6d6.jpg',
       bio: 'Assisting in administrative coordination, communications, and logistical follow-ups.',
       socials: [{ platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }]
     },
@@ -545,7 +545,7 @@ export class PujaDataService {
       role: 'Joint Secretary (Sahakari Sampadaka)',
       category: 'leadership',
       badge: 'Joint Secretary',
-      image: 'assets/images/members/joint-sec2.jpg',
+      image: 'assets/images/members/3930a0df-599e-4017-b0e8-aecf04957185.jpg',
       bio: 'Coordinating cultural evening artists, sound schedules, and youth wing deployments.',
       socials: [{ platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }]
     },
@@ -555,7 +555,7 @@ export class PujaDataService {
       role: 'Treasurer & Finance Lead (Kosadhyaksha)',
       category: 'seva',
       badge: 'Treasurer',
-      image: 'assets/images/members/treasurer.jpg',
+      image: 'assets/images/members/8f8b4bf6-731e-43c8-a342-4a95373730ee.jpg',
       bio: 'Managing festival funds, donation receipts, vendor disbursements with transparent accounting.',
       socials: [{ platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }]
     },
@@ -565,7 +565,7 @@ export class PujaDataService {
       role: 'Assistant Cashier (Sahakari Kosadhyaksha)',
       category: 'seva',
       badge: 'Asst. Cashier',
-      image: 'assets/images/members/cashier.jpg',
+      image: 'assets/images/members/428ab165-7e63-42b7-92f1-249ec8c67b00.jpg',
       bio: 'Maintaining daily ledger accounts, receipt book tracking, and prasad fund records.',
       socials: [{ platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }]
     },
@@ -575,7 +575,7 @@ export class PujaDataService {
       role: 'Chief Advisor (Mukhya Paramarsadata)',
       category: 'advisor',
       badge: 'Chief Advisor',
-      image: 'assets/images/members/advisor1.jpg',
+      image: 'assets/images/members/ab68d95e-acb0-4d6e-a879-0570900b49aa.jpg',
       bio: 'Veteran community elder advising on Vedic rituals, community harmony, and long-term legacy.',
       socials: [{ platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }]
     },
@@ -785,7 +785,7 @@ export class PujaDataService {
       role: 'Generator & Power Backup Incharge',
       category: 'organizer',
       badge: 'Power Systems',
-      image: 'assets/images/members/power-lead.jpg',
+      image: 'assets/images/members/cb76ead5-7e1f-49be-be7d-b44a5acbc2da.jpg',
       bio: 'Ensuring 24x7 uninterrupted silent generator power supply for pandal and roadway lights.',
       socials: [{ platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }]
     },
