@@ -491,7 +491,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-2',
-      name: 'Satyananda Sahoo',
+      name: 'Surendra Sahoo',
       role: 'Working President (Karyakari Sabhapati)',
       category: 'leadership',
       badge: 'Working President',
@@ -551,7 +551,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-8',
-      name: 'Surendra Sahoo',
+      name: 'Satyananda Sahoo',
       role: 'Treasurer & Finance Lead (Kosadhyaksha)',
       category: 'seva',
       badge: 'Treasurer',
