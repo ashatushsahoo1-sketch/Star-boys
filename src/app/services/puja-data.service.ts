@@ -78,6 +78,14 @@ export class PujaDataService {
      ========================================================================= */
   readonly legacyItems: LegacyMilestone[] = [
     {
+      year: '2013',
+      title: 'The Beginning',
+      tagline: 'A Spark of Devotion & Brotherhood',
+      description: 'STAR BOYS began its glorious journey with a small group of enthusiastic youths who came together with empty pockets but hearts full of devotion to install our first Maa Laxmi Puja mandap.',
+      image: 'assets/images/legacy/2013.jpg',
+      highlights: ['First sacred kalash sthapana', 'Modest bamboo & fabric pandal', '20 founding youth members']
+    },
+    {
       year: '2014',
       title: 'The Beginning',
       tagline: 'A Spark of Devotion & Brotherhood',
@@ -544,7 +552,7 @@ export class PujaDataService {
       role: 'Sound, Visuals & Tech Coordinator',
       category: 'tech',
       badge: 'Audio/Visuals',
-      image: 'assets/images/members/tech-4.jpg',
+      image: 'assets/images/members/8707b0ac-87af-45ff-ad47-823fdfb810a6.jpg',
       bio: 'Supervising digital LED walls, synchronized audio mixers, lighting automation, and backup power systems at the mandap.',
       socials: [
         { platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }
@@ -762,7 +770,7 @@ export class PujaDataService {
       role: 'Public Relations (PR) & Media Incharge',
       category: 'organizer',
       badge: 'PR & Media',
-      image: 'assets/images/members/pr-lead.jpg',
+      image: 'assets/images/members/090a7fad-7bf6-4a77-b9aa-0c03a600c87e.jpg',
       bio: 'Managing print press releases, television coverage, and dignitary reception at the mandap.',
       socials: [{ platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }]
     },
@@ -842,7 +850,7 @@ export class PujaDataService {
       role: 'Vedic Aarti Seva Incharge',
       category: 'seva',
       badge: 'Aarti Seva',
-      image: 'assets/images/members/aarti-lead.jpg',
+      image: 'assets/images/members/12aee478-8bf7-496b-9503-71bac369455d.jpg',
       bio: 'Arranging grand 108-diya aarti, camphor lamps, and holy bells for the evening sandhya aarti.',
       socials: [{ platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }]
     },
@@ -852,7 +860,7 @@ export class PujaDataService {
       role: 'Community Seva Volunteer Lead',
       category: 'seva',
       badge: 'Social Seva',
-      image: 'assets/images/members/seva-lead.jpg',
+      image: 'assets/images/members/8e32dda0-5c72-4252-b3e7-5390eba4fd16.jpg',
       bio: 'Facilitating wheel-chair access, drinking water kiosks, and medical first-aid desks.',
       socials: [{ platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }]
     },
@@ -912,7 +920,7 @@ export class PujaDataService {
       role: 'Devotee Queue & Assistance Incharge',
       category: 'organizer',
       badge: 'Devotee Seva',
-      image: 'assets/images/members/queue-lead.jpg',
+      image: 'assets/images/members/2ef07b64-fce0-433d-bc16-18c6ffa6ba8f.jpg',
       bio: 'Guiding women, children, and elderly devotees for smooth and serene darshan.',
       socials: [{ platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }]
     },
@@ -948,7 +956,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-40',
-      name: 'to be updated',
+      name: 'Pinku',
       role: 'Executive Volunteer & Immersion Lead',
       category: 'youth',
       badge: 'Youth Wing',
