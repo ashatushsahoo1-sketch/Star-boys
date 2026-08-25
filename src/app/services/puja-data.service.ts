@@ -820,7 +820,7 @@ export class PujaDataService {
       role: 'Youth Brigade Leader',
       category: 'youth',
       badge: 'Youth Wing',
-      image: 'assets/images/members/youth-lead1.jpg',
+      image: 'assets/images/members/18aca2a2-acb1-43bc-bbee-5b885c5cdc96.jpg',
       bio: 'Inspiring and coordinating the energy of School Sahi youth for seamless festival seva.',
       socials: [{ platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }]
     },
