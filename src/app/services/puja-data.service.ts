@@ -374,98 +374,233 @@ export class PujaDataService {
   ];
 
   /* =========================================================================
-     8. PHOTO GALLERY (FILTERABLE CATEGORIES)
+     8. PHOTO GALLERY (FILTERABLE CATEGORIES & YEARS)
      ========================================================================= */
   readonly galleryItems: GalleryItem[] = [
+    // 2025 Photos
     {
-      id: 'gal-1',
-      title: 'Divya Maa Laxmi Darshan',
+      id: 'gal-2025-1',
+      title: 'Divya Maa Laxmi Maha Darshan',
       category: 'puja',
       categoryLabel: 'Puja & Rituals',
-      image: 'assets/images/gallery/puja-1.jpg',
+      image: 'assets/images/legacy/2025.jpg',
       year: '2025',
-      description: 'Close-up darshan of Maa Laxmi adorned in pure silk, golden ornaments, and fresh lotus garland.'
+      description: 'The sublime divine darshan of Maa Laxmi adorned in golden jewellery, silken saree, and fragrant lotus garlands at School Sahi.'
     },
     {
-      id: 'gal-2',
-      title: '108 Diyas Sandhya Maha Aarti',
+      id: 'gal-2025-2',
+      title: 'Youth Brigade in Traditional Seva',
+      category: 'community',
+      categoryLabel: 'Community & Seva',
+      image: 'assets/images/legacy/3c931b91-3fea-4660-af50-f9b29ee1b491.jpg',
+      year: '2025',
+      description: 'STAR BOYS youth volunteers uniting in festive traditional attire during the sacred Pushpanjali ritual.'
+    },
+
+    // 2024 Photos
+    {
+      id: 'gal-2024-1',
+      title: 'Golden Dazzle & Illuminated Pandal',
+      category: 'decoration',
+      categoryLabel: 'Decoration & Lighting',
+      image: 'assets/images/legacy/2024.jpg',
+      year: '2024',
+      description: 'The breathtaking illuminated pandal architecture glowing across Ghantapada on Kumar Purnima night.'
+    },
+    {
+      id: 'gal-2024-2',
+      title: 'Maha Aarti with 1008 Sacred Diyas',
       category: 'puja',
       categoryLabel: 'Puja & Rituals',
-      image: 'assets/images/gallery/puja-2.jpg',
-      year: '2025',
-      description: 'Priests performing the grand twilight aarti with sacred conch blowing and chanting.'
-    },
-    {
-      id: 'gal-3',
-      title: 'Golden Arch Pandal Entrance',
-      category: 'decoration',
-      categoryLabel: 'Decoration & Lighting',
-      image: 'assets/images/gallery/dec-1.jpg',
-      year: '2025',
-      description: 'Illuminated entryway with intricate Odia jhoti motifs and cascading golden LED curtains.'
-    },
-    {
-      id: 'gal-4',
-      title: 'Handcrafted Lotus Sanctum',
-      category: 'decoration',
-      categoryLabel: 'Decoration & Lighting',
-      image: 'assets/images/gallery/dec-2.jpg',
+      image: 'assets/images/legacy/00e10f27-3f38-4122-836b-61a5987db7de.jpg',
       year: '2024',
-      description: 'Artisans shaping the monumental lotus sanctum using eco-friendly natural materials.'
+      description: 'The celestial spectacle of head priests offering rhythmic Maha Aarti amidst resonant conch blowing.'
     },
     {
-      id: 'gal-5',
-      title: 'Devotional Bhajan Sandhya',
+      id: 'gal-2024-3',
+      title: 'Cultural Odissi & Sambalpuri Night',
       category: 'cultural',
       categoryLabel: 'Cultural Programs',
-      image: 'assets/images/gallery/cult-1.jpg',
-      year: '2025',
-      description: 'Renowned vocalists singing soul-stirring Odia Jananas and Laxmi Vandanas under the starry sky.'
-    },
-    {
-      id: 'gal-6',
-      title: 'Classical Odissi Dance Recital',
-      category: 'cultural',
-      categoryLabel: 'Cultural Programs',
-      image: 'assets/images/gallery/cult-2.jpg',
+      image: 'assets/images/legacy/a0a9b515-8d96-4e48-bbef-5c2b335f6095.jpg',
       year: '2024',
-      description: 'Graceful dancers depicting Dashavatara and Maa Laxmi\'s arrival on Earth.'
+      description: 'Captivating cultural performances by talented artists celebrating the rich devotional heritage of Odisha.'
     },
     {
-      id: 'gal-7',
-      title: 'Community Mahaprasad Seva',
+      id: 'gal-2024-4',
+      title: 'Devotee Congregation & Pushpanjali',
       category: 'community',
       categoryLabel: 'Community & Seva',
-      image: 'assets/images/gallery/comm-1.jpg',
-      year: '2025',
-      description: 'Volunteers serving hot prasad with love and devotion to thousands of smiling visitors.'
+      image: 'assets/images/legacy/58e4643b-b86b-4972-94d9-57f6869919f7.jpg',
+      year: '2024',
+      description: 'Thousands of devotees from Talcher and nearby villages joining hands in heartfelt prayers for prosperity.'
     },
     {
-      id: 'gal-8',
-      title: 'Youth Volunteer Camp',
-      category: 'community',
-      categoryLabel: 'Community & Seva',
-      image: 'assets/images/gallery/comm-2.jpg',
-      year: '2025',
-      description: 'STAR BOYS brigade coordinating crowd safety, elder assistance, and health camp services.'
+      id: 'gal-2024-5',
+      title: 'Midnight Jyoti & Sandhya Darshan',
+      category: 'puja',
+      categoryLabel: 'Puja & Rituals',
+      image: 'assets/images/legacy/0ceaa5a6-e880-4845-9ff4-9b0e58249957.jpg',
+      year: '2024',
+      description: 'Mesmerizing midnight radiance of the altar illuminated by hundreds of ghee lamps and sacred chandan fragrance.'
     },
+
+    // 2023 Photos
     {
-      id: 'gal-9',
-      title: 'Brotherhood Through The Decades',
+      id: 'gal-2023-1',
+      title: 'Silver Jubilee Arch & Visarjan Utsav',
       category: 'memories',
-      categoryLabel: 'Nostalgic Memories',
-      image: 'assets/images/gallery/mem-1.jpg',
-      year: '2018',
-      description: 'Founders and young volunteers capturing a candid moment of pure joy after the grand aarti.'
-    },
-    {
-      id: 'gal-10',
-      title: 'Visarjan Sobhayatra Carnival',
-      category: 'memories',
-      categoryLabel: 'Nostalgic Memories',
-      image: 'assets/images/gallery/mem-2.jpg',
+      categoryLabel: 'Golden Memories',
+      image: 'assets/images/legacy/2023.jpg',
       year: '2023',
-      description: 'Joyful immersion procession accompanied by Dulduli drums, cymbals, and flower showers.'
+      description: 'Historic moments from the grand immersion procession celebrated with traditional Dulduli drums and flower showers.'
+    },
+
+    // 2022 Photos
+    {
+      id: 'gal-2022-1',
+      title: 'Grand Lotus Sanctum & Floral Altar',
+      category: 'decoration',
+      categoryLabel: 'Decoration & Lighting',
+      image: 'assets/images/legacy/2022.jpg',
+      year: '2022',
+      description: 'Majestic floral decoration sculpted with thousands of fresh marigold and lotus blossoms by master florists.'
+    },
+
+    // 2021 Photos
+    {
+      id: 'gal-2021-1',
+      title: 'Sacred Kalash Sthapana & Sankalpa',
+      category: 'puja',
+      categoryLabel: 'Puja & Rituals',
+      image: 'assets/images/legacy/2021.jpg',
+      year: '2021',
+      description: 'The auspicious invocation of divine presence and Vedic chanting at the beginning of the annual festival.'
+    },
+
+    // 2020 Photos
+    {
+      id: 'gal-2020-1',
+      title: 'Unbroken Devotion & Quiet Diya Seva',
+      category: 'puja',
+      categoryLabel: 'Puja & Rituals',
+      image: 'assets/images/legacy/2020.jpg',
+      year: '2020',
+      description: 'Sacred rituals continued with unwavering faith, offering prayers for universal health and global well-being.'
+    },
+    {
+      id: 'gal-2020-2',
+      title: 'Brotherhood & Faith in Adversity',
+      category: 'memories',
+      categoryLabel: 'Golden Memories',
+      image: 'assets/images/legacy/7f48c716-63ad-48fa-b988-21a34776a39f.jpg',
+      year: '2020',
+      description: 'Dedicated committee members upholding the sacred flame and uninterrupted puja traditions.'
+    },
+
+    // 2019 Photos
+    {
+      id: 'gal-2019-1',
+      title: 'Mega Annadan & Mahaprasad Feast',
+      category: 'community',
+      categoryLabel: 'Community & Seva',
+      image: 'assets/images/legacy/2019.jpg',
+      year: '2019',
+      description: 'Distributing steaming hot Khichdi and Kheeri Mahaprasad to thousands of visiting pilgrims with warm love.'
+    },
+    {
+      id: 'gal-2019-2',
+      title: 'Volunteers Serving with Warmth',
+      category: 'community',
+      categoryLabel: 'Community & Seva',
+      image: 'assets/images/legacy/acc03467-b19a-4ea5-a1a2-464648f1a2ce.jpg',
+      year: '2019',
+      description: 'STAR BOYS members working tirelessly through day and night in the seva pandal.'
+    },
+
+    // 2018 Photos
+    {
+      id: 'gal-2018-1',
+      title: 'Melodious Bhajan Sandhya Under Sky',
+      category: 'cultural',
+      categoryLabel: 'Cultural Programs',
+      image: 'assets/images/legacy/2018.jpg',
+      year: '2018',
+      description: 'Soul-stirring Odia Janana and devotional music sessions uniting the entire community in spiritual ecstasy.'
+    },
+
+    // 2017 Photos
+    {
+      id: 'gal-2017-1',
+      title: 'Illuminated School Sahi Festival Ground',
+      category: 'decoration',
+      categoryLabel: 'Decoration & Lighting',
+      image: 'assets/images/legacy/2017.jpg',
+      year: '2017',
+      description: 'Dynamic light displays and artistic toranas transforming School Sahi into a celestial realm.'
+    },
+
+    // 2016 Photos
+    {
+      id: 'gal-2016-1',
+      title: 'Artisans Crafting Traditional Mandap',
+      category: 'decoration',
+      categoryLabel: 'Decoration & Lighting',
+      image: 'assets/images/legacy/2016.jpg',
+      year: '2016',
+      description: 'Master artisans weaving intricate Odia wooden motifs and filigree mandap designs.'
+    },
+    {
+      id: 'gal-2016-2',
+      title: 'Traditional Filigree Mandap Elegance',
+      category: 'memories',
+      categoryLabel: 'Golden Memories',
+      image: 'assets/images/legacy/f4c8d765-e3ff-4d9d-91a2-4f6925507879.jpg',
+      year: '2016',
+      description: 'Classic photograph of the handcrafted royal pandal structure built with devotion.'
+    },
+
+    // 2015 Photos
+    {
+      id: 'gal-2015-1',
+      title: 'Divine Pushpanjali with Conch Echoes',
+      category: 'puja',
+      categoryLabel: 'Puja & Rituals',
+      image: 'assets/images/legacy/2015.jpg',
+      year: '2015',
+      description: 'Devotees offering sacred bilva patra and flowers to the Mother amidst blowing of conches.'
+    },
+
+    // 2014 Photos
+    {
+      id: 'gal-2014-1',
+      title: 'Community Unity & STAR BOYS Legacy',
+      category: 'memories',
+      categoryLabel: 'Golden Memories',
+      image: 'assets/images/legacy/2014.jpg',
+      year: '2014',
+      description: 'A timeless snapshot of village elders and youth collaborating for the grand Laxmi Puja.'
+    },
+
+    // 2013 Photos
+    {
+      id: 'gal-2013-1',
+      title: 'Historic 10th Year Grand Milestone',
+      category: 'memories',
+      categoryLabel: 'Golden Memories',
+      image: 'assets/images/legacy/2013.jpg',
+      year: '2013',
+      description: 'Celebrating 10 glorious years of united devotion, community bonding, and seva at Ghantapada.'
+    },
+
+    // 2010 Photos
+    {
+      id: 'gal-2010-1',
+      title: 'The Sacred Humble First Darshan',
+      category: 'memories',
+      categoryLabel: 'Golden Memories',
+      image: 'assets/images/legacy/01d388ee-917b-456f-9a9f-8562dc2370d7.jpg',
+      year: '2010',
+      description: 'The foundation era darshan where it all began with pure devotion and community spirit.'
     }
   ];
 

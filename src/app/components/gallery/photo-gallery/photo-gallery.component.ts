@@ -11,6 +11,11 @@ interface FilterOption {
   icon: string;
 }
 
+interface YearFilterOption {
+  year: string;
+  count: number;
+}
+
 @Component({
   selector: 'app-photo-gallery',
   standalone: true,
@@ -24,6 +29,7 @@ export class PhotoGalleryComponent {
 
   readonly allItems = this.pujaData.getGalleryItems();
   readonly selectedCategory = signal<GalleryCategory>('all');
+  readonly selectedYear = signal<string>('all');
 
   readonly categories: FilterOption[] = [
     { id: 'all', label: 'All Photos', icon: 'fa-solid fa-border-all' },
@@ -34,16 +40,39 @@ export class PhotoGalleryComponent {
     { id: 'memories', label: 'Golden Memories', icon: 'fa-solid fa-film' }
   ];
 
+  readonly availableYears = computed<YearFilterOption[]>(() => {
+    const yearMap = new Map<string, number>();
+    for (const item of this.allItems) {
+      yearMap.set(item.year, (yearMap.get(item.year) || 0) + 1);
+    }
+    const sortedYears = Array.from(yearMap.keys()).sort((a, b) => parseInt(b, 10) - parseInt(a, 10));
+    return [
+      { year: 'all', count: this.allItems.length },
+      ...sortedYears.map(y => ({ year: y, count: yearMap.get(y) || 0 }))
+    ];
+  });
+
   readonly filteredItems = computed<GalleryItem[]>(() => {
     const cat = this.selectedCategory();
-    if (cat === 'all') {
-      return this.allItems;
-    }
-    return this.allItems.filter(item => item.category === cat);
+    const yr = this.selectedYear();
+    return this.allItems.filter(item => {
+      const matchCat = cat === 'all' || item.category === cat;
+      const matchYear = yr === 'all' || item.year === yr;
+      return matchCat && matchYear;
+    });
   });
 
   setCategory(category: GalleryCategory): void {
     this.selectedCategory.set(category);
+  }
+
+  setYear(year: string): void {
+    this.selectedYear.set(year);
+  }
+
+  resetFilters(): void {
+    this.selectedCategory.set('all');
+    this.selectedYear.set('all');
   }
 
   openLightbox(item: GalleryItem): void {

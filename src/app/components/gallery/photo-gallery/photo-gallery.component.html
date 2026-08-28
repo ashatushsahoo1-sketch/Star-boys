@@ -2,12 +2,32 @@
   <div class="container">
     <!-- Header -->
     <div class="section-header">
-      <span class="section-tagline">“Visual Splendor”</span>
+      <span class="section-tagline">“Visual Splendor Across Decades”</span>
       <h2 class="section-title gold-gradient-text">STAR BOYS Photo Gallery</h2>
       <app-decorative-divider></app-decorative-divider>
       <p class="section-subtitle">
-        Immerse yourself in divine darshans, majestic illumination, soulful cultural celebrations, and heartwarming community moments.
+        Explore year-wise memories, divine darshans, majestic pandal decorations, and cultural celebrations of Laxmi Puja.
       </p>
+    </div>
+
+    <!-- Year Filter Bar -->
+    <div class="year-filter-wrapper">
+      <div class="year-filter-label">
+        <i class="fa-solid fa-calendar-days text-gold"></i>
+        <span>Filter by Year:</span>
+      </div>
+      <div class="year-filter-scroll">
+        @for (yr of availableYears(); track yr.year) {
+          <button
+            type="button"
+            class="year-pill-btn"
+            [class.active]="selectedYear() === yr.year"
+            (click)="setYear(yr.year)">
+            <span>{{ yr.year === 'all' ? 'All Years' : yr.year }}</span>
+            <span class="year-count-badge">{{ yr.count }}</span>
+          </button>
+        }
+      </div>
     </div>
 
     <!-- Category Filter Tabs -->
@@ -27,58 +47,86 @@
       </div>
     </div>
 
+    <!-- Active Filter Summary -->
+    @if (selectedCategory() !== 'all' || selectedYear() !== 'all') {
+      <div class="filter-status-bar">
+        <span>
+          Showing <strong>{{ filteredItems().length }}</strong> {{ filteredItems().length === 1 ? 'photo' : 'photos' }}
+          @if (selectedYear() !== 'all') { for year <span class="highlight-tag">{{ selectedYear() }}</span> }
+          @if (selectedCategory() !== 'all') { in <span class="highlight-tag">{{ selectedCategory() }}</span> }
+        </span>
+        <button type="button" class="btn-clear-filter" (click)="resetFilters()">
+          <i class="fa-solid fa-rotate-left"></i> Reset Filters
+        </button>
+      </div>
+    }
+
     <!-- Gallery Grid with Animated Transitions -->
-    <div class="gallery-grid">
-      @for (item of filteredItems(); track item.id) {
-        <div
-          class="gallery-card"
-          (click)="openLightbox(item)"
-          role="button"
-          tabindex="0"
-          (keydown.enter)="openLightbox(item)"
-          [attr.aria-label]="'View full photo of ' + item.title">
-          
-          <div class="gallery-card-inner">
-            <!-- Simulated Sacred Card Background Art -->
-            <div class="gallery-art-layer" [style.background]="'radial-gradient(circle at center, #2e0836, #120713)'">
-              <div class="art-badge-top">
+    @if (filteredItems().length > 0) {
+      <div class="gallery-grid">
+        @for (item of filteredItems(); track item.id) {
+          <div
+            class="gallery-card"
+            (click)="openLightbox(item)"
+            role="button"
+            tabindex="0"
+            (keydown.enter)="openLightbox(item)"
+            [attr.aria-label]="'View full photo of ' + item.title">
+            
+            <div class="gallery-card-inner">
+              <!-- Real Photo Image Layer -->
+              @if (item.image) {
+                <img [src]="item.image" [alt]="item.title" class="gallery-photo-img" loading="lazy" />
+              }
+
+              <!-- Badges on top of card -->
+              <div class="card-badges-top">
                 <span class="badge-cat">{{ item.categoryLabel }}</span>
-                <span class="badge-year">{{ item.year }}</span>
-              </div>
-              <div class="art-center-icon">
-                <i class="fa-solid fa-camera-retro"></i>
-              </div>
-              <span class="art-title-text">{{ item.title }}</span>
-            </div>
-
-            <!-- Hover Effect Overlay -->
-            <div class="gallery-hover-overlay">
-              <div class="overlay-top">
-                <span class="overlay-cat-badge">
-                  <i class="fa-solid fa-tag"></i>
-                  <span>{{ item.categoryLabel }}</span>
+                <span class="badge-year">
+                  <i class="fa-solid fa-calendar-check"></i>
+                  {{ item.year }}
                 </span>
-                <span class="overlay-year-badge">{{ item.year }}</span>
               </div>
 
-              <div class="overlay-bottom">
-                <h3 class="overlay-photo-title">{{ item.title }}</h3>
-                <p class="overlay-photo-desc">{{ item.description }}</p>
-                <div class="enlarge-action">
-                  <i class="fa-solid fa-magnifying-glass-plus"></i>
-                  <span>View High-Resolution</span>
+              <!-- Hover Effect Overlay -->
+              <div class="gallery-hover-overlay">
+                <div class="overlay-top">
+                  <span class="overlay-cat-badge">
+                    <i class="fa-solid fa-tag"></i>
+                    <span>{{ item.categoryLabel }}</span>
+                  </span>
+                  <span class="overlay-year-badge">{{ item.year }}</span>
+                </div>
+
+                <div class="overlay-bottom">
+                  <h3 class="overlay-photo-title">{{ item.title }}</h3>
+                  <p class="overlay-photo-desc">{{ item.description }}</p>
+                  <div class="enlarge-action">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    <span>Click to Enlarge Full Photo</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      }
-    </div>
+        }
+      </div>
+    } @else {
+      <!-- Empty State -->
+      <div class="empty-gallery-state">
+        <i class="fa-solid fa-images empty-icon"></i>
+        <h3>No photos found for this selection</h3>
+        <p>There are no photos matching the selected category and year combination.</p>
+        <button type="button" class="btn btn-primary btn-sm" (click)="resetFilters()">
+          <i class="fa-solid fa-arrows-rotate"></i> Show All Photos
+        </button>
+      </div>
+    }
 
     <!-- Gallery Customization Note -->
     <div class="gallery-info-strip">
-      <i class="fa-solid fa-image text-gold"></i>
-      <span>All gallery images can be customized with actual high-definition STAR BOYS festival photos via <code>src/assets/images/gallery/</code> and <code>puja-data.service.ts</code>.</span>
+      <i class="fa-solid fa-camera text-gold"></i>
+      <span>Star Boys Laxmi Puja archive features authentic photos from 2010 to 2025. Committee members can add more year-wise memories in <code>puja-data.service.ts</code>.</span>
     </div>
   </div>
 </section>
