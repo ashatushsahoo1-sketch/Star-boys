@@ -18,8 +18,64 @@
           <div class="frame-border-glow"></div>
           <div class="visual-img-wrapper">
             <div class="devotional-art-card">
-              <!-- Traditional Odia Alpona/Mandala Motif Background -->
-              <div class="art-mandala-bg"></div>
+              <!-- Sacred Devotional Star Frame Motif (Star Boys Ashta Lakshmi Star) -->
+              <div class="art-star-bg">
+                <svg class="art-star-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="starGoldGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#FFF1B8" stop-opacity="0.9"/>
+                      <stop offset="30%" stop-color="#F5C542" stop-opacity="0.75"/>
+                      <stop offset="70%" stop-color="#D48806" stop-opacity="0.6"/>
+                      <stop offset="100%" stop-color="#FAAD14" stop-opacity="0.85"/>
+                    </linearGradient>
+                    <linearGradient id="starGoldGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#FFD666" stop-opacity="0.8"/>
+                      <stop offset="50%" stop-color="#F5C542" stop-opacity="0.4"/>
+                      <stop offset="100%" stop-color="#B37FEB" stop-opacity="0.6"/>
+                    </linearGradient>
+                    <radialGradient id="starCenterAura" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" stop-color="#F5C542" stop-opacity="0.18"/>
+                      <stop offset="45%" stop-color="#722ED1" stop-opacity="0.12"/>
+                      <stop offset="100%" stop-color="#190a1c" stop-opacity="0"/>
+                    </radialGradient>
+                    <filter id="starGlow" x="-20%" y="-20%" width="140%" height="140%">
+                      <feGaussianBlur stdDeviation="3" result="blur" />
+                      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                    </filter>
+                  </defs>
+
+                  <!-- Ambient Star Aura -->
+                  <circle cx="200" cy="200" r="170" fill="url(#starCenterAura)" />
+
+                  <!-- Rotating Outer Dashed Star / Star of Lakshmi (Square 1 & Square 2) -->
+                  <g class="rotating-star-outer">
+                    <rect x="42" y="42" width="316" height="316" rx="16" 
+                          stroke="url(#starGoldGrad1)" stroke-width="1.5" stroke-dasharray="6 6" fill="none" opacity="0.45"/>
+                    <rect x="42" y="42" width="316" height="316" rx="16" transform="rotate(45 200 200)"
+                          stroke="url(#starGoldGrad1)" stroke-width="1.5" stroke-dasharray="6 6" fill="none" opacity="0.45"/>
+                  </g>
+
+                  <!-- Intermediate Glowing 8-Point Star Outline -->
+                  <g class="pulsing-star-mid">
+                    <polygon points="200,20 247.8,84.5 327.3,72.7 315.5,152.2 380,200 315.5,247.8 327.3,327.3 247.8,315.5 200,380 152.2,315.5 72.7,327.3 84.5,247.8 20,200 84.5,152.2 72.7,72.7 152.2,84.5"
+                             stroke="url(#starGoldGrad1)" stroke-width="1.8" fill="rgba(245, 197, 66, 0.03)" filter="url(#starGlow)" />
+                    
+                    <!-- Inner Star Accent Ring -->
+                    <polygon points="200,45 242.1,98.4 309.6,90.4 301.6,157.9 355,200 301.6,242.1 309.6,309.6 242.1,301.6 200,355 157.9,301.6 90.4,309.6 98.4,242.1 45,200 98.4,157.9 90.4,90.4 157.9,98.4"
+                             stroke="url(#starGoldGrad2)" stroke-width="1.2" stroke-dasharray="3 3" fill="none" opacity="0.75" />
+                  </g>
+
+                  <!-- Sparkle Nodes on Star Vertices -->
+                  <circle cx="200" cy="20" r="3" fill="#FFE58F" />
+                  <circle cx="380" cy="200" r="3" fill="#FFE58F" />
+                  <circle cx="200" cy="380" r="3" fill="#FFE58F" />
+                  <circle cx="20" cy="200" r="3" fill="#FFE58F" />
+                  <circle cx="327.3" cy="72.7" r="2.5" fill="#F5C542" />
+                  <circle cx="327.3" cy="327.3" r="2.5" fill="#F5C542" />
+                  <circle cx="72.7" cy="327.3" r="2.5" fill="#F5C542" />
+                  <circle cx="72.7" cy="72.7" r="2.5" fill="#F5C542" />
+                </svg>
+              </div>
               <div class="art-content">
                 <div class="diya-centerpiece">
                   <div class="flame"></div>
