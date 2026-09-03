@@ -40,7 +40,7 @@ export class PujaDataService {
     description: 'Founded in 2004 by a passionate circle of youths, STAR BOYS has evolved into a cornerstone of cultural heritage. We take immense pride in preserving sacred Odia Laxmi Puja rituals, uplifting local artisans through breathtaking pandal architecture, and fostering unity through selfless community service and vibrant cultural extravaganzas.',
     image: 'assets/images/hero/about-pandal.jpg',
     stats: [
-      { count: '22+', label: 'Glorious Years of Legacy' },
+      { count: 'Since 2004', label: 'Glorious Devotional Legacy' },
       { count: '1000+', label: 'Devotees Welcomed Annually' },
       { count: '50+', label: 'Dedicated Youths & Volunteers' },
       { count: '100%', label: 'Joy, Faith & Pure Devotion' }
@@ -74,120 +74,176 @@ export class PujaDataService {
   };
 
   /* =========================================================================
-     3. LEGACY TIMELINE (2004 - 2026)
+     3. LEGACY TIMELINE (2013 - 2026)
      ========================================================================= */
   readonly legacyItems: LegacyMilestone[] = [
     {
       year: '2013',
-      title: 'The Beginning',
-      tagline: 'A Spark of Devotion & Brotherhood',
-      description: 'STAR BOYS began its glorious journey with a small group of enthusiastic youths who came together with empty pockets but hearts full of devotion to install our first Maa Laxmi Puja mandap.',
+      title: 'Uttarakhand Flood & Divine Grace',
+      tagline: 'Compassion Amidst the Deluge',
+      description: 'Dedicated in reverent tribute to the Uttarakhand flood relief, this moving pandal depicted Himalayan peaks, roaring waters, and rescue helicopters, with Maa Laxmi radiating supreme peace, protection, and solace for every suffering soul.',
       image: 'assets/images/legacy/2013.jpg',
-      highlights: ['First sacred kalash sthapana', 'Modest bamboo & fabric pandal', '20 founding youth members']
+      highlights: [
+        'Uttarakhand deluge & Kedarnath relief tribute theme',
+        'Artistic mountain peaks, flood rescue helicopter & Shiva darshan',
+        'Solemn community prayers and relief seva for flood victims'
+      ]
     },
     {
       year: '2014',
-      title: 'The Beginning',
-      tagline: 'A Spark of Devotion & Brotherhood',
-      description: 'STAR BOYS began its glorious journey with a small group of enthusiastic youths who came together with empty pockets but hearts full of devotion to install our first Maa Laxmi Puja mandap.',
+      title: 'Lord Vishnu’s Dashavatara',
+      tagline: 'The Ten Sacred Incarnations',
+      description: 'A celestial darshan celebrating the cosmic balance of the universe, gloriously depicting the ten sacred Dashavatara incarnations of Lord Vishnu surrounding the divine Mother Maa Laxmi in golden radiance.',
       image: 'assets/images/legacy/2014.jpg',
-      highlights: ['First sacred kalash sthapana', 'Modest bamboo & fabric pandal', '20 founding youth members']
+      highlights: [
+        'Epic Dashavatara sanctum portraying all 10 Vishnu avatars',
+        'Intricate handcrafted motifs & spiritual narrative pandal',
+        'Resonant Vedic chants and devotional Maha Aarti'
+      ]
     },
     {
       year: '2015',
-      title: 'The Beginning',
-      tagline: 'A Spark of Devotion & Brotherhood',
-      description: 'STAR BOYS began its glorious journey with a small group of enthusiastic youths who came together with empty pockets but hearts full of devotion to install our first Maa Laxmi Puja mandap.',
+      title: 'Gaja Laxmi — Royal Elephant Worship',
+      tagline: 'Airavata Showering Divine Abundance',
+      description: 'Bringing the majestic Gaja Laxmi vision to life, where regal white celestial elephants flank Maa Laxmi, pouring sacred waters from golden kalash over the blooming lotus throne amidst blowing conches.',
       image: 'assets/images/legacy/2015.jpg',
-      highlights: ['First sacred kalash sthapana', 'Modest bamboo & fabric pandal', '20 founding youth members']
+      highlights: [
+        'Grand Gaja Laxmi swaroop with celestial elephant sentinels',
+        'Sacred Kalash abhishekam representation with fragrant lotus blooms',
+        'Traditional Odia dhola and nisan rhythmic beats'
+      ]
     },
     {
       year: '2016',
-      title: 'The Beginning',
-      tagline: 'A Spark of Devotion & Brotherhood',
-      description: 'STAR BOYS began its glorious journey with a small group of enthusiastic youths who came together with empty pockets but hearts full of devotion to install our first Maa Laxmi Puja mandap.',
+      title: 'Famous Places in Hindu Religion',
+      tagline: 'The Eternal Pilgrimage of Sanatana Dharma',
+      description: 'A stunning architectural showcase uniting sacred Hindu tirthas—from the holy heights of Char Dham to grand coastal temples—bringing the divine sanctity of all revered pilgrimage sites right to School Sahi.',
       image: 'assets/images/legacy/2016.jpg',
-      highlights: ['First sacred kalash sthapana', 'Modest bamboo & fabric pandal', '20 founding youth members']
+      highlights: [
+        'Replicas of sacred Hindu shrines and holy Char Dham tirthas',
+        'Magnificent temple spire architecture & detailed wooden carvings',
+        'Unprecedented spiritual congregation of pilgrims and devotees'
+      ]
     },
     {
       year: '2017',
-      title: 'The Beginning',
-      tagline: 'A Spark of Devotion & Brotherhood',
-      description: 'STAR BOYS began its glorious journey with a small group of enthusiastic youths who came together with empty pockets but hearts full of devotion to install our first Maa Laxmi Puja mandap.',
+      title: 'Sacred Laxmi Purana',
+      tagline: 'The Timeless Legend of Devotion & Equality',
+      description: 'Inspired by Mahapurusha Balaram Das’s revered Odia classic Laxmi Purana, depicting the Mother’s supreme compassion, righteous dignity, and grace that blesses every humble threshold without discrimination.',
       image: 'assets/images/legacy/2017.jpg',
-      highlights: ['First sacred kalash sthapana', 'Modest bamboo & fabric pandal', '20 founding youth members']
+      highlights: [
+        'Visual reenactment of Balaram Das’s sacred Laxmi Purana',
+        'Celebration of inclusive devotion, jhoti chita art & social equality',
+        'Special distribution of traditional Odia pitha and prasad'
+      ]
     },
     {
       year: '2018',
-      title: 'The Beginning',
-      tagline: 'A Spark of Devotion & Brotherhood',
-      description: 'STAR BOYS began its glorious journey with a small group of enthusiastic youths who came together with empty pockets but hearts full of devotion to install our first Maa Laxmi Puja mandap.',
+      title: 'Mountain & Waterfall Open Pandal',
+      tagline: 'Nature’s Symphony in Divine Harmony',
+      description: 'A breathtaking open-air landscape mandap featuring towering rocky mountain cliffs, misty gorges, and flowing natural waterfalls cascading serenely around the lotus feet of Maa Laxmi under the open sky.',
       image: 'assets/images/legacy/2018.jpg',
-      highlights: ['First sacred kalash sthapana', 'Modest bamboo & fabric pandal', '20 founding youth members']
+      highlights: [
+        'Open-air natural mountain landscape with live cascading waterfalls',
+        'Sensory mist effects, ambient forest lighting & natural rock stones',
+        'Mesmerizing night view that drew devotees from across Angul'
+      ]
     },
     {
       year: '2019',
-      title: 'The Beginning',
-      tagline: 'A Spark of Devotion & Brotherhood',
-      description: 'STAR BOYS began its glorious journey with a small group of enthusiastic youths who came together with empty pockets but hearts full of devotion to install our first Maa Laxmi Puja mandap.',
+      title: 'Biodegradable Thermocol Artisan Idol',
+      tagline: 'Green Innovation Meets Sacred Craftsmanship',
+      description: 'A pioneer in sustainable festivities, where master artisans sculpted the breathtaking Maa Laxmi idol entirely out of eco-friendly, biodegradable thermocol, setting an inspiring milestone for nature-friendly puja.',
       image: 'assets/images/legacy/2019.jpg',
-      highlights: ['First sacred kalash sthapana', 'Modest bamboo & fabric pandal', '20 founding youth members']
+      highlights: [
+        '100% eco-friendly, biodegradable thermocol idol construction',
+        'Intricate filigree jaali and delicate floral relief artistry',
+        'Grand community Annadan seva serving thousands of pilgrims'
+      ]
     },
     {
       year: '2020',
-      title: 'The Beginning',
-      tagline: 'A Spark of Devotion & Brotherhood',
-      description: 'STAR BOYS began its glorious journey with a small group of enthusiastic youths who came together with empty pockets but hearts full of devotion to install our first Maa Laxmi Puja mandap.',
+      title: 'Chandi Medha — Silver Filigree Splendor',
+      tagline: 'Unbroken Devotion in Quiet Times',
+      description: 'Adorning Maa Laxmi with the resplendent Chandi Medha (intricate silver filigree tableaus), upholding centuries-old Odia silver art while performing disciplined, soulful Vedic rituals with prayers for global healing.',
       image: 'assets/images/legacy/2020.jpg',
-      highlights: ['First sacred kalash sthapana', 'Modest bamboo & fabric pandal', '20 founding youth members']
+      highlights: [
+        'Shimmering Cuttack-style Chandi Medha (silver filigree) backdrop',
+        'Unbroken sacred ghee lamp rituals and prayers for universal health',
+        'Digital live darshan broadcast to devotee families worldwide'
+      ]
     },
     {
       year: '2021',
-      title: 'The Beginning',
-      tagline: 'A Spark of Devotion & Brotherhood',
-      description: 'STAR BOYS began its glorious journey with a small group of enthusiastic youths who came together with empty pockets but hearts full of devotion to install our first Maa Laxmi Puja mandap.',
+      title: 'Chandi Medha — Silver Grace & Renewal',
+      tagline: 'Radiance of Hope & Sacred Silver',
+      description: 'Continuing the divine Chandi Medha legacy with sparkling silver ornamentation and filigree aureoles, welcoming the return of festive cheer, heartfelt pushpanjali, and deep brotherhood across School Sahi.',
       image: 'assets/images/legacy/2021.jpg',
-      highlights: ['First sacred kalash sthapana', 'Modest bamboo & fabric pandal', '20 founding youth members']
+      highlights: [
+        'Elaborate Chandi Medha silver filigree crown and throne backdrop',
+        'Solemn Vedic Kalash Sthapana & resonant evening conch blowing',
+        'Reunion of community volunteers with renewed festive spirit'
+      ]
     },
     {
       year: '2022',
-      title: 'Growing Together',
-      tagline: 'Community Embraces the Vision',
-      description: 'Over the years, the celebration expanded with overwhelming love and participation from the entire neighborhood. Grand lighting gates and traditional bhajan nights were introduced.',
+      title: 'Raja Darbar — Royal Imperial Court',
+      tagline: 'Opulence, Royalty & Divine Majesty',
+      description: 'A majestic recreation of a King’s Royal Court (Raja Darbar), featuring opulent palace arches, gilded pillars, and rich velvet canopies centered on a breathtakingly beautiful Maa Laxmi idol reigning with supreme grace.',
       image: 'assets/images/legacy/2022.jpg',
-      highlights: ['First decorative illuminated gate', 'Community Anna Prasad distribution', 'Folk dance & Odissi night']
+      highlights: [
+        'Grand Raja Darbar theme with royal palace architecture & arches',
+        'Exquisitely crafted, life-like Maa Laxmi idol in royal silk and gems',
+        'Cultural evening extravaganza with classical Odissi recitals'
+      ]
     },
     {
       year: '2023',
-      title: 'A New Chapter',
-      tagline: 'Artistic Excellence & Social Impact',
-      description: 'STAR BOYS scaled new heights with magnificent architectural pandal replicas, introducing social blood donation camps, blanket drives, and vibrant inter-school cultural contests.',
+      title: 'Dry Fruits Artisan Idol',
+      tagline: 'A Miracle of Nature’s Bountiful Harvest',
+      description: 'An awe-inspiring artistic marvel where the holy idol and sanctum ornaments of Maa Laxmi were intricately hand-crafted using thousands of dry fruits—almonds, cashews, walnuts, and raisins—symbolizing the Mother of abundant nourishment.',
       image: 'assets/images/legacy/2023.jpg',
-      highlights: ['Theme-based eco-friendly idol', 'Annual charity & blood drive launch', '5-day mega festival format']
+      highlights: [
+        'Unique divine idol sculpted completely from premium dry fruits',
+        'Extraordinary attention to intricate anatomical & jewel detailing',
+        'Massive footfall of amazed devotees and extensive media acclaim'
+      ]
     },
     {
       year: '2024',
-      title: 'Together Through Challenges',
-      tagline: 'Devotion Unbroken by Adversity',
-      description: 'Even during challenging global times, the flame of faith and brotherhood burned bright. We conducted disciplined rituals with live broadcasts and delivered prasad to hundreds of doorsteps.',
+      title: 'Plant-Based Biodegradable Thermocol Pandal',
+      tagline: 'Ecological Devotion for a Greener Tomorrow',
+      description: 'Championing green spirituality with an organic, plant-based biodegradable thermocol structure, blending cutting-edge eco-architecture with glorious traditional craftsmanship to honor Mother Earth.',
       image: 'assets/images/legacy/2024.jpg',
-      highlights: ['Digital live darshan for devotees', 'Doorstep prasad delivery seva', 'Essential food relief distribution']
+      highlights: [
+        'Advanced 100% plant-derived biodegradable thermocol architecture',
+        'Dazzling energy-efficient LED light symphony & midnight Maha Aarti',
+        'Serving over 10,000 devotees warm Mahaprasad and sweet Kheeri'
+      ]
     },
     {
       year: '2025',
-      title: 'A Celebration of Tradition',
-      tagline: 'Passing the Torch to New Generations',
-      description: 'New energetic youths joined hands with veteran founders, blending modern digital creativity with sacred time-honored rituals, creating our most magnificent golden idol showcase yet.',
+      title: 'Mystic Jungle View Pandal',
+      tagline: 'Sacred Wilderness & Harmony of Life',
+      description: 'An immersive deep jungle sanctuary theme adorned with lush living flora, towering ancient canopies, cascading waters, and forest creatures, celebrating Maa Laxmi as the divine protector of nature and all living beings.',
       image: 'assets/images/legacy/2025.jpg',
-      highlights: ['30-ft Grand Golden Temple Facade', 'Symphonic Bhajan & Light spectacle', 'Over 12,000 visitors in 4 days']
+      highlights: [
+        'Immersive natural jungle view with wild foliage & bird ambient sounds',
+        'Lifelike fauna sculptures honoring wildlife and sacred nature',
+        'Over 15,000 pilgrims visiting the illuminated forest sanctum'
+      ]
     },
     {
       year: '2026',
-      title: 'The Journey Continues',
-      tagline: '16 Years of Unmatched Glory',
-      description: 'STAR BOYS steps into 2026 with unyielding faith, lifelong friendship, rich cultural pride, and renewed commitment to make this year’s Laxmi Puja the most spiritually uplifting milestone yet.',
-      image: 'assets/images/legacy/2026.jpg',
-      highlights: ['Grand 16-Year Celebration Pandal', 'Digital Heritage Archiving', 'Expanded Youth & Women Cultural Wings']
+      title: '23rd Annual Grand Celebration',
+      tagline: 'Grand Surprise Theme — Revealing Soon!',
+      description: 'STAR BOYS is preparing for our most monumental celebration yet on October 25, 2026! Our grand artistic theme and surprise innovation will be unveiled soon to welcome Maa Laxmi with unprecedented splendor.',
+      image: '',
+      highlights: [
+        'Magnificent 23rd Year milestone celebration in School Sahi',
+        'Grand surprise pandal theme & divine idol concept revealing soon',
+        'Special community Mahaprasad seva & mega cultural nights'
+      ]
     }
   ];
 
@@ -196,67 +252,95 @@ export class PujaDataService {
      ========================================================================= */
   readonly legacyMemories: LegacyMemory[] = [
     {
-      id: 'mem-1',
-      year: '2010',
-      title: 'The Humble First Darshan',
-      image: 'assets/images/legacy/01d388ee-917b-456f-9a9f-8562dc2370d7.jpg',
-      caption: 'The founding members performing the inaugural Maha Aarti with clay diyas.'
+      id: 'mem-2013',
+      year: '2013',
+      title: 'Uttarakhand Flood Tribute',
+      image: 'assets/images/legacy/2013.jpg',
+      caption: 'Moving tribute depicting Himalayan peaks, flood waters, and divine protection during the Uttarakhand deluge.'
     },
     {
-      id: 'mem-2',
-      year: '2019',
-      title: 'First Mega Prasad Seva',
-      image: 'assets/images/legacy/acc03467-b19a-4ea5-a1a2-464648f1a2ce.jpg',
-      caption: 'Serving thousands of devotees hot Khichdi and Kheer prasad with pure joy.'
+      id: 'mem-2014',
+      year: '2014',
+      title: 'Lord Vishnu’s Dashavatara',
+      image: 'assets/images/legacy/2014.jpg',
+      caption: 'The ten sacred cosmic incarnations of Bhagwan Vishnu encircling the radiant lotus altar of Maa Laxmi.'
     },
     {
-      id: 'mem-3',
+      id: 'mem-2015',
+      year: '2015',
+      title: 'Gaja Laxmi Elephant Worship',
+      image: 'assets/images/legacy/2015.jpg',
+      caption: 'White celestial elephants offering sacred kalash abhishekam to the Mother on her blooming lotus throne.'
+    },
+    {
+      id: 'mem-2016',
       year: '2016',
-      title: 'Artisans Crafting the Pandal',
-      image: 'assets/images/legacy/f4c8d765-e3ff-4d9d-91a2-4f6925507879.jpg',
-      caption: 'Master artisans creating intricate Odia wooden filigree and golden arches.'
+      title: 'Sanatana Shrines & Tirthas',
+      image: 'assets/images/legacy/2016.jpg',
+      caption: 'Magnificent architectural replicas of revered Hindu holy shrines and Char Dham pilgrimage tirthas.'
     },
     {
-      id: 'mem-4',
+      id: 'mem-2017',
+      year: '2017',
+      title: 'Sacred Laxmi Purana Lore',
+      image: 'assets/images/legacy/2017.jpg',
+      caption: 'Celebrating Mahapurusha Balaram Das’s timeless Odia classic of divine love, equality, and compassion.'
+    },
+    {
+      id: 'mem-2018',
+      year: '2018',
+      title: 'Open Mountain & Waterfalls',
+      image: 'assets/images/legacy/2018.jpg',
+      caption: 'Breathtaking open-air landscape pandal featuring living waterfalls and rocky mountain cliff formations.'
+    },
+    {
+      id: 'mem-2019',
+      year: '2019',
+      title: 'Biodegradable Thermocol Idol',
+      image: 'assets/images/legacy/2019.jpg',
+      caption: 'Pioneering green festival art with the holy idol handcrafted entirely from biodegradable thermocol.'
+    },
+    {
+      id: 'mem-2020',
       year: '2020',
-      title: 'Quiet Faith & Eternal Bond',
-      image: 'assets/images/legacy/7f48c716-63ad-48fa-b988-21a34776a39f.jpg',
-      caption: 'Maintaining the uninterrupted sacred diya rituals with heartfelt prayers for global healing.'
+      title: 'Chandi Medha Silver Filigree',
+      image: 'assets/images/legacy/2020.jpg',
+      caption: 'Resplendent Cuttack-style silver filigree backdrop shining bright with uninterrupted prayer rituals.'
     },
     {
-      id: 'mem-5',
+      id: 'mem-2021',
+      year: '2021',
+      title: 'Chandi Medha Festive Renewal',
+      image: 'assets/images/legacy/2021.jpg',
+      caption: 'Continuing the shimmering silver filigree tradition with joyful community pushpanjali and devotion.'
+    },
+    {
+      id: 'mem-2022',
+      year: '2022',
+      title: 'Raja Darbar Imperial Court',
+      image: 'assets/images/legacy/2022.jpg',
+      caption: 'Royal palace court architecture with opulent arches and an exquisitely sculpted divine Maa Laxmi idol.'
+    },
+    {
+      id: 'mem-2023',
+      year: '2023',
+      title: 'Dry Fruits Artisan Miracle',
+      image: 'assets/images/legacy/2023.jpg',
+      caption: 'An awe-inspiring idol intricately sculpted from thousands of almonds, cashews, walnuts, and raisins.'
+    },
+    {
+      id: 'mem-2024',
       year: '2024',
-      title: 'Golden Dazzle & Night Aarti',
-      image: 'assets/images/legacy/0ceaa5a6-e880-4845-9ff4-9b0e58249957.jpg',
-      caption: 'The majestic night glow of Maa Laxmi surrounded by thousand glittering diyas.'
+      title: 'Plant-Based Thermocol Pandal',
+      image: 'assets/images/legacy/2024.jpg',
+      caption: '100% organic plant-based biodegradable thermocol pandal glowing brilliantly on Kumar Purnima night.'
     },
     {
-      id: 'mem-6',
+      id: 'mem-2025',
       year: '2025',
-      title: 'Youth Brigade in Action',
-      image: 'assets/images/legacy/3c931b91-3fea-4660-af50-f9b29ee1b491.jpg',
-      caption: 'STAR BOYS members united in traditional attire during the grand pushpanjali.'
-    },
-    {
-      id: 'mem-7',
-      year: '2024',
-      title: 'Golden Dazzle & Night Aarti',
-      image: 'assets/images/legacy/00e10f27-3f38-4122-836b-61a5987db7de.jpg',
-      caption: 'The majestic night glow of Maa Laxmi surrounded by thousand glittering diyas.'
-    },
-    {
-      id: 'mem-8',
-      year: '2024',
-      title: 'Golden Dazzle & Night Aarti',
-      image: 'assets/images/legacy/a0a9b515-8d96-4e48-bbef-5c2b335f6095.jpg',
-      caption: 'The majestic night glow of Maa Laxmi surrounded by thousand glittering diyas.'
-    },
-    {
-      id: 'mem-9',
-      year: '2024',
-      title: 'Golden Dazzle & Night Aarti',
-      image: 'assets/images/legacy/58e4643b-b86b-4972-94d9-57f6869919f7.jpg',
-      caption: 'The majestic night glow of Maa Laxmi surrounded by thousand glittering diyas.'
+      title: 'Mystic Jungle View Darshan',
+      image: 'assets/images/legacy/2025.jpg',
+      caption: 'Enchanting verdant forest sanctuary with lush living flora, wildlife motifs, and divine Maa Laxmi.'
     }
   ];
 
@@ -337,93 +421,93 @@ export class PujaDataService {
   readonly pastEvents: PastEvent[] = [
     {
       year: '2025',
-      title: 'Laxmi Puja 2025: Swarna Mandap',
-      theme: 'Theme: Golden Temple of Devotion',
-      coverImage: 'assets/images/events/past-2025.jpg',
-      description: 'A breathtaking 4-day extravaganza featuring a 35-foot replica of the Konark Sun Temple sanctum and 14,000+ devotees.',
-      attendeesCount: '14,000+ Devotees',
-      highlightText: 'Grand Sandhya Aarti & Fireworks'
+      title: 'Laxmi Puja 2025: Mystic Jungle View',
+      theme: 'Theme: Jungle View & Sacred Wilderness Sanctuary',
+      coverImage: 'assets/images/legacy/2025.jpg',
+      description: 'An enchanting deep forest sanctuary bringing lush living flora, towering canopy trees, and wildlife motifs to the lotus feet of Maa Laxmi.',
+      attendeesCount: '15,000+ Devotees',
+      highlightText: 'Mystic Jungle Pandal & Grand Aarti'
     },
     {
       year: '2024',
-      title: 'Laxmi Puja 2024: Lotus Divine',
-      theme: 'Theme: Sahasradala Padma',
-      coverImage: 'assets/images/events/past-2024.jpg',
-      description: 'An eco-friendly pandal handcrafted from bamboo, jute, and thousands of fresh pink lotus blooms from Chilika.',
-      attendeesCount: '12,500+ Devotees',
-      highlightText: 'Classical Odissi Dance Recital'
+      title: 'Laxmi Puja 2024: Green Pandal Innovation',
+      theme: 'Theme: Plant-Based Biodegradable Thermocol',
+      coverImage: 'assets/images/legacy/2024.jpg',
+      description: 'A revolutionary green mandap sculpted completely from 100% plant-based biodegradable thermocol with glittering midnight lighting.',
+      attendeesCount: '13,500+ Devotees',
+      highlightText: 'Plant-Based Eco Architecture'
     },
     {
       year: '2023',
-      title: 'Laxmi Puja 2023: Vedic Glow',
-      theme: 'Theme: Ancient Vedic Chants',
-      coverImage: 'assets/images/events/past-2023.jpg',
-      description: 'Illuminated by over 5,000 brass lamps and mesmerizing light tunnels along the entire avenue.',
-      attendeesCount: '11,000+ Devotees',
-      highlightText: 'Mega Community Anna Seva'
+      title: 'Laxmi Puja 2023: Dry Fruits Miracle',
+      theme: 'Theme: Sacred Dry Fruits Artisan Idol',
+      coverImage: 'assets/images/legacy/2023.jpg',
+      description: 'A mesmerizing artistic feat where Maa Laxmi was sculpted using almonds, cashews, raisins, and walnuts to symbolize divine nourishment.',
+      attendeesCount: '12,000+ Devotees',
+      highlightText: 'Dry Fruits Idol & Anna Seva'
     },
     {
       year: '2022',
-      title: 'Laxmi Puja 2022: Reborn Spirit',
-      theme: 'Theme: Harmony & Unity',
-      coverImage: 'assets/images/events/past-2022.jpg',
-      description: 'A historic comeback after the pandemic with unprecedented fervor, devotional fervor, and massive youth participation.',
-      attendeesCount: '10,000+ Devotees',
-      highlightText: 'Folk Sambalpuri Night'
+      title: 'Laxmi Puja 2022: Royal Raja Darbar',
+      theme: 'Theme: Raja Darbar Palace Court',
+      coverImage: 'assets/images/legacy/2022.jpg',
+      description: 'A magnificent royal imperial court with grand golden arches and an extraordinarily beautiful idol commanding supreme reverence.',
+      attendeesCount: '11,000+ Devotees',
+      highlightText: 'Raja Darbar & Classical Odissi'
     }
   ];
 
   /* =========================================================================
-     8. PHOTO GALLERY (FILTERABLE CATEGORIES & YEARS)
+     8. PHOTO GALLERY (YEAR-WISE ARCHIVE: 2013 - 2025)
      ========================================================================= */
   readonly galleryItems: GalleryItem[] = [
-    // 2025 Photos
+    // 2025 Photos - Theme: Jungle View
     {
       id: 'gal-2025-1',
-      title: 'Divya Maa Laxmi Maha Darshan',
+      title: 'Mystic Jungle View — Divya Maa Laxmi Darshan',
       category: 'puja',
       categoryLabel: 'Puja & Rituals',
       image: 'assets/images/legacy/2025.jpg',
       year: '2025',
-      description: 'The sublime divine darshan of Maa Laxmi adorned in golden jewellery, silken saree, and fragrant lotus garlands at School Sahi.'
+      description: 'Enchanting deep jungle mandap adorned with lush greenery, living flora, and wildlife motifs, with Maa Laxmi blessing devotees as the divine protector of nature.'
     },
     {
       id: 'gal-2025-2',
-      title: 'Youth Brigade in Traditional Seva',
+      title: 'Youth Volunteers in Sacred Forest Sanctum',
       category: 'community',
       categoryLabel: 'Community & Seva',
       image: 'assets/images/legacy/3c931b91-3fea-4660-af50-f9b29ee1b491.jpg',
       year: '2025',
-      description: 'STAR BOYS youth volunteers uniting in festive traditional attire during the sacred Pushpanjali ritual.'
+      description: 'STAR BOYS youth volunteers gathered in festive traditional attire during the sacred Pushpanjali in the jungle-themed pandal.'
     },
 
-    // 2024 Photos
+    // 2024 Photos - Theme: Plant-Based Biodegradable Thermocol
     {
       id: 'gal-2024-1',
-      title: 'Golden Dazzle & Illuminated Pandal',
+      title: 'Plant-Based Biodegradable Thermocol Pandal',
       category: 'decoration',
       categoryLabel: 'Decoration & Lighting',
       image: 'assets/images/legacy/2024.jpg',
       year: '2024',
-      description: 'The breathtaking illuminated pandal architecture glowing across Ghantapada on Kumar Purnima night.'
+      description: 'Magnificent eco-friendly pandal architecture crafted entirely from plant-based, biodegradable thermocol glowing across Ghantapada on Kumar Purnima night.'
     },
     {
       id: 'gal-2024-2',
-      title: 'Maha Aarti with 1008 Sacred Diyas',
+      title: 'Maha Aarti of Plant-Based Thermocol Idol',
       category: 'puja',
       categoryLabel: 'Puja & Rituals',
       image: 'assets/images/legacy/00e10f27-3f38-4122-836b-61a5987db7de.jpg',
       year: '2024',
-      description: 'The celestial spectacle of head priests offering rhythmic Maha Aarti amidst resonant conch blowing.'
+      description: 'Celestial spectacle of priests offering rhythmic Maha Aarti with 1008 holy ghee lamps before the plant-based biodegradable thermocol idol.'
     },
     {
       id: 'gal-2024-3',
-      title: 'Cultural Odissi & Sambalpuri Night',
+      title: 'Cultural Night in Eco-Friendly Pandal',
       category: 'cultural',
       categoryLabel: 'Cultural Programs',
       image: 'assets/images/legacy/a0a9b515-8d96-4e48-bbef-5c2b335f6095.jpg',
       year: '2024',
-      description: 'Captivating cultural performances by talented artists celebrating the rich devotional heritage of Odisha.'
+      description: 'Captivating cultural performances and Odissi devotional recitals celebrating our eco-conscious green Laxmi Puja.'
     },
     {
       id: 'gal-2024-4',
@@ -432,7 +516,7 @@ export class PujaDataService {
       categoryLabel: 'Community & Seva',
       image: 'assets/images/legacy/58e4643b-b86b-4972-94d9-57f6869919f7.jpg',
       year: '2024',
-      description: 'Thousands of devotees from Talcher and nearby villages joining hands in heartfelt prayers for prosperity.'
+      description: 'Thousands of devotees from Talcher and neighboring villages offering flowers with folded hands, praying for peace and prosperity.'
     },
     {
       id: 'gal-2024-5',
@@ -441,166 +525,155 @@ export class PujaDataService {
       categoryLabel: 'Puja & Rituals',
       image: 'assets/images/legacy/0ceaa5a6-e880-4845-9ff4-9b0e58249957.jpg',
       year: '2024',
-      description: 'Mesmerizing midnight radiance of the altar illuminated by hundreds of ghee lamps and sacred chandan fragrance.'
+      description: 'Mesmerizing midnight radiance of the altar illuminated by earthen ghee lamps and the scent of sacred chandan.'
     },
 
-    // 2023 Photos
+    // 2023 Photos - Theme: Idol Made Up of Dry Fruits
     {
       id: 'gal-2023-1',
-      title: 'Silver Jubilee Arch & Visarjan Utsav',
+      title: 'Divine Idol Sculpted from Dry Fruits',
       category: 'memories',
       categoryLabel: 'Golden Memories',
       image: 'assets/images/legacy/2023.jpg',
       year: '2023',
-      description: 'Historic moments from the grand immersion procession celebrated with traditional Dulduli drums and flower showers.'
+      description: 'An extraordinary artisan marvel where the divine idol and ornaments of Maa Laxmi were painstakingly handcrafted using thousands of premium dry fruits—almonds, cashews, raisins, and walnuts.'
     },
 
-    // 2022 Photos
+    // 2022 Photos - Theme: Raja Darbar
     {
       id: 'gal-2022-1',
-      title: 'Grand Lotus Sanctum & Floral Altar',
+      title: 'Raja Darbar — Royal Imperial Palace Court',
       category: 'decoration',
       categoryLabel: 'Decoration & Lighting',
       image: 'assets/images/legacy/2022.jpg',
       year: '2022',
-      description: 'Majestic floral decoration sculpted with thousands of fresh marigold and lotus blossoms by master florists.'
+      description: 'Opulent Raja Darbar theme featuring gilded royal arches, velvet drapes, and an exquisitely sculpted Maa Laxmi idol reigning with supreme grace.'
     },
 
-    // 2021 Photos
+    // 2021 Photos - Theme: Chandi Medha
     {
       id: 'gal-2021-1',
-      title: 'Sacred Kalash Sthapana & Sankalpa',
+      title: 'Chandi Medha — Sparkling Silver Filigree Splendor',
       category: 'puja',
       categoryLabel: 'Puja & Rituals',
       image: 'assets/images/legacy/2021.jpg',
       year: '2021',
-      description: 'The auspicious invocation of divine presence and Vedic chanting at the beginning of the annual festival.'
+      description: 'Grand Cuttack-style Chandi Medha silver filigree tableau framing Maa Laxmi, bringing divine silver radiance and festive renewal.'
     },
 
-    // 2020 Photos
+    // 2020 Photos - Theme: Chandi Medha
     {
       id: 'gal-2020-1',
-      title: 'Unbroken Devotion & Quiet Diya Seva',
+      title: 'Chandi Medha — Pure Silver Filigree Altar',
       category: 'puja',
       categoryLabel: 'Puja & Rituals',
       image: 'assets/images/legacy/2020.jpg',
       year: '2020',
-      description: 'Sacred rituals continued with unwavering faith, offering prayers for universal health and global well-being.'
+      description: 'Traditional Chandi Medha silver filigree backdrop shining bright amidst disciplined rituals and earnest prayers for global healing.'
     },
     {
       id: 'gal-2020-2',
-      title: 'Brotherhood & Faith in Adversity',
+      title: 'Quiet Faith & Unbroken Brotherhood',
       category: 'memories',
       categoryLabel: 'Golden Memories',
       image: 'assets/images/legacy/7f48c716-63ad-48fa-b988-21a34776a39f.jpg',
       year: '2020',
-      description: 'Dedicated committee members upholding the sacred flame and uninterrupted puja traditions.'
+      description: 'Dedicated STAR BOYS committee members upholding the sacred flame and uninterrupted puja rituals.'
     },
 
-    // 2019 Photos
+    // 2019 Photos - Theme: Bio-Degradable Thermocol Idol
     {
       id: 'gal-2019-1',
-      title: 'Mega Annadan & Mahaprasad Feast',
+      title: 'Biodegradable Thermocol Eco-Friendly Idol',
       category: 'community',
       categoryLabel: 'Community & Seva',
       image: 'assets/images/legacy/2019.jpg',
       year: '2019',
-      description: 'Distributing steaming hot Khichdi and Kheeri Mahaprasad to thousands of visiting pilgrims with warm love.'
+      description: 'A pioneering green initiative featuring the divine Maa Laxmi idol and intricate sanctum filigree sculpted entirely from biodegradable thermocol.'
     },
     {
       id: 'gal-2019-2',
-      title: 'Volunteers Serving with Warmth',
+      title: 'Mega Annadan & Mahaprasad Seva',
       category: 'community',
       categoryLabel: 'Community & Seva',
       image: 'assets/images/legacy/acc03467-b19a-4ea5-a1a2-464648f1a2ce.jpg',
       year: '2019',
-      description: 'STAR BOYS members working tirelessly through day and night in the seva pandal.'
+      description: 'STAR BOYS volunteers distributing steaming hot Khichdi and Kheeri Mahaprasad to thousands of visiting pilgrims with warm love.'
     },
 
-    // 2018 Photos
+    // 2018 Photos - Theme: Open Pandal Mountain and Waterfall
     {
       id: 'gal-2018-1',
-      title: 'Melodious Bhajan Sandhya Under Sky',
+      title: 'Open Pandal with Rocky Mountains & Waterfalls',
       category: 'cultural',
       categoryLabel: 'Cultural Programs',
       image: 'assets/images/legacy/2018.jpg',
       year: '2018',
-      description: 'Soul-stirring Odia Janana and devotional music sessions uniting the entire community in spiritual ecstasy.'
+      description: 'Breathtaking open-air landscape mandap featuring natural mountain cliff formations, mist, and living cascading waterfalls flowing around the lotus feet of Maa Laxmi.'
     },
 
-    // 2017 Photos
+    // 2017 Photos - Theme: Laxmi Purana
     {
       id: 'gal-2017-1',
-      title: 'Illuminated School Sahi Festival Ground',
+      title: 'Sacred Tale of Balaram Das’s Laxmi Purana',
       category: 'decoration',
       categoryLabel: 'Decoration & Lighting',
       image: 'assets/images/legacy/2017.jpg',
       year: '2017',
-      description: 'Dynamic light displays and artistic toranas transforming School Sahi into a celestial realm.'
+      description: 'Thematic pandal depicting the sacred Odia classic Laxmi Purana, honoring the Mother’s supreme grace, righteousness, and universal equality.'
     },
 
-    // 2016 Photos
+    // 2016 Photos - Theme: Famous Places in Hindu Religion
     {
       id: 'gal-2016-1',
-      title: 'Artisans Crafting Traditional Mandap',
+      title: 'Famous Places & Holy Shrines in Hindu Religion',
       category: 'decoration',
       categoryLabel: 'Decoration & Lighting',
       image: 'assets/images/legacy/2016.jpg',
       year: '2016',
-      description: 'Master artisans weaving intricate Odia wooden motifs and filigree mandap designs.'
+      description: 'Architectural masterpiece uniting sacred Hindu tirthas and holy Char Dham shrines at School Sahi to celebrate Sanatana heritage.'
     },
     {
       id: 'gal-2016-2',
-      title: 'Traditional Filigree Mandap Elegance',
+      title: 'Intricate Temple Spire & Handcrafted Motifs',
       category: 'memories',
       categoryLabel: 'Golden Memories',
       image: 'assets/images/legacy/f4c8d765-e3ff-4d9d-91a2-4f6925507879.jpg',
       year: '2016',
-      description: 'Classic photograph of the handcrafted royal pandal structure built with devotion.'
+      description: 'Master artisans handcrafting intricate wooden motifs, temple spires, and filigree mandap designs.'
     },
 
-    // 2015 Photos
+    // 2015 Photos - Theme: Elephants Worshipping Laxmi (Gaja Laxmi)
     {
       id: 'gal-2015-1',
-      title: 'Divine Pushpanjali with Conch Echoes',
+      title: 'Gaja Laxmi — Royal Elephants Worshipping the Mother',
       category: 'puja',
       categoryLabel: 'Puja & Rituals',
       image: 'assets/images/legacy/2015.jpg',
       year: '2015',
-      description: 'Devotees offering sacred bilva patra and flowers to the Mother amidst blowing of conches.'
+      description: 'Splendid Gaja Laxmi swaroop with royal white celestial elephants showering sacred holy waters over Maa Laxmi on her lotus throne.'
     },
 
-    // 2014 Photos
+    // 2014 Photos - Theme: God Vishnu's Dashavatara
     {
       id: 'gal-2014-1',
-      title: 'Community Unity & STAR BOYS Legacy',
+      title: 'Bhagwan Vishnu’s Sacred Dashavatara',
       category: 'memories',
       categoryLabel: 'Golden Memories',
       image: 'assets/images/legacy/2014.jpg',
       year: '2014',
-      description: 'A timeless snapshot of village elders and youth collaborating for the grand Laxmi Puja.'
+      description: 'Cosmic pandal depicting the ten holy incarnations (Dashavatara) of Lord Vishnu surrounding the radiant divine Mother Maa Laxmi.'
     },
 
-    // 2013 Photos
+    // 2013 Photos - Theme: Uttarakhand Flood Relief
     {
       id: 'gal-2013-1',
-      title: 'Historic 10th Year Grand Milestone',
+      title: 'Uttarakhand Flood Relief & Divine Protection',
       category: 'memories',
       categoryLabel: 'Golden Memories',
       image: 'assets/images/legacy/2013.jpg',
       year: '2013',
-      description: 'Celebrating 10 glorious years of united devotion, community bonding, and seva at Ghantapada.'
-    },
-
-    // 2010 Photos
-    {
-      id: 'gal-2010-1',
-      title: 'The Sacred Humble First Darshan',
-      category: 'memories',
-      categoryLabel: 'Golden Memories',
-      image: 'assets/images/legacy/01d388ee-917b-456f-9a9f-8562dc2370d7.jpg',
-      year: '2010',
-      description: 'The foundation era darshan where it all began with pure devotion and community spirit.'
+      description: 'A moving tribute pandal depicting Kedarnath mountains, flood deluge, rescue helicopters, and Lord Shiva, with Maa Laxmi standing as the savior of all.'
     }
   ];
 

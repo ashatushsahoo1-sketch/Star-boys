@@ -2,18 +2,17 @@ import { Component, signal, computed, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PujaDataService } from '../../../services/puja-data.service';
 import { LightboxService } from '../../../services/lightbox.service';
-import { GalleryItem, GalleryCategory } from '../../../models/gallery.model';
+import { GalleryItem } from '../../../models/gallery.model';
 import { DecorativeDividerComponent } from '../../../shared/decorative-divider/decorative-divider.component';
-
-interface FilterOption {
-  id: GalleryCategory;
-  label: string;
-  icon: string;
-}
 
 interface YearFilterOption {
   year: string;
   count: number;
+}
+
+interface YearGroup {
+  year: string;
+  items: GalleryItem[];
 }
 
 @Component({
@@ -28,50 +27,56 @@ export class PhotoGalleryComponent {
   private lightbox = inject(LightboxService);
 
   readonly allItems = this.pujaData.getGalleryItems();
-  readonly selectedCategory = signal<GalleryCategory>('all');
   readonly selectedYear = signal<string>('all');
-
-  readonly categories: FilterOption[] = [
-    { id: 'all', label: 'All Photos', icon: 'fa-solid fa-border-all' },
-    { id: 'puja', label: 'Puja & Rituals', icon: 'fa-solid fa-om' },
-    { id: 'decoration', label: 'Decoration & Pandal', icon: 'fa-solid fa-wand-magic-sparkles' },
-    { id: 'cultural', label: 'Cultural Nights', icon: 'fa-solid fa-masks-theater' },
-    { id: 'community', label: 'Community & Seva', icon: 'fa-solid fa-hands-holding-heart' },
-    { id: 'memories', label: 'Golden Memories', icon: 'fa-solid fa-film' }
-  ];
 
   readonly availableYears = computed<YearFilterOption[]>(() => {
     const yearMap = new Map<string, number>();
     for (const item of this.allItems) {
       yearMap.set(item.year, (yearMap.get(item.year) || 0) + 1);
     }
-    const sortedYears = Array.from(yearMap.keys()).sort((a, b) => parseInt(b, 10) - parseInt(a, 10));
+
+    const allYearsList: string[] = [];
+    for (let y = 2004; y <= 2026; y++) {
+      allYearsList.push(y.toString());
+    }
+
     return [
       { year: 'all', count: this.allItems.length },
-      ...sortedYears.map(y => ({ year: y, count: yearMap.get(y) || 0 }))
+      ...allYearsList.map(y => ({ year: y, count: yearMap.get(y) || 0 }))
     ];
   });
 
   readonly filteredItems = computed<GalleryItem[]>(() => {
-    const cat = this.selectedCategory();
     const yr = this.selectedYear();
-    return this.allItems.filter(item => {
-      const matchCat = cat === 'all' || item.category === cat;
-      const matchYear = yr === 'all' || item.year === yr;
-      return matchCat && matchYear;
-    });
+    if (yr === 'all') {
+      return this.allItems;
+    }
+    return this.allItems.filter(item => item.year === yr);
   });
 
-  setCategory(category: GalleryCategory): void {
-    this.selectedCategory.set(category);
-  }
+  readonly yearGroups = computed<YearGroup[]>(() => {
+    const items = this.filteredItems();
+    const map = new Map<string, GalleryItem[]>();
+    for (const item of items) {
+      if (!map.has(item.year)) {
+        map.set(item.year, []);
+      }
+      map.get(item.year)!.push(item);
+    }
+
+    // Ascending order (2004 to 2026)
+    const sortedYears = Array.from(map.keys()).sort((a, b) => parseInt(a, 10) - parseInt(b, 10));
+    return sortedYears.map(year => ({
+      year,
+      items: map.get(year)!
+    }));
+  });
 
   setYear(year: string): void {
     this.selectedYear.set(year);
   }
 
   resetFilters(): void {
-    this.selectedCategory.set('all');
     this.selectedYear.set('all');
   }
 
@@ -93,3 +98,4 @@ export class PhotoGalleryComponent {
     }, list);
   }
 }
+

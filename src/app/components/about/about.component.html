@@ -18,7 +18,7 @@
           <div class="frame-border-glow"></div>
           <div class="visual-img-wrapper">
             <div class="devotional-art-card">
-              <!-- Sacred Devotional Star Frame Motif (Star Boys Ashta Lakshmi Star) -->
+              <!-- Sacred Devotional Star Frame Motif (Star Boys Pentagon Star) -->
               <div class="art-star-bg">
                 <svg class="art-star-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <defs>
@@ -47,33 +47,31 @@
                   <!-- Ambient Star Aura -->
                   <circle cx="200" cy="200" r="170" fill="url(#starCenterAura)" />
 
-                  <!-- Rotating Outer Dashed Star / Star of Lakshmi (Square 1 & Square 2) -->
+                  <!-- Rotating Outer Dashed Pentagon Ring -->
                   <g class="rotating-star-outer">
-                    <rect x="42" y="42" width="316" height="316" rx="16" 
-                          stroke="url(#starGoldGrad1)" stroke-width="1.5" stroke-dasharray="6 6" fill="none" opacity="0.45"/>
-                    <rect x="42" y="42" width="316" height="316" rx="16" transform="rotate(45 200 200)"
-                          stroke="url(#starGoldGrad1)" stroke-width="1.5" stroke-dasharray="6 6" fill="none" opacity="0.45"/>
+                    <polygon points="200,30 361.7,147.5 299.9,337.5 100.1,337.5 38.3,147.5"
+                             stroke="url(#starGoldGrad1)" stroke-width="1.5" stroke-dasharray="6 6" fill="none" opacity="0.45"/>
+                    <polygon points="200,30 361.7,147.5 299.9,337.5 100.1,337.5 38.3,147.5"
+                             stroke="url(#starGoldGrad1)" stroke-width="1.5" stroke-dasharray="6 6" fill="none" opacity="0.3"
+                             transform="rotate(36 200 200)"/>
                   </g>
 
-                  <!-- Intermediate Glowing 8-Point Star Outline -->
+                  <!-- Glowing 5-Point Pentagram Star (Outer) -->
                   <g class="pulsing-star-mid">
-                    <polygon points="200,20 247.8,84.5 327.3,72.7 315.5,152.2 380,200 315.5,247.8 327.3,327.3 247.8,315.5 200,380 152.2,315.5 72.7,327.3 84.5,247.8 20,200 84.5,152.2 72.7,72.7 152.2,84.5"
-                             stroke="url(#starGoldGrad1)" stroke-width="1.8" fill="rgba(245, 197, 66, 0.03)" filter="url(#starGlow)" />
+                    <polygon points="200,30 241.1,143.4 361.7,147.5 266.6,221.6 299.9,337.5 200,270 100.1,337.5 133.4,221.6 38.3,147.5 158.9,143.4"
+                             stroke="url(#starGoldGrad1)" stroke-width="1.8" fill="rgba(245, 197, 66, 0.04)" filter="url(#starGlow)" />
                     
-                    <!-- Inner Star Accent Ring -->
-                    <polygon points="200,45 242.1,98.4 309.6,90.4 301.6,157.9 355,200 301.6,242.1 309.6,309.6 242.1,301.6 200,355 157.9,301.6 90.4,309.6 98.4,242.1 45,200 98.4,157.9 90.4,90.4 157.9,98.4"
+                    <!-- Inner Dashed Accent Pentagram -->
+                    <polygon points="200,60 234.1,153.1 333.2,156.7 255.2,217.9 282.3,313.3 200,258 117.7,313.3 144.8,217.9 66.8,156.7 165.9,153.1"
                              stroke="url(#starGoldGrad2)" stroke-width="1.2" stroke-dasharray="3 3" fill="none" opacity="0.75" />
                   </g>
 
-                  <!-- Sparkle Nodes on Star Vertices -->
-                  <circle cx="200" cy="20" r="3" fill="#FFE58F" />
-                  <circle cx="380" cy="200" r="3" fill="#FFE58F" />
-                  <circle cx="200" cy="380" r="3" fill="#FFE58F" />
-                  <circle cx="20" cy="200" r="3" fill="#FFE58F" />
-                  <circle cx="327.3" cy="72.7" r="2.5" fill="#F5C542" />
-                  <circle cx="327.3" cy="327.3" r="2.5" fill="#F5C542" />
-                  <circle cx="72.7" cy="327.3" r="2.5" fill="#F5C542" />
-                  <circle cx="72.7" cy="72.7" r="2.5" fill="#F5C542" />
+                  <!-- Sparkle Nodes on 5 Star Tips -->
+                  <circle cx="200" cy="30" r="3.5" fill="#FFE58F" />
+                  <circle cx="361.7" cy="147.5" r="3" fill="#F5C542" />
+                  <circle cx="299.9" cy="337.5" r="3" fill="#FFE58F" />
+                  <circle cx="100.1" cy="337.5" r="3" fill="#F5C542" />
+                  <circle cx="38.3" cy="147.5" r="3" fill="#FFE58F" />
                 </svg>
               </div>
               <div class="art-content">
@@ -84,7 +82,7 @@
                 <h3 class="art-title font-cinzel">STAR BOYS</h3>
                 <p class="art-tagline font-decorative">Maa Laxmi Puja Committee</p>
                 <div class="art-badge">
-                  <span>Est. {{ about.stats[0].count }}</span>
+                  <span>Since 2004</span>
                 </div>
               </div>
             </div>

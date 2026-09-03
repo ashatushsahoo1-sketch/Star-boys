@@ -103,76 +103,24 @@
       color: #f5c542;
     }
   }
-}
 
-/* Category Filter Tabs */
-.filter-tabs-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
+  &.empty-year {
+    opacity: 0.7;
 
-  .filter-tabs-scroll {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    justify-content: center;
-    background: rgba(35, 14, 39, 0.7);
-    padding: 0.5rem;
-    border-radius: 50px;
-    border: 1px solid rgba(245, 197, 66, 0.2);
-    backdrop-filter: blur(10px);
-
-    @media (max-width: 768px) {
-      border-radius: 20px;
-      padding: 0.5rem;
-      gap: 0.5rem;
+    .year-count-badge {
+      background: rgba(255, 255, 255, 0.06);
+      color: rgba(255, 255, 255, 0.4);
     }
-  }
-}
 
-.filter-pill-btn {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.65rem 1.4rem;
-  border-radius: 30px;
-  background: transparent;
-  border: 1px solid transparent;
-  color: var(--text-muted);
-  font-family: var(--font-heading);
-  font-size: 0.85rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-
-  @media (max-width: 576px) {
-    padding: 0.5rem 0.9rem;
-    font-size: 0.78rem;
-  }
-
-  i {
-    font-size: 0.9rem;
-    transition: transform 0.2s ease;
-  }
-
-  &:hover {
-    color: var(--gold-light);
-    background: rgba(245, 197, 66, 0.1);
-
-    i {
-      transform: scale(1.15);
+    &:hover {
+      opacity: 1;
+      .year-count-badge {
+        color: #fff;
+      }
     }
-  }
 
-  &.active {
-    color: #1a0815;
-    background: linear-gradient(135deg, #ffe8a3 0%, #f5c542 100%);
-    box-shadow: 0 4px 15px rgba(245, 197, 66, 0.35);
-    font-weight: 700;
-
-    i {
-      color: #1a0815;
+    &.active {
+      opacity: 1;
     }
   }
 }
@@ -224,6 +172,81 @@
       border-color: var(--gold);
       color: var(--gold-light);
     }
+  }
+}
+
+/* Year Wise Groups Layout */
+.year-groups-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.year-section {
+  position: relative;
+}
+
+.year-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, rgba(245, 197, 66, 0.14) 0%, rgba(26, 8, 21, 0.75) 70%, transparent 100%);
+  border-left: 4px solid var(--gold);
+  border-radius: 8px;
+  border-top: 1px solid rgba(245, 197, 66, 0.2);
+  border-bottom: 1px solid rgba(245, 197, 66, 0.2);
+  backdrop-filter: blur(8px);
+
+  @media (max-width: 576px) {
+    padding: 0.6rem 0.9rem;
+  }
+
+  .year-badge-title {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+
+    i {
+      font-size: 1.1rem;
+    }
+
+    .year-number {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--gold-light);
+      letter-spacing: 0.05em;
+    }
+
+    .year-title-sep {
+      color: rgba(245, 197, 66, 0.35);
+      font-size: 0.9rem;
+    }
+
+    .year-label {
+      font-family: var(--font-heading);
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.75);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+
+      @media (max-width: 480px) {
+        display: none;
+      }
+    }
+  }
+
+  .year-photo-count {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--gold-light);
+    background: rgba(245, 197, 66, 0.15);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    border: 1px solid rgba(245, 197, 66, 0.25);
   }
 }
 

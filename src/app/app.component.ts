@@ -8,7 +8,6 @@ import { LegacyTimelineComponent } from './components/legacy/legacy-timeline/leg
 import { LegacyMemoriesComponent } from './components/legacy/legacy-memories/legacy-memories.component';
 import { UpcomingEventComponent } from './components/events/upcoming-event/upcoming-event.component';
 import { EventScheduleComponent } from './components/events/event-schedule/event-schedule.component';
-import { PastEventsComponent } from './components/events/past-events/past-events.component';
 import { PhotoGalleryComponent } from './components/gallery/photo-gallery/photo-gallery.component';
 import { CommitteeComponent } from './components/committee/committee.component';
 import { OurFamilyComponent } from './components/our-family/our-family.component';
@@ -31,7 +30,6 @@ import { FooterComponent } from './components/footer/footer.component';
     LegacyMemoriesComponent,
     UpcomingEventComponent,
     EventScheduleComponent,
-    PastEventsComponent,
     PhotoGalleryComponent,
     CommitteeComponent,
     OurFamilyComponent,
