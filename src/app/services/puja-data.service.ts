@@ -867,6 +867,24 @@ export class PujaDataService {
       year: '2008',
       description: ''
     },
+    {
+      id: 'gal-2007-1',
+      title: '',
+      category: 'memories',
+      categoryLabel: 'Golden Memories',
+      image: 'assets/images/legacy/2007.jpg',
+      year: '2007',
+      description: ''
+    },
+    {
+      id: 'gal-2006-1',
+      title: '',
+      category: 'memories',
+      categoryLabel: 'Golden Memories',
+      image: 'assets/images/legacy/2006.jpg',
+      year: '2006',
+      description: ''
+    }
   ];
 
   /* =========================================================================

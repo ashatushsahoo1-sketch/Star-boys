@@ -20,8 +20,8 @@ export class NavbarComponent {
   readonly navLinks = [
     { label: 'Home', target: 'home', icon: 'fa-solid fa-house' },
     { label: 'About', target: 'about', icon: 'fa-solid fa-om' },
-    { label: 'Our Legacy', target: 'legacy', icon: 'fa-solid fa-timeline' },
     { label: 'Puja Events', target: 'events', icon: 'fa-solid fa-calendar-days' },
+    { label: 'Our Legacy', target: 'legacy', icon: 'fa-solid fa-timeline' },
     { label: 'Gallery', target: 'gallery', icon: 'fa-solid fa-images' },
     { label: 'Committee', target: 'committee', icon: 'fa-solid fa-users' },
     { label: 'Our Family', target: 'our-family', icon: 'fa-solid fa-house-chimney-heart' },

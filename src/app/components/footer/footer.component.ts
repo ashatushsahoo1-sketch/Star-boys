@@ -17,9 +17,9 @@ export class FooterComponent {
   readonly quickLinks = [
     { label: 'Home', target: 'home' },
     { label: 'About STAR BOYS', target: 'about' },
-    { label: 'Historical Legacy', target: 'legacy' },
     { label: 'Upcoming Puja 2026', target: 'events' },
     { label: 'Program Schedule', target: 'schedule' },
+    { label: 'Historical Legacy', target: 'legacy' },
     { label: 'Photo Gallery', target: 'gallery' },
     { label: 'Committee Members', target: 'committee' },
     { label: 'Developer Details', target: 'developer' }
