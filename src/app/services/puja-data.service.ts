@@ -488,6 +488,15 @@ export class PujaDataService {
       year: '2025',
       description: 'Enchanting deep jungle mandap adorned with lush greenery, living flora, and wildlife motifs, with Maa Laxmi blessing devotees as the divine protector of nature.'
     },
+    {
+      id: 'gal-2025-4',
+      title: 'Vasani',
+      category: 'puja',
+      categoryLabel: 'Puja & Rituals',
+      image: 'assets/images/legacy/d34fa0bf-c3fd-4520-ad12-9de7c95a1c53.jpg',
+      year: '2025',
+      description: 'Enchanting deep jungle mandap adorned with lush greenery, living flora, and wildlife motifs, with Maa Laxmi blessing devotees as the divine protector of nature.'
+    },
 
 
     // 2024 Photos - Theme: Plant-Based Biodegradable Thermocol
@@ -497,6 +506,51 @@ export class PujaDataService {
       category: 'decoration',
       categoryLabel: 'Decoration & Lighting',
       image: 'assets/images/legacy/2024.jpg',
+      year: '2024',
+      description: 'Magnificent eco-friendly pandal architecture crafted entirely from plant-based, biodegradable thermocol glowing across Ghantapada on Kumar Purnima night.'
+    },
+    {
+      id: 'gal-2024-2',
+      title: 'Plant-Based Biodegradable Thermocol Pandal',
+      category: 'decoration',
+      categoryLabel: 'Decoration & Lighting',
+      image: 'assets/images/legacy/a44eda8f-1f7a-4c35-bd92-2416f116b4d1.jpg',
+      year: '2024',
+      description: 'Magnificent eco-friendly pandal architecture crafted entirely from plant-based, biodegradable thermocol glowing across Ghantapada on Kumar Purnima night.'
+    },
+    {
+      id: 'gal-2024-3',
+      title: 'Plant-Based Biodegradable Thermocol Pandal',
+      category: 'decoration',
+      categoryLabel: 'Decoration & Lighting',
+      image: 'assets/images/legacy/90aa543c-3ab7-4413-bf49-e2ff1c742ec5.jpg',
+      year: '2024',
+      description: 'Magnificent eco-friendly pandal architecture crafted entirely from plant-based, biodegradable thermocol glowing across Ghantapada on Kumar Purnima night.'
+    },
+    {
+      id: 'gal-2024-4',
+      title: 'Plant-Based Biodegradable Thermocol Pandal',
+      category: 'decoration',
+      categoryLabel: 'Decoration & Lighting',
+      image: 'assets/images/legacy/005aade2-711a-44fe-8d94-2a84e626ab29.jpg',
+      year: '2024',
+      description: 'Magnificent eco-friendly pandal architecture crafted entirely from plant-based, biodegradable thermocol glowing across Ghantapada on Kumar Purnima night.'
+    },
+    {
+      id: 'gal-2024-5',
+      title: 'Plant-Based Biodegradable Thermocol Pandal',
+      category: 'decoration',
+      categoryLabel: 'Decoration & Lighting',
+      image: 'assets/images/legacy/6aa5dc4c-d258-4af8-b93a-ff7bfe9bf7bd.jpg',
+      year: '2024',
+      description: 'Magnificent eco-friendly pandal architecture crafted entirely from plant-based, biodegradable thermocol glowing across Ghantapada on Kumar Purnima night.'
+    },
+    {
+      id: 'gal-2024-6',
+      title: 'Plant-Based Biodegradable Thermocol Pandal',
+      category: 'decoration',
+      categoryLabel: 'Decoration & Lighting',
+      image: 'assets/images/legacy/47c47f3c-9420-40b9-8fe2-ed67e694ed08.jpg',
       year: '2024',
       description: 'Magnificent eco-friendly pandal architecture crafted entirely from plant-based, biodegradable thermocol glowing across Ghantapada on Kumar Purnima night.'
     },
@@ -511,6 +565,51 @@ export class PujaDataService {
       year: '2023',
       description: 'An extraordinary artisan marvel where the divine idol and ornaments of Maa Laxmi were painstakingly handcrafted using thousands of premium dry fruits—almonds, cashews, raisins, and walnuts.'
     },
+    {
+      id: 'gal-2023-2',
+      title: 'Divine Idol Sculpted from Dry Fruits',
+      category: 'memories',
+      categoryLabel: 'Golden Memories',
+      image: 'assets/images/legacy/0ceaa5a6-e880-4845-9ff4-9b0e58249957.jpg',
+      year: '2023',
+      description: 'An extraordinary artisan marvel where the divine idol and ornaments of Maa Laxmi were painstakingly handcrafted using thousands of premium dry fruits—almonds, cashews, raisins, and walnuts.'
+    },
+    {
+      id: 'gal-2023-3',
+      title: 'Divine Idol Sculpted from Dry Fruits',
+      category: 'memories',
+      categoryLabel: 'Golden Memories',
+      image: 'assets/images/legacy/01d388ee-917b-456f-9a9f-8562dc2370d7.jpg',
+      year: '2023',
+      description: 'An extraordinary artisan marvel where the divine idol and ornaments of Maa Laxmi were painstakingly handcrafted using thousands of premium dry fruits—almonds, cashews, raisins, and walnuts.'
+    },
+    {
+      id: 'gal-2023-4',
+      title: 'Divine Idol Sculpted from Dry Fruits',
+      category: 'memories',
+      categoryLabel: 'Golden Memories',
+      image: 'assets/images/legacy/58e4643b-b86b-4972-94d9-57f6869919f7.jpg',
+      year: '2023',
+      description: 'An extraordinary artisan marvel where the divine idol and ornaments of Maa Laxmi were painstakingly handcrafted using thousands of premium dry fruits—almonds, cashews, raisins, and walnuts.'
+    },
+    {
+      id: 'gal-2023-5',
+      title: 'Divine Idol Sculpted from Dry Fruits',
+      category: 'memories',
+      categoryLabel: 'Golden Memories',
+      image: 'assets/images/legacy/d47668d7-9cb3-43fa-8b81-42321ea933c2.jpg',
+      year: '2023',
+      description: 'An extraordinary artisan marvel where the divine idol and ornaments of Maa Laxmi were painstakingly handcrafted using thousands of premium dry fruits—almonds, cashews, raisins, and walnuts.'
+    },
+    {
+      id: 'gal-2023-6',
+      title: 'Divine Idol Sculpted from Dry Fruits',
+      category: 'memories',
+      categoryLabel: 'Golden Memories',
+      image: 'assets/images/legacy/a1ef279f-e679-47ed-9dea-89c620877801.jpg',
+      year: '2023',
+      description: 'An extraordinary artisan marvel where the divine idol and ornaments of Maa Laxmi were painstakingly handcrafted using thousands of premium dry fruits—almonds, cashews, raisins, and walnuts.'
+    },
 
     // 2022 Photos - Theme: Raja Darbar
     {
@@ -519,6 +618,42 @@ export class PujaDataService {
       category: 'decoration',
       categoryLabel: 'Decoration & Lighting',
       image: 'assets/images/legacy/2022.jpg',
+      year: '2022',
+      description: 'Opulent Raja Darbar theme featuring gilded royal arches, velvet drapes, and an exquisitely sculpted Maa Laxmi idol reigning with supreme grace.'
+    },
+    {
+      id: 'gal-2022-2',
+      title: 'Raja Darbar — Royal Imperial Palace Court',
+      category: 'decoration',
+      categoryLabel: 'Decoration & Lighting',
+      image: 'assets/images/legacy/00e10f27-3f38-4122-836b-61a5987db7de.jpg',
+      year: '2022',
+      description: 'Opulent Raja Darbar theme featuring gilded royal arches, velvet drapes, and an exquisitely sculpted Maa Laxmi idol reigning with supreme grace.'
+    },
+    {
+      id: 'gal-2022-3',
+      title: 'Raja Darbar — Royal Imperial Palace Court',
+      category: 'decoration',
+      categoryLabel: 'Decoration & Lighting',
+      image: 'assets/images/legacy/98adb4c8-9457-4fc0-9808-c66ffbe39dcd.jpg',
+      year: '2022',
+      description: 'Opulent Raja Darbar theme featuring gilded royal arches, velvet drapes, and an exquisitely sculpted Maa Laxmi idol reigning with supreme grace.'
+    },
+    {
+      id: 'gal-2022-4',
+      title: 'Raja Darbar — Royal Imperial Palace Court',
+      category: 'decoration',
+      categoryLabel: 'Decoration & Lighting',
+      image: 'assets/images/legacy/9cfeab7e-6590-4243-b084-89cd8e03d24b.jpg',
+      year: '2022',
+      description: 'Opulent Raja Darbar theme featuring gilded royal arches, velvet drapes, and an exquisitely sculpted Maa Laxmi idol reigning with supreme grace.'
+    },
+    {
+      id: 'gal-2022-5',
+      title: 'Raja Darbar — Royal Imperial Palace Court',
+      category: 'decoration',
+      categoryLabel: 'Decoration & Lighting',
+      image: 'assets/images/legacy/9463c3e3-a408-41db-8e8f-6af7f5be09df.jpg',
       year: '2022',
       description: 'Opulent Raja Darbar theme featuring gilded royal arches, velvet drapes, and an exquisitely sculpted Maa Laxmi idol reigning with supreme grace.'
     },
@@ -649,6 +784,15 @@ export class PujaDataService {
       year: '2018',
       description: 'Breathtaking open-air landscape mandap featuring natural mountain cliff formations, mist, and living cascading waterfalls flowing around the lotus feet of Maa Laxmi.'
     },
+    {
+      id: 'gal-2018-2',
+      title: 'Open Pandal with Rocky Mountains & Waterfalls',
+      category: 'cultural',
+      categoryLabel: 'Cultural Programs',
+      image: 'assets/images/legacy/f1421c60-dc6f-436a-9ce0-7a7ddfae8b74.jpg',
+      year: '2018',
+      description: 'Breathtaking open-air landscape mandap featuring natural mountain cliff formations, mist, and living cascading waterfalls flowing around the lotus feet of Maa Laxmi.'
+    },
 
     // 2017 Photos - Theme: Laxmi Purana
     {
@@ -712,7 +856,17 @@ export class PujaDataService {
       image: 'assets/images/legacy/2013.jpg',
       year: '2013',
       description: 'A moving tribute pandal depicting Kedarnath mountains, flood deluge, rescue helicopters, and Lord Shiva, with Maa Laxmi standing as the savior of all.'
-    }
+    },
+    // 2013 Photos 
+    {
+      id: 'gal-2008-1',
+      title: '',
+      category: 'memories',
+      categoryLabel: 'Golden Memories',
+      image: 'assets/images/legacy/1a2922f3-d040-4073-986f-54ce2ce00a1c.jpg',
+      year: '2008',
+      description: ''
+    },
   ];
 
   /* =========================================================================
