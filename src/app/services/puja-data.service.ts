@@ -470,16 +470,25 @@ export class PujaDataService {
       image: 'assets/images/legacy/2025.jpg',
       year: '2025',
       description: 'Enchanting deep jungle mandap adorned with lush greenery, living flora, and wildlife motifs, with Maa Laxmi blessing devotees as the divine protector of nature.'
+    }, {
+      id: 'gal-2025-2',
+      title: 'Vasani',
+      category: 'puja',
+      categoryLabel: 'Puja & Rituals',
+      image: 'assets/images/legacy/7f48c716-63ad-48fa-b988-21a34776a39f.jpg',
+      year: '2025',
+      description: 'Enchanting deep jungle mandap adorned with lush greenery, living flora, and wildlife motifs, with Maa Laxmi blessing devotees as the divine protector of nature.'
     },
     {
-      id: 'gal-2025-2',
-      title: 'Youth Volunteers in Sacred Forest Sanctum',
-      category: 'community',
-      categoryLabel: 'Community & Seva',
-      image: 'assets/images/legacy/3c931b91-3fea-4660-af50-f9b29ee1b491.jpg',
+      id: 'gal-2025-3',
+      title: 'Vasani',
+      category: 'puja',
+      categoryLabel: 'Puja & Rituals',
+      image: 'assets/images/legacy/a0a9b515-8d96-4e48-bbef-5c2b335f6095.jpg',
       year: '2025',
-      description: 'STAR BOYS youth volunteers gathered in festive traditional attire during the sacred Pushpanjali in the jungle-themed pandal.'
+      description: 'Enchanting deep jungle mandap adorned with lush greenery, living flora, and wildlife motifs, with Maa Laxmi blessing devotees as the divine protector of nature.'
     },
+
 
     // 2024 Photos - Theme: Plant-Based Biodegradable Thermocol
     {
@@ -490,42 +499,6 @@ export class PujaDataService {
       image: 'assets/images/legacy/2024.jpg',
       year: '2024',
       description: 'Magnificent eco-friendly pandal architecture crafted entirely from plant-based, biodegradable thermocol glowing across Ghantapada on Kumar Purnima night.'
-    },
-    {
-      id: 'gal-2024-2',
-      title: 'Maha Aarti of Plant-Based Thermocol Idol',
-      category: 'puja',
-      categoryLabel: 'Puja & Rituals',
-      image: 'assets/images/legacy/00e10f27-3f38-4122-836b-61a5987db7de.jpg',
-      year: '2024',
-      description: 'Celestial spectacle of priests offering rhythmic Maha Aarti with 1008 holy ghee lamps before the plant-based biodegradable thermocol idol.'
-    },
-    {
-      id: 'gal-2024-3',
-      title: 'Cultural Night in Eco-Friendly Pandal',
-      category: 'cultural',
-      categoryLabel: 'Cultural Programs',
-      image: 'assets/images/legacy/a0a9b515-8d96-4e48-bbef-5c2b335f6095.jpg',
-      year: '2024',
-      description: 'Captivating cultural performances and Odissi devotional recitals celebrating our eco-conscious green Laxmi Puja.'
-    },
-    {
-      id: 'gal-2024-4',
-      title: 'Devotee Congregation & Pushpanjali',
-      category: 'community',
-      categoryLabel: 'Community & Seva',
-      image: 'assets/images/legacy/58e4643b-b86b-4972-94d9-57f6869919f7.jpg',
-      year: '2024',
-      description: 'Thousands of devotees from Talcher and neighboring villages offering flowers with folded hands, praying for peace and prosperity.'
-    },
-    {
-      id: 'gal-2024-5',
-      title: 'Midnight Jyoti & Sandhya Darshan',
-      category: 'puja',
-      categoryLabel: 'Puja & Rituals',
-      image: 'assets/images/legacy/0ceaa5a6-e880-4845-9ff4-9b0e58249957.jpg',
-      year: '2024',
-      description: 'Mesmerizing midnight radiance of the altar illuminated by earthen ghee lamps and the scent of sacred chandan.'
     },
 
     // 2023 Photos - Theme: Idol Made Up of Dry Fruits
@@ -560,6 +533,70 @@ export class PujaDataService {
       year: '2021',
       description: 'Grand Cuttack-style Chandi Medha silver filigree tableau framing Maa Laxmi, bringing divine silver radiance and festive renewal.'
     },
+    {
+      id: 'gal-2021-2',
+      title: 'Chandi Medha — Sparkling Silver Filigree Splendor',
+      category: 'puja',
+      categoryLabel: 'Puja & Rituals',
+      image: 'assets/images/legacy/20211023_205142.jpg',
+      year: '2021',
+      description: 'Grand Cuttack-style Chandi Medha silver filigree tableau framing Maa Laxmi, bringing divine silver radiance and festive renewal.'
+    },
+    {
+      id: 'gal-2021-3',
+      title: 'Chandi Medha — Sparkling Silver Filigree Splendor',
+      category: 'puja',
+      categoryLabel: 'Vasani',
+      image: 'assets/images/legacy/20211025_185334.jpg',
+      year: '2021',
+      description: 'Grand Cuttack-style Chandi Medha silver filigree tableau framing Maa Laxmi, bringing divine silver radiance and festive renewal.'
+    },
+    {
+      id: 'gal-2021-4',
+      title: 'Chandi Medha — Sparkling Silver Filigree Splendor',
+      category: 'puja',
+      categoryLabel: 'Community & Seva',
+      image: 'assets/images/legacy/IMG-20211020-WA0003.jpg',
+      year: '2021',
+      description: 'Grand Cuttack-style Chandi Medha silver filigree tableau framing Maa Laxmi, bringing divine silver radiance and festive renewal.'
+    },
+    {
+      id: 'gal-2021-5',
+      title: 'Chandi Medha — Sparkling Silver Filigree Splendor',
+      category: 'puja',
+      categoryLabel: 'Community & Seva',
+      image: 'assets/images/legacy/IMG-20211020-WA0012.jpg',
+      year: '2021',
+      description: 'Grand Cuttack-style Chandi Medha silver filigree tableau framing Maa Laxmi, bringing divine silver radiance and festive renewal.'
+    },
+    {
+      id: 'gal-2021-6',
+      title: 'Chandi Medha — Sparkling Silver Filigree Splendor',
+      category: 'puja',
+      categoryLabel: 'Community & Seva',
+      image: 'assets/images/legacy/IMG-20211023-WA0012.jpg',
+      year: '2021',
+      description: 'Grand Cuttack-style Chandi Medha silver filigree tableau framing Maa Laxmi, bringing divine silver radiance and festive renewal.'
+    },
+    {
+      id: 'gal-2021-7',
+      title: 'Chandi Medha — Sparkling Silver Filigree Splendor',
+      category: 'puja',
+      categoryLabel: 'Community & Seva',
+      image: 'assets/images/legacy/IMG-20211023-WA0021.jpg',
+      year: '2021',
+      description: 'Grand Cuttack-style Chandi Medha silver filigree tableau framing Maa Laxmi, bringing divine silver radiance and festive renewal.'
+    },
+    {
+      id: 'gal-2021-8',
+      title: 'Chandi Medha — Sparkling Silver Filigree Splendor',
+      category: 'puja',
+      categoryLabel: 'Community & Seva',
+      image: 'assets/images/legacy/IMG-20211023-WA0018.jpg',
+      year: '2021',
+      description: 'Grand Cuttack-style Chandi Medha silver filigree tableau framing Maa Laxmi, bringing divine silver radiance and festive renewal.'
+    },
+
 
     // 2020 Photos - Theme: Chandi Medha
     {
@@ -571,15 +608,7 @@ export class PujaDataService {
       year: '2020',
       description: 'Traditional Chandi Medha silver filigree backdrop shining bright amidst disciplined rituals and earnest prayers for global healing.'
     },
-    {
-      id: 'gal-2020-2',
-      title: 'Quiet Faith & Unbroken Brotherhood',
-      category: 'memories',
-      categoryLabel: 'Golden Memories',
-      image: 'assets/images/legacy/7f48c716-63ad-48fa-b988-21a34776a39f.jpg',
-      year: '2020',
-      description: 'Dedicated STAR BOYS committee members upholding the sacred flame and uninterrupted puja rituals.'
-    },
+
 
     // 2019 Photos - Theme: Bio-Degradable Thermocol Idol
     {
@@ -593,10 +622,19 @@ export class PujaDataService {
     },
     {
       id: 'gal-2019-2',
-      title: 'Mega Annadan & Mahaprasad Seva',
+      title: 'Vasani',
       category: 'community',
       categoryLabel: 'Community & Seva',
       image: 'assets/images/legacy/acc03467-b19a-4ea5-a1a2-464648f1a2ce.jpg',
+      year: '2019',
+      description: 'STAR BOYS volunteers distributing steaming hot Khichdi and Kheeri Mahaprasad to thousands of visiting pilgrims with warm love.'
+    },
+    {
+      id: 'gal-2019-2',
+      title: 'Puja Mandap',
+      category: 'community',
+      categoryLabel: 'Community & Seva',
+      image: 'assets/images/legacy/20191018_193732.jpg',
       year: '2019',
       description: 'STAR BOYS volunteers distributing steaming hot Khichdi and Kheeri Mahaprasad to thousands of visiting pilgrims with warm love.'
     },
@@ -622,6 +660,15 @@ export class PujaDataService {
       year: '2017',
       description: 'Thematic pandal depicting the sacred Odia classic Laxmi Purana, honoring the Mother’s supreme grace, righteousness, and universal equality.'
     },
+    {
+      id: 'gal-2017-2',
+      title: 'Sacred Tale of Balaram Das’s Laxmi Purana',
+      category: 'decoration',
+      categoryLabel: 'Decoration & Lighting',
+      image: 'assets/images/legacy/20171.jpg',
+      year: '2017',
+      description: 'Thematic pandal depicting the sacred Odia classic Laxmi Purana, honoring the Mother’s supreme grace, righteousness, and universal equality.'
+    },
 
     // 2016 Photos - Theme: Famous Places in Hindu Religion
     {
@@ -632,15 +679,6 @@ export class PujaDataService {
       image: 'assets/images/legacy/2016.jpg',
       year: '2016',
       description: 'Architectural masterpiece uniting sacred Hindu tirthas and holy Char Dham shrines at School Sahi to celebrate Sanatana heritage.'
-    },
-    {
-      id: 'gal-2016-2',
-      title: 'Intricate Temple Spire & Handcrafted Motifs',
-      category: 'memories',
-      categoryLabel: 'Golden Memories',
-      image: 'assets/images/legacy/f4c8d765-e3ff-4d9d-91a2-4f6925507879.jpg',
-      year: '2016',
-      description: 'Master artisans handcrafting intricate wooden motifs, temple spires, and filigree mandap designs.'
     },
 
     // 2015 Photos - Theme: Elephants Worshipping Laxmi (Gaja Laxmi)
