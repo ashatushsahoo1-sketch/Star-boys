@@ -35,14 +35,14 @@ export class PhotoGalleryComponent {
       yearMap.set(item.year, (yearMap.get(item.year) || 0) + 1);
     }
 
-    const allYearsList: string[] = [];
-    for (let y = 2004; y <= 2026; y++) {
-      allYearsList.push(y.toString());
-    }
+    const yearsWithPhotos = Array.from(yearMap.keys())
+      .filter(year => (yearMap.get(year) || 0) > 0)
+      .sort((a, b) => parseInt(a, 10) - parseInt(b, 10))
+      .map(y => ({ year: y, count: yearMap.get(y)! }));
 
     return [
       { year: 'all', count: this.allItems.length },
-      ...allYearsList.map(y => ({ year: y, count: yearMap.get(y) || 0 }))
+      ...yearsWithPhotos
     ];
   });
 
