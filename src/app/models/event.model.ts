@@ -4,6 +4,7 @@ export interface PujaEventConfig {
   year: string;
   targetDate: string; // ISO format: e.g. "2026-10-25T18:00:00"
   displayDate: string;
+  muhurtaTime?: string;
   location: string;
   venueMapUrl?: string;
   description: string;
@@ -12,6 +13,8 @@ export interface PujaEventConfig {
 
 export interface ScheduleItem {
   id: string;
+  dayId?: 'day1' | 'day2' | 'day3';
+  date?: string;
   time: string;
   title: string;
   description: string;

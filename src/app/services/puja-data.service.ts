@@ -237,7 +237,7 @@ export class PujaDataService {
       year: '2026',
       title: '23rd Annual Grand Celebration',
       tagline: 'Grand Surprise Theme — Revealing Soon!',
-      description: 'STAR BOYS is preparing for our most monumental celebration yet on October 25, 2026! Our grand artistic theme and surprise innovation will be unveiled soon to welcome Maa Laxmi with unprecedented splendor.',
+      description: 'STAR BOYS is preparing for our most monumental celebration yet on October 26, 2026! Our grand artistic theme and surprise innovation will be unveiled soon to welcome Maa Laxmi with unprecedented splendor.',
       image: '',
       highlights: [
         'Magnificent 23rd Year milestone celebration in School Sahi',
@@ -350,68 +350,96 @@ export class PujaDataService {
      ========================================================================= */
   readonly pujaEvent: PujaEventConfig = {
     title: 'MAA LAXMI PUJA 2026',
-    subTitle: '23th Annual Grand Celebration',
+    subTitle: '23rd Annual Grand Celebration',
     year: '2026',
-    // Set target date (ISO format). Example: 2026-10-25 at 18:00 (Kumar Purnima evening)
-    targetDate: '2026-10-25T18:00:00',
-    displayDate: 'October 25, 2026 (Kumar Purnima)',
+    // Set target date (ISO format). 2026-10-26 at 05:00:00 AM (Ghat Kalash Sthapana & Sankalpa)
+    targetDate: '2026-10-26T05:00:00',
+    displayDate: 'October 26 – November 4, 2026 (Vasani)',
+    muhurtaTime: '7:00 AM & 7:00 PM Every Day',
     location: 'School Sahi, Ghantapada, Talcher, Odisha',
     venueMapUrl: 'https://maps.google.com/?q=School+Sahi+Ghantapada+Talcher+Odisha',
-    description: 'Join STAR BOYS for our 23th annual grand Laxmi Puja celebration at School Sahi, Ghantapada, Talcher. Experience divine darshan of Maa Laxmi, majestic pandal lighting, soul-stirring Vedic bhajans, grand Pushpanjali, and sumptuous Mahaprasad.',
+    description: 'Join STAR BOYS for our 23rd annual grand Laxmi Puja celebration from October 26 to November 4 (Vasani) at School Sahi, Ghantapada, Talcher. Experience divine darshan of Maa Laxmi, majestic pandal lighting, soul-stirring Vedic bhajans, grand Pushpanjali, and sumptuous Mahaprasad.',
     themeBanner: 'assets/images/hero/hero-banner.jpg'
   };
 
   /* =========================================================================
-     6. EVENT SCHEDULE
+     6. EVENT SCHEDULE (3 MAIN FESTIVAL RITUAL DAYS)
      ========================================================================= */
   readonly eventSchedule: ScheduleItem[] = [
+    // --- October 26 (Puja Day) ---
     {
       id: 'sch-1',
-      time: '05:00 PM',
-      title: 'Devotee Gathering & Shehnai Vadan',
-      description: 'Devotees, committee members, and visitors assemble to the holy strains of traditional Shehnai and Mangala Dhwani.',
-      icon: 'fa-solid fa-users',
-      highlight: false
-    },
-    {
-      id: 'sch-2',
-      time: '06:00 PM',
+      dayId: 'day1',
+      date: '26 Oct 2026',
+      time: '05:00 AM',
       title: 'Ghat Kalash Sthapana & Sankalpa',
       description: 'Sacred water pot consecration and invocation of divine presence led by head Vedic priests.',
       icon: 'fa-solid fa-hands-holding-circle',
-      highlight: false
+      highlight: true
     },
     {
-      id: 'sch-3',
-      time: '07:00 PM',
-      title: 'Maha Laxmi Puja & Sandhya Aarti',
-      description: 'The core Vedic Sodashopachara puja of Maa Laxmi with 108 lotus offerings and the grand rhythmic Sandhya Aarti.',
+      id: 'sch-2',
+      dayId: 'day1',
+      date: '26 Oct 2026',
+      time: '09:00 AM',
+      title: 'Maha Laxmi Puja & Aarti',
+      description: 'The core Vedic Sodashopachara puja of Maa Laxmi with 108 lotus offerings and morning Maha Aarti.',
       icon: 'fa-solid fa-fire-flame-curved',
       highlight: true
     },
     {
-      id: 'sch-4',
-      time: '08:30 PM',
+      id: 'sch-3',
+      dayId: 'day1',
+      date: '26 Oct 2026',
+      time: '12:00 PM',
       title: 'Community Pushpanjali',
-      description: 'All devotees offer holy flowers, bilva patra, and chant sacred stotrams with folded hands for peace and abundance.',
+      description: 'All devotees offer holy flowers, bilva patra, and chant sacred stotrams with folded hands for divine peace and abundance.',
       icon: 'fa-solid fa-spa',
-      highlight: false
+      highlight: true
     },
+
+    // --- October 31 (Maha Prasad & Naam Sankirtan) ---
     {
-      id: 'sch-5',
-      time: '09:00 PM',
+      id: 'sch-4',
+      dayId: 'day2',
+      date: '31 Oct 2026',
+      time: '07:00 PM Onwards',
       title: 'Maha Prasad & Bhog Distribution',
-      description: 'Serving blessed Khichdi, Payasam, Kheeri, and fruits prasad to all attendees with warm hospitality.',
+      description: 'Grand community Anna Dan serving blessed Khichdi, Payasam, sweet Kheeri, and sanctified Mahaprasad to all devotees.',
       icon: 'fa-solid fa-bowl-food',
       highlight: true
     },
     {
-      id: 'sch-6',
-      time: '09:30 PM',
-      title: 'Cultural Extravaganza & Bhajan Sandhya',
-      description: 'Enchanting devotional music by acclaimed singers, traditional folk performances, and celebratory fireworks display.',
-      icon: 'fa-solid fa-music',
+      id: 'sch-5',
+      dayId: 'day2',
+      date: '31 Oct 2026',
+      time: '06:00 PM Onwards',
+      title: 'Naama and Sankirtan',
+      description: 'Soulful Harinaam chanting and traditional Odia Naam Sankirtan accompanied by mridangam, kartal, and devotional choruses.',
+      icon: 'fa-solid fa-om',
       highlight: false
+    },
+
+    // --- November 4 (Bisharjan Puja & Grand Vasani) ---
+    {
+      id: 'sch-6',
+      dayId: 'day3',
+      date: '04 Nov 2026',
+      time: '10:00 AM',
+      title: 'Bisharjan Puja',
+      description: 'Solemn Vedic farewell rituals, final pushpanjali, shanti stotram chants, and gratitude prayers offered to Maa Laxmi.',
+      icon: 'fa-solid fa-hands-praying',
+      highlight: false
+    },
+    {
+      id: 'sch-7',
+      dayId: 'day3',
+      date: '04 Nov 2026',
+      time: '04:00 PM Onwards',
+      title: 'Grand Vasani (Immersion Procession)',
+      description: 'The monumental Bhasani procession carrying Maa Laxmi through Ghantapada with vibrant music, royal lights, fireworks, and emotional farewell.',
+      icon: 'fa-solid fa-drum',
+      highlight: true
     }
   ];
 

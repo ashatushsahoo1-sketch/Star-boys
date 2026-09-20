@@ -2,17 +2,56 @@
   <div class="container">
     <!-- Header -->
     <div class="section-header">
-      <span class="section-tagline">“Festival Timeline”</span>
-      <h2 class="section-title gold-gradient-text">Puja Day Program Schedule</h2>
+      <span class="section-tagline">“Festival Timeline (26 Oct – 04 Nov)”</span>
+      <h2 class="section-title gold-gradient-text">Sacred Rituals & Program Schedule</h2>
       <app-decorative-divider></app-decorative-divider>
       <p class="section-subtitle">
-        Carefully planned Vedic rituals and cultural performances for an unforgettable evening of devotion.
+        Celebrations commence on <strong>26th October</strong> with sacred Vedic rituals, followed by Maha Prasad & Sankirtan on <strong>31st October</strong>, culminating in the grand <strong>Vasani</strong> on <strong>4th November</strong>.
       </p>
+    </div>
+
+    <!-- Day Filter Pills -->
+    <div class="schedule-filter-tabs">
+      <button 
+        type="button" 
+        class="filter-tab-btn" 
+        [class.active]="activeFilter() === 'all'"
+        (click)="setFilter('all')">
+        <i class="fa-solid fa-calendar-days"></i>
+        <span>All Rituals (7)</span>
+      </button>
+
+      <button 
+        type="button" 
+        class="filter-tab-btn" 
+        [class.active]="activeFilter() === 'day1'"
+        (click)="setFilter('day1')">
+        <i class="fa-solid fa-om"></i>
+        <span>26 Oct • Puja Day (3)</span>
+      </button>
+
+      <button 
+        type="button" 
+        class="filter-tab-btn" 
+        [class.active]="activeFilter() === 'day2'"
+        (click)="setFilter('day2')">
+        <i class="fa-solid fa-bowl-food"></i>
+        <span>31 Oct • Maha Prasad (2)</span>
+      </button>
+
+      <button 
+        type="button" 
+        class="filter-tab-btn" 
+        [class.active]="activeFilter() === 'day3'"
+        (click)="setFilter('day3')">
+        <i class="fa-solid fa-drum"></i>
+        <span>04 Nov • Vasani (2)</span>
+      </button>
     </div>
 
     <!-- Responsive Cards Grid Schedule -->
     <div class="schedule-grid">
-      @for (item of schedule; track item.id; let idx = $index) {
+      @for (item of filteredSchedule(); track item.id; let idx = $index) {
         <div class="schedule-card glass-card" [class.highlight-card]="item.highlight">
           
           <!-- Special Badge if Highlight -->
@@ -23,9 +62,17 @@
             </div>
           }
 
-          <!-- Time Header Badge -->
+          <!-- Date & Time Header Badge -->
           <div class="time-badge-wrapper">
             <span class="step-num">{{ idx + 1 }}</span>
+
+            @if (item.date) {
+              <div class="date-badge">
+                <i class="fa-regular fa-calendar"></i>
+                <span>{{ item.date }}</span>
+              </div>
+            }
+
             <div class="time-badge">
               <i class="fa-regular fa-clock"></i>
               <span>{{ item.time }}</span>
