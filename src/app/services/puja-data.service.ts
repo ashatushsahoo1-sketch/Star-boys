@@ -1392,7 +1392,7 @@ export class PujaDataService {
     },
     {
       id: 'mem-39',
-      name: 'Suman Kumar Sahoo',
+      name: 'Milan Sahoo',
       role: 'to be updated',
       category: 'organizer',
       badge: 'Art & Decor',
