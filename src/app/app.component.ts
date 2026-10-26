@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ParticleBackgroundComponent } from './components/particle-background/particle-background.component';
 import { HeroComponent } from './components/hero/hero.component';
+import { Puja2026Component } from './components/puja-2026/puja-2026.component';
 import { AboutComponent } from './components/about/about.component';
 import { LegacyTimelineComponent } from './components/legacy/legacy-timeline/legacy-timeline.component';
 import { LegacyMemoriesComponent } from './components/legacy/legacy-memories/legacy-memories.component';
@@ -25,6 +26,7 @@ import { FooterComponent } from './components/footer/footer.component';
     NavbarComponent,
     ParticleBackgroundComponent,
     HeroComponent,
+    Puja2026Component,
     AboutComponent,
     LegacyTimelineComponent,
     LegacyMemoriesComponent,

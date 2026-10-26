@@ -123,6 +123,62 @@
       opacity: 1;
     }
   }
+
+  /* ── Special 2026 pill ── */
+  &.year-2026-pill {
+    background: linear-gradient(135deg, rgba(245, 197, 66, 0.18) 0%, rgba(255, 140, 0, 0.1) 100%);
+    border-color: rgba(245, 197, 66, 0.5);
+    color: var(--gold-light);
+    font-weight: 700;
+
+    .new-badge-dot {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #f5c542;
+      box-shadow: 0 0 6px rgba(245, 197, 66, 0.9);
+      animation: pulse-dot 1.6s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+
+    .new-label {
+      display: inline-block;
+      font-size: 0.58rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      background: linear-gradient(135deg, #ffe8a3, #f5c542);
+      color: #1a0815;
+      padding: 0.1rem 0.4rem;
+      border-radius: 8px;
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      background: linear-gradient(135deg, rgba(245, 197, 66, 0.28) 0%, rgba(255, 140, 0, 0.18) 100%);
+      border-color: var(--gold);
+      box-shadow: 0 0 18px rgba(245, 197, 66, 0.35);
+      transform: translateY(-2px);
+    }
+
+    &.active {
+      background: linear-gradient(135deg, #ffe8a3 0%, #f5c542 60%, #ff9500 100%);
+      border-color: #f5c542;
+      color: #1a0815;
+      box-shadow: 0 4px 20px rgba(245, 197, 66, 0.55), 0 0 30px rgba(245, 197, 66, 0.25);
+
+      .new-label {
+        background: rgba(26, 8, 21, 0.9);
+        color: #f5c542;
+      }
+
+      .new-badge-dot {
+        background: #1a0815;
+        box-shadow: none;
+        animation: none;
+      }
+    }
+  }
 }
 
 /* Filter Status Bar */
@@ -494,4 +550,71 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.4); }
+}
+
+/* 2026 Special Section */
+.year-section-2026 {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -12px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(245, 197, 66, 0.06) 0%, rgba(255, 140, 0, 0.04) 100%);
+    border: 1px solid rgba(245, 197, 66, 0.18);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  > * { position: relative; z-index: 1; }
+}
+
+.header-2026 {
+  background: linear-gradient(90deg,
+    rgba(245, 197, 66, 0.22) 0%,
+    rgba(255, 140, 0, 0.12) 50%,
+    rgba(26, 8, 21, 0.75) 80%,
+    transparent 100%
+  ) !important;
+  border-left-color: #ff9500 !important;
+  border-top-color: rgba(245, 197, 66, 0.4) !important;
+  border-bottom-color: rgba(245, 197, 66, 0.4) !important;
+  box-shadow: 0 4px 24px rgba(245, 197, 66, 0.15);
+
+  .year-number {
+    font-size: 1.55rem !important;
+    background: linear-gradient(135deg, #ffe8a3, #f5c542, #ff9500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+.year-label-2026 {
+  color: var(--gold-light) !important;
+  font-weight: 700 !important;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+/* Latest tag in filter status bar */
+.latest-tag {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  background: rgba(245, 197, 66, 0.15);
+  border: 1px solid rgba(245, 197, 66, 0.35);
+  padding: 0.1rem 0.55rem;
+  border-radius: 12px;
+  letter-spacing: 0.03em;
 }

@@ -235,14 +235,14 @@ export class PujaDataService {
     },
     {
       year: '2026',
-      title: '23rd Annual Grand Celebration',
-      tagline: 'Grand Surprise Theme — Revealing Soon!',
-      description: 'STAR BOYS is preparing for our most monumental celebration yet on October 26, 2026! Our grand artistic theme and surprise innovation will be unveiled soon to welcome Maa Laxmi with unprecedented splendor.',
-      image: '',
+      title: 'Royal Pushpa Mahal Pandal',
+      tagline: 'Grace Woven in Grain ',
+      description: '.A beautiful palace theme with red curtains, white arches, a shining chandelier and colourful flowers all around. Maa Laxmi sits in the middle, made from rice and other eco-friendly things you can eat, blessing everyone with happiness and wealth.',
+      image: 'assets/images/legacy/2026.jpg',
       highlights: [
-        'Magnificent 23rd Year milestone celebration in School Sahi',
-        'Grand surprise pandal theme & divine idol concept revealing soon',
-        'Special community Mahaprasad seva & mega cultural nights'
+        'Eco-friendly idol crafted from rice, with almonds and other edible elements',
+        'Royal palace setting with arched floral gateways',
+        'Golden glow behind Maa Laxmi with elephants beside her, showing wealth and blessings'
       ]
     }
   ];
@@ -486,9 +486,38 @@ export class PujaDataService {
   ];
 
   /* =========================================================================
-     8. PHOTO GALLERY (YEAR-WISE ARCHIVE: 2013 - 2025)
+     8. PHOTO GALLERY (YEAR-WISE ARCHIVE: 2013 - 2026)
      ========================================================================= */
   readonly galleryItems: GalleryItem[] = [
+    // 2026 Photos - Theme: Royal Pushpa Mahal
+    {
+      id: 'gal-2026-1',
+      title: 'Royal Pushpa Mahal — Divya Maa Laxmi Darshan',
+      category: 'puja',
+      categoryLabel: 'Puja & Rituals',
+      image: 'assets/images/legacy/2026.jpg',
+      year: '2026',
+      description: 'A beautiful palace theme with red curtains, white arches, a shining chandelier and colourful flowers all around. Maa Laxmi sits in the middle, made from rice and other eco-friendly elements, blessing everyone with happiness and wealth.'
+    },
+    {
+      id: 'gal-2026-2',
+      title: 'Royal Pushpa Mahal — Divya Maa Laxmi Darshan',
+      category: 'puja',
+      categoryLabel: 'Puja & Rituals',
+      image: 'assets/images/legacy/2026-1.jpg',
+      year: '2026',
+      description: 'A beautiful palace theme with red curtains, white arches, a shining chandelier and colourful flowers all around. Maa Laxmi sits in the middle, made from rice and other eco-friendly elements, blessing everyone with happiness and wealth.'
+    },
+    {
+      id: 'gal-2026-2',
+      title: 'Royal Pushpa Mahal — Divya Maa Laxmi Darshan',
+      category: 'puja',
+      categoryLabel: 'Puja & Rituals',
+      image: 'assets/images/legacy/2026-2.jpg',
+      year: '2026',
+      description: 'A beautiful palace theme with red curtains, white arches, a shining chandelier and colourful flowers all around. Maa Laxmi sits in the middle, made from rice and other eco-friendly elements, blessing everyone with happiness and wealth.'
+    },
+
     // 2025 Photos - Theme: Jungle View
     {
       id: 'gal-2025-1',
@@ -1459,6 +1488,10 @@ export class PujaDataService {
 
   getGalleryItems() {
     return this.galleryItems;
+  }
+
+  get2026GalleryItems(): GalleryItem[] {
+    return this.galleryItems.filter(item => item.year === '2026');
   }
 
   getKartaMembers() {

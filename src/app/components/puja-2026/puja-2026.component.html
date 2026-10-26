@@ -1,0 +1,94 @@
+<section id="2026" class="puja-2026-section section-padding">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="section-header">
+      <div class="header-badge">
+        <i class="fa-solid fa-crown text-gold"></i>
+        <span>23rd Annual Grand Festival • 2026</span>
+      </div>
+      <h2 class="section-title gold-gradient-text">Maa Laxmi Puja 2026 Photos</h2>
+      <app-decorative-divider></app-decorative-divider>
+      <p class="section-subtitle">
+        {{ themeInfo.tagline }} — Sacred darshan of Maa Laxmi in the magnificent Royal Pushpa Mahal at School Sahi, Ghantapada, Talcher.
+      </p>
+    </div>
+
+    <!-- 2026 Royal Theme Highlights Banner -->
+    <div class="theme-highlights-card">
+      <div class="theme-badge-row">
+        <span class="theme-pill theme-main">
+          <i class="fa-solid fa-monument"></i>
+          Theme: {{ themeInfo.title }}
+        </span>
+        <span class="theme-pill theme-date">
+          <i class="fa-solid fa-calendar-check"></i>
+          {{ themeInfo.date }}
+        </span>
+        <span class="theme-pill theme-count">
+          <i class="fa-solid fa-camera"></i>
+          {{ allPhotos().length }} {{ allPhotos().length === 1 ? 'Photo' : 'Photos' }} Available
+        </span>
+      </div>
+      <p class="theme-description">
+        {{ themeInfo.description }}
+      </p>
+    </div>
+
+    <!-- Photos Grid & Upload Action -->
+    <div class="photos-2026-container">
+      <div class="photos-grid-2026">
+        <!-- Render Existing / Uploaded 2026 Photos -->
+        @for (photo of filteredPhotos(); track photo.id) {
+          <div
+            class="photo-card-2026"
+            (click)="openLightbox(photo)"
+            role="button"
+            tabindex="0"
+            (keydown.enter)="openLightbox(photo)"
+            [attr.aria-label]="'Enlarge photo: ' + photo.title">
+            <div class="card-image-box">
+              <img [src]="photo.image" [alt]="photo.title" class="photo-img" loading="lazy" />
+              
+              <!-- Badges on top -->
+              <div class="card-badges-top">
+                <span class="badge-year">
+                  <i class="fa-solid fa-crown"></i> 2026
+                </span>
+                <span class="badge-theme">Royal Pushpa Mahal</span>
+              </div>
+
+              <!-- Hover Overlay with Details -->
+              <div class="photo-hover-overlay">
+                <div class="overlay-top">
+                  <span class="overlay-year">
+                    <i class="fa-solid fa-calendar-days"></i> 2026
+                  </span>
+                  <span class="overlay-cat">{{ photo.categoryLabel }}</span>
+                </div>
+                <div class="overlay-content">
+                  <h3 class="photo-title">{{ photo.title }}</h3>
+                  <p class="photo-desc">{{ photo.description }}</p>
+                  <div class="overlay-zoom-action">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    <span>Click to Enlarge Full Photo</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+
+    <!-- Permanent Upload / Photo Integration Guide Notice -->
+    <div class="photo-guide-strip">
+      <div class="guide-icon">
+        <i class="fa-solid fa-circle-info text-gold"></i>
+      </div>
+      <div class="guide-text">
+        <strong>Devotee & Member Note:</strong>
+        Photos captured during the 2026 Laxmi Puja celebration (Rituals, Sandhya Aarti, Royal Pandal, Naama Sankirtan, and Grand Vasani) will appear here as they are added.
+      </div>
+    </div>
+  </div>
+</section>

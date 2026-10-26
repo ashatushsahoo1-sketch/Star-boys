@@ -19,6 +19,7 @@ export class NavbarComponent {
 
   readonly navLinks = [
     { label: 'Home', target: 'home', icon: 'fa-solid fa-house' },
+    { label: '2026', target: '2026', icon: 'fa-solid fa-camera-retro' },
     { label: 'About', target: 'about', icon: 'fa-solid fa-om' },
     { label: 'Puja Events', target: 'events', icon: 'fa-solid fa-calendar-days' },
     { label: 'Our Legacy', target: 'legacy', icon: 'fa-solid fa-timeline' },

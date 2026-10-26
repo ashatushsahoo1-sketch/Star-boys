@@ -27,7 +27,8 @@ export class PhotoGalleryComponent {
   private lightbox = inject(LightboxService);
 
   readonly allItems = this.pujaData.getGalleryItems();
-  readonly selectedYear = signal<string>('all');
+  readonly selectedYear = signal<string>('2026');
+  readonly currentYear = '2026';
 
   readonly availableYears = computed<YearFilterOption[]>(() => {
     const yearMap = new Map<string, number>();
@@ -37,7 +38,7 @@ export class PhotoGalleryComponent {
 
     const yearsWithPhotos = Array.from(yearMap.keys())
       .filter(year => (yearMap.get(year) || 0) > 0)
-      .sort((a, b) => parseInt(a, 10) - parseInt(b, 10))
+      .sort((a, b) => parseInt(b, 10) - parseInt(a, 10))
       .map(y => ({ year: y, count: yearMap.get(y)! }));
 
     return [
@@ -64,8 +65,8 @@ export class PhotoGalleryComponent {
       map.get(item.year)!.push(item);
     }
 
-    // Ascending order (2004 to 2026)
-    const sortedYears = Array.from(map.keys()).sort((a, b) => parseInt(a, 10) - parseInt(b, 10));
+    // Descending order (2026 first, oldest last)
+    const sortedYears = Array.from(map.keys()).sort((a, b) => parseInt(b, 10) - parseInt(a, 10));
     return sortedYears.map(year => ({
       year,
       items: map.get(year)!

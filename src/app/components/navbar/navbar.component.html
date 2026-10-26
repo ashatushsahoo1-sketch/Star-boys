@@ -44,8 +44,14 @@
               [href]="'#' + link.target"
               class="nav-link"
               [class.active]="activeSection() === link.target"
+              [class.nav-link-2026]="link.target === '2026'"
               (click)="scrollToSection(link.target, $event)">
-              <span class="link-label">{{ link.label }}</span>
+              <span class="link-label">
+                {{ link.label }}
+                @if (link.target === '2026') {
+                  <span class="nav-2026-sparkle">✨</span>
+                }
+              </span>
               <span class="link-indicator"></span>
             </a>
           </li>

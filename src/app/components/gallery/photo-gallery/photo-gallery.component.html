@@ -23,8 +23,15 @@
             class="year-pill-btn"
             [class.active]="selectedYear() === yr.year"
             [class.empty-year]="yr.year !== 'all' && yr.count === 0"
+            [class.year-2026-pill]="yr.year === '2026'"
             (click)="setYear(yr.year)">
+            @if (yr.year === '2026') {
+              <span class="new-badge-dot"></span>
+            }
             <span>{{ yr.year === 'all' ? 'All Years' : yr.year }}</span>
+            @if (yr.year === '2026') {
+              <span class="new-label">NEW</span>
+            }
             <span class="year-count-badge">{{ yr.count }}</span>
           </button>
         }
@@ -36,6 +43,9 @@
       <div class="filter-status-bar">
         <span>
           Showing <strong>{{ filteredItems().length }}</strong> {{ filteredItems().length === 1 ? 'photo' : 'photos' }} from year <span class="highlight-tag">{{ selectedYear() }}</span>
+          @if (selectedYear() === '2026') {
+            <span class="latest-tag">✨ Latest</span>
+          }
         </span>
         <button type="button" class="btn-clear-filter" (click)="resetFilters()">
           <i class="fa-solid fa-rotate-left"></i> View All Years
@@ -47,19 +57,28 @@
     @if (yearGroups().length > 0) {
       <div class="year-groups-container">
         @for (group of yearGroups(); track group.year) {
-          <div class="year-section">
+          <div class="year-section" [class.year-section-2026]="group.year === '2026'">
             <!-- Year Section Header Banner -->
-            <div class="year-section-header">
+            <div class="year-section-header" [class.header-2026]="group.year === '2026'">
               <div class="year-badge-title">
-                <i class="fa-solid fa-calendar-days text-gold"></i>
+                @if (group.year === '2026') {
+                  <i class="fa-solid fa-crown text-gold"></i>
+                } @else {
+                  <i class="fa-solid fa-calendar-days text-gold"></i>
+                }
                 <span class="year-number">{{ group.year }}</span>
                 <span class="year-title-sep">•</span>
-                <span class="year-label">Laxmi Puja Archive</span>
+                @if (group.year === '2026') {
+                  <span class="year-label year-label-2026">Latest Puja • Royal Pushpa Mahal</span>
+                } @else {
+                  <span class="year-label">Laxmi Puja Archive</span>
+                }
               </div>
               <div class="year-photo-count">
                 <span>{{ group.items.length }} {{ group.items.length === 1 ? 'Photo' : 'Photos' }}</span>
               </div>
             </div>
+
 
             <!-- Photos Grid for this Year -->
             <div class="gallery-grid">
@@ -135,7 +154,7 @@
     <!-- Gallery Customization Note -->
     <div class="gallery-info-strip">
       <i class="fa-solid fa-camera text-gold"></i>
-      <span>Star Boys Laxmi Puja archive features authentic photos organized in ascending year-wise order.</span>
+      <span>Star Boys Laxmi Puja archive features authentic photos organized newest-first, from 2026 to the earliest years.</span>
     </div>
   </div>
 </section>
