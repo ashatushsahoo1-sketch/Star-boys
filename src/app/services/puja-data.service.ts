@@ -998,7 +998,7 @@ export class PujaDataService {
       role: 'Sound, Visuals & Tech Coordinator',
       category: 'tech',
       badge: 'Audio/Visuals',
-      image: 'assets/images/members/8707b0ac-87af-45ff-ad47-823fdfb810a6.jpg',
+      image: 'assets/images/members/9125ca7d-cef8-4715-96d1-087b6b55d878.jpg',
       bio: 'Supervising digital LED walls, synchronized audio mixers, lighting automation, and backup power systems at the mandap.',
       socials: [
         { platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }
