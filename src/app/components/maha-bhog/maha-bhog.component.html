@@ -30,17 +30,13 @@
         <!-- Photo Section -->
         <div class="bhog-photo-area">
           <div class="bhog-photo-frame">
-            <img
-              [src]="todaysBhog().image"
-              [alt]="'Today\'s Maha Bhog: ' + todaysBhog().name"
-              class="bhog-photo"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-            />
+            <img [src]="todaysBhog().image" [alt]="'Today\'s Maha Bhog: ' + todaysBhog().name" class="bhog-photo"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
             <!-- Fallback placeholder -->
             <div class="bhog-placeholder" style="display:none;">
               <div class="placeholder-icons">🍛 🥗 🍚</div>
               <p>Bhog Photo</p>
-              <span>Place photo at<br><code>assets/images/bhog/maha-bhog.jpg</code></span>
+              <span>Place photo at<br><code>assets/images/bhog/kakara.jpg</code></span>
             </div>
           </div>
 
