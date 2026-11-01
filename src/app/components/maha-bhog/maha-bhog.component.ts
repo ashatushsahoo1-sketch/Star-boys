@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class MahaBhogComponent {
   readonly todaysBhog = signal({
-    name: 'Chhena Jhili',
+    name: 'Rasabali',
     offeredBy: 'Star Boys Laxmi Puja Committee',
     image: 'assets/images/bhog/mb.jpg'
   });
