@@ -1305,9 +1305,9 @@ export class PujaDataService {
       role: 'Youth Coordinator',
       category: 'youth',
       badge: 'Youth Wing',
-      image: 'assets/images/members/youth-lead2.jpg',
+      image: 'assets/images/members/suman.jpg',
       bio: 'Organizing youth volunteers across pandal maintenance, gate control, and visitor support.',
-      socials: [{ platform: 'phone', url: 'tel:+919778669092', icon: 'fa-solid fa-phone', label: 'Call' }]
+      socials: [{ platform: 'phone', url: 'tel:+7008594717', icon: 'fa-solid fa-phone', label: 'Call' }]
     },
     {
       id: 'mem-28',
