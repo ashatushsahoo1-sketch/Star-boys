@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+﻿import { Injectable } from '@angular/core';
 import { LegacyMilestone, LegacyMemory } from '../models/legacy.model';
 import { PujaEventConfig, ScheduleItem, PastEvent } from '../models/event.model';
 import { GalleryItem } from '../models/gallery.model';
@@ -345,20 +345,20 @@ export class PujaDataService {
   ];
 
   /* =========================================================================
-     5. UPCOMING LAXMI PUJA 2026 EVENT CONFIGURATION
+     5. UPCOMING LAXMI PUJA 2027 EVENT CONFIGURATION
      (Change this targetDate anytime to automatically update countdown!)
      ========================================================================= */
   readonly pujaEvent: PujaEventConfig = {
-    title: 'MAA LAXMI PUJA 2026',
-    subTitle: '23rd Annual Grand Celebration',
-    year: '2026',
-    // Set target date (ISO format). 2026-10-26 at 05:00:00 AM (Ghat Kalash Sthapana & Sankalpa)
-    targetDate: '2026-10-26T05:00:00',
-    displayDate: 'October 26 – November 4, 2026 (Vasani)',
+    title: 'MAA LAXMI PUJA 2027',
+    subTitle: '24th Annual Grand Celebration',
+    year: '2027',
+    // Approximate date — update once dates are confirmed for 2027. (ISO format). 2026-10-26 at 05:00:00 AM (Ghat Kalash Sthapana & Sankalpa)
+    targetDate: '2027-10-16T05:00:00',
+    displayDate: 'October 2027 (Dates Coming Soon)',
     muhurtaTime: '7:00 AM & 7:00 PM Every Day',
     location: 'School Sahi, Ghantapada, Talcher, Odisha',
     venueMapUrl: 'https://maps.google.com/?q=School+Sahi+Ghantapada+Talcher+Odisha',
-    description: 'Join STAR BOYS for our 23rd annual grand Laxmi Puja celebration from October 26 to November 4 (Vasani) at School Sahi, Ghantapada, Talcher. Experience divine darshan of Maa Laxmi, majestic pandal lighting, soul-stirring Vedic bhajans, grand Pushpanjali, and sumptuous Mahaprasad.',
+    description: 'Join STAR BOYS for our 24th annual grand Laxmi Puja celebration in October 2027 at School Sahi, Ghantapada, Talcher. Stay tuned for the grand theme reveal, divine darshan of Maa Laxmi, majestic pandal art, soul-stirring Vedic bhajans, and sumptuous Mahaprasad.',
     themeBanner: 'assets/images/hero/hero-banner.jpg'
   };
 
@@ -448,6 +448,15 @@ export class PujaDataService {
      ========================================================================= */
   readonly pastEvents: PastEvent[] = [
     {
+      year: '2026',
+      title: 'Laxmi Puja 2026: Royal Pushpa Mahal',
+      theme: 'Theme: Royal Pushpa Mahal',
+      coverImage: 'assets/images/legacy/2026.jpg',
+      description: 'A stunning palace-themed pandal with red curtains, white arches, shining chandelier and colourful flowers. Maa Laxmi sat at the centre, crafted from rice and eco-friendly elements, blessing everyone with happiness and wealth.',
+      attendeesCount: '16,000+ Devotees',
+      highlightText: 'Royal Pushpa Mahal & Grand Vasani'
+    },
+    {
       year: '2025',
       title: 'Laxmi Puja 2025: Mystic Jungle View',
       theme: 'Theme: Jungle View & Sacred Wilderness Sanctuary',
@@ -516,6 +525,15 @@ export class PujaDataService {
       image: 'assets/images/legacy/2026-2.jpg',
       year: '2026',
       description: 'A beautiful palace theme with red curtains, white arches, a shining chandelier and colourful flowers all around. Maa Laxmi sits in the middle, made from rice and other eco-friendly elements, blessing everyone with happiness and wealth.'
+    },
+    {
+      id: 'gal-2026-2',
+      title: 'Last day',
+      category: 'memories',
+      categoryLabel: 'Vasani',
+      image: 'assets/images/legacy/2026-3.jpg',
+      year: '2026',
+      description: 'Vasani.'
     },
 
     // 2025 Photos - Theme: Jungle View
